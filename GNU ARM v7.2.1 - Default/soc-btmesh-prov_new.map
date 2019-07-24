@@ -575,9 +575,9 @@ c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/.
 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-msizer.o)
                               c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-reallocr.o) (_malloc_usable_size_r)
 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-calloc.o)
-                              C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans7.ltrans.o (calloc)
+                              C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans7.ltrans.o (calloc)
 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memcmp.o)
-                              C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans0.ltrans.o (memcmp)
+                              C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans0.ltrans.o (memcmp)
 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-callocr.o)
                               c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-calloc.o) (_calloc_r)
 
@@ -634,8 +634,8 @@ Discarded input sections
  .data          0x00000000        0x0 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/crt0.o
  .bss           0x00000000        0x0 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/crt0.o
  .ARM.extab     0x00000000        0x0 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/crt0.o
- .data          0x00000000        0x0 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans4.ltrans.o
- .data          0x00000000        0x0 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans6.ltrans.o
+ .data          0x00000000        0x0 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans4.ltrans.o
+ .data          0x00000000        0x0 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans6.ltrans.o
  .text          0x00000000        0x0 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\binapploader.o
  .data          0x00000000        0x0 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\binapploader.o
  .bss           0x00000000        0x0 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\binapploader.o
@@ -2060,15 +2060,15 @@ LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/
 LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
 LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/crt0.o
 START GROUP
-LOAD C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans0.ltrans.o
-LOAD C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans1.ltrans.o
-LOAD C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans2.ltrans.o
-LOAD C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans3.ltrans.o
-LOAD C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans4.ltrans.o
-LOAD C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans5.ltrans.o
-LOAD C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans6.ltrans.o
-LOAD C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans7.ltrans.o
-LOAD C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans8.ltrans.o
+LOAD C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans0.ltrans.o
+LOAD C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans1.ltrans.o
+LOAD C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans2.ltrans.o
+LOAD C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans3.ltrans.o
+LOAD C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans4.ltrans.o
+LOAD C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans5.ltrans.o
+LOAD C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans6.ltrans.o
+LOAD C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans7.ltrans.o
+LOAD C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans8.ltrans.o
 LOAD C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libpsstore.a
 LOAD C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\binapploader.o
 LOAD C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libcoex.a
@@ -2111,22 +2111,22 @@ LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/
 .text_application
                 0x0000a800    0x3b258
  *(.vectors)
- .vectors       0x0000a800       0xfc C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans5.ltrans.o
+ .vectors       0x0000a800       0xfc C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans5.ltrans.o
                 0x0000a800                __Vectors
                 0x0000a8fc                __Vectors_End = .
                 0x000000fc                __Vectors_Size = (__Vectors_End - __Vectors)
                 0x0000a8fc                __end__ = .
  *(.application_properties)
  .application_properties
-                0x0000a8fc       0x40 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans5.ltrans.o
+                0x0000a8fc       0x40 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans5.ltrans.o
                 0x0000a8fc                bg_application_properties
  *(.gecko_configuration)
  *(.xo_configuration)
  *(.gatt_header)
- .gatt_header   0x0000a93c       0x34 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans8.ltrans.o
+ .gatt_header   0x0000a93c       0x34 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans8.ltrans.o
                 0x0000a93c                bg_gattdb_data
  *(.gatt_data)
- .gatt_data     0x0000a970      0x2bc C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans8.ltrans.o
+ .gatt_data     0x0000a970      0x2bc C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans8.ltrans.o
                 0x0000a970                bg_gattdb_data_attribute_field_30
                 0x0000a978                bg_gattdb_data_attribute_field_29
                 0x0000a98e                bg_gattdb_data_attribute_field_28
@@ -2166,7 +2166,7 @@ LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/
  .text          0x0000ac6c       0x74 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/crt0.o
                 0x0000ac6c                _mainCRTStartup
                 0x0000ac6c                _start
- .text          0x0000ace0     0x5350 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans0.ltrans.o
+ .text          0x0000ace0     0x5350 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans0.ltrans.o
                 0x0000ad74                BG_PRORTC_IRQHandler
                 0x0000adac                ll_task_default_callback.lto_priv.376
                 0x0000ae24                ubt_event_free
@@ -2201,7 +2201,7 @@ LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/
                 0x0000cb14                sli_bt_cmd_mesh_config_client_set_model_pub
                 0x0000cd80                sli_bt_cmd_mesh_prov_init
                 0x0000e764                gecko_priority_handle
- .text          0x00010030     0x5ba4 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans1.ltrans.o
+ .text          0x00010030     0x5ba4 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans1.ltrans.o
                 0x00010070                ll_radioTimerExpired.lto_priv.735
                 0x00010094                ll_llcpCallbackLocalTerminate.lto_priv.743
                 0x000100c4                bg_pre_sleep
@@ -2311,7 +2311,7 @@ LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/
                 0x000157e8                ll_llcpConnectionUpdate_sender.lto_priv.741
                 0x000158a0                ll_llcpCallbackConnectionUpdatePreListen.lto_priv.739
                 0x000158e0                ll_llcpHandlePacketCommon
- .text          0x00015bd4     0x63a0 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans2.ltrans.o
+ .text          0x00015bd4     0x63a0 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans2.ltrans.o
                 0x00015bd4                s81464a2878d09dbd2de6234ce8934184bf5116fd04efc613284ea48a9619bc39.lto_priv.712
                 0x00015d52                s0d9fb6afc7a5b3df58c0cb7bf23273dd9d8d3988520c8c4d91dc3aaadafd363d.lto_priv.720
                 0x00015da4                s19afc5aeb0fa3ad5437453e4974a9aca3c414191115ed0d8573b5b0b1457b096
@@ -2434,10 +2434,10 @@ LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/
                 0x0001be60                s630c48516aeb8590a31d7c39d77f44f92188e774044cf17033dea58668f1b433.lto_priv.827
                 0x0001bf18                s76cb0009c38d97748c40fb80af8eb69e087d975dcb9e945047195ce1b5cf8e07
  .text.unlikely
-                0x0001bf74       0xb8 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans2.ltrans.o
+                0x0001bf74       0xb8 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans2.ltrans.o
                 0x0001bf74                s1a8ee2bcac1599feb58e1b1ed33e45a95bd03febd32de637684d473d3eae735c.lto_priv.675
                 0x0001bfc8                seec249431fcb9d5d5ea133fee50277659005ff96792d0f1161e15cb24ac3da5c.lto_priv.676
- .text          0x0001c02c     0x5c70 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans3.ltrans.o
+ .text          0x0001c02c     0x5c70 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans3.ltrans.o
                 0x0001c144                s811283eda8925aa908a29c0fb184c1693eb6e29d68029a5072949c207b4f7cb8.lto_priv.409
                 0x0001c150                ccm_aes_setkey_wrap.lto_priv.406
                 0x0001c154                aes_ctx_free.lto_priv.405
@@ -2619,10 +2619,10 @@ LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/
                 0x00021700                s55aa115f5304976b41d66a7ca64ddfff017dc83836a40847cf51b17a7c642872
                 0x00021b5c                sbdab0a659a16ba137b7d899db62f0b250227ca35db821e3eae0ad86b6f52ca17
  .text.unlikely
-                0x00021c9c       0xa0 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans3.ltrans.o
+                0x00021c9c       0xa0 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans3.ltrans.o
                 0x00021c9c                mbedtls_mpi_shift_l
                 0x00021d2a                sb757ea2164791fd86a5ee7def8113152704c255e6fc33d18b31fd6b63f0e7dfb.lto_priv.653
- .text          0x00021d3c     0x52f4 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans4.ltrans.o
+ .text          0x00021d3c     0x52f4 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans4.ltrans.o
                 0x00021d5c                s203c11a0e296da6702f974aa7096ebe966ea61a0ec7b70ba6d359e8bda6a59aa.lto_priv.750
                 0x00021dc0                s64ec19537b527aa778a6ec009b06ebbe07b609befdc684ca07977921956276c2.lto_priv.749
                 0x00021df0                s005973216bcb99fc86eb4ed314903a24bab65fe7bae1a6fa154d0eaba59507a5
@@ -2716,7 +2716,7 @@ LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/
                 0x00025cbc                s680ca2cdc74432d47b868ed0a6658cac2b21c8f60b9eef4d342f00260234efbd
                 0x00025cf0                s4e0e563de4943801a7497127e88f346bae5b856bfb1a2a22b704fd5999e6e691
                 0x00025efc                s52a958eed992c5285bed4345ee3d727bb229196b3be3728a0283b14bea5bbfac
- .text          0x00027030     0x348c C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans5.ltrans.o
+ .text          0x00027030     0x348c C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans5.ltrans.o
                 0x000273d4                sleepCallbackWrapper.lto_priv.375
                 0x000273e8                Default_Handler
                 0x000273e8                CRYPTO0_IRQHandler
@@ -2768,9 +2768,9 @@ LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/
                 0x0002a4ac                _fstat
                 0x0002a4b6                _exit
                 0x0002a4b8                _close
- .text.startup  0x0002a4bc     0x15a8 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans5.ltrans.o
+ .text.startup  0x0002a4bc     0x15a8 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans5.ltrans.o
                 0x0002a4bc                main
- .text          0x0002ba64     0x50a8 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans6.ltrans.o
+ .text          0x0002ba64     0x50a8 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans6.ltrans.o
                 0x0002ba64                s9a038438b96a59eed64aababe6ec97f449cc898c03ab04d2c74a7f7c4bbc2e05.lto_priv.718
                 0x0002baf4                s57c5640bfee223650e674e78dbd5151760c9d90d8f8237f6f1859df9e8569b27.lto_priv.588
                 0x0002bde4                s0c6edf4f07cfb851a379f0548f82fb1ee757c5198913c6efe66b0133af5b6da5
@@ -2818,10 +2818,10 @@ LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/
                 0x0002fa74                s8f611065e0c9bc6023b9164d9f68d2ec67a5c05ebeaa8547ea295b13df3b6a3c.lto_priv.623
                 0x0002fac8                s2d8d60151f84e2fe74c36f9345a673a736f6d41e148e924262ba779b16ff2942
  .text.unlikely
-                0x00030b0c       0x3a C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans6.ltrans.o
+                0x00030b0c       0x3a C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans6.ltrans.o
                 0x00030b0c                s13c87fcd1e7b3daa26d5cd11518ed7984adeafe4dfd73084375b248b53f47225
  *fill*         0x00030b46        0x2 
- .text          0x00030b48     0x4f64 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans7.ltrans.o
+ .text          0x00030b48     0x4f64 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans7.ltrans.o
                 0x00030b48                s5ad1fa4191f3ccb36fb97c2ef6225191588ef0fd75f8cc98a16e688db40d5bfa.lto_priv.602
                 0x00030b9e                s5152318604d3b3e95e664e84eb14a56c721d1c0cc372c068ae948753661e95a5
                 0x00030f04                se70c2aa28d2f59c7577823c670ab2389ad7d7455a3313477adcd39c3bac98240
@@ -2936,7 +2936,7 @@ LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/
                 0x000356d0                mbedtls_ecp_group_free
                 0x0003572e                mbedtls_cipher_cmac_finish
                 0x0003583c                ecp_normalize_jac_many.lto_priv.450
- .text          0x00035aac     0x46a0 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans8.ltrans.o
+ .text          0x00035aac     0x46a0 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans8.ltrans.o
                 0x00035c46                sd69063ac414aa9b182b3715be7c99e550c11a43ab43002cd16895150daad7b64
                 0x00035c90                gecko_register_bgapi_library.constprop.351
                 0x00035cc8                graphPrintCenter.constprop.339
@@ -4117,35 +4117,35 @@ LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
  *(.rodata*)
- .rodata        0x00041290      0x1f8 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans0.ltrans.o
+ .rodata        0x00041290      0x1f8 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans0.ltrans.o
                 0x00041480                CSWTCH.4.lto_priv.778
                 0x00041484                CSWTCH.1.lto_priv.779
  .rodata.str1.1
-                0x00041488       0x11 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans0.ltrans.o
+                0x00041488       0x11 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans0.ltrans.o
  *fill*         0x00041499        0x3 
- .rodata        0x0004149c       0x4a C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans1.ltrans.o
+ .rodata        0x0004149c       0x4a C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans1.ltrans.o
  *fill*         0x000414e6        0x2 
- .rodata        0x000414e8      0x380 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans2.ltrans.o
+ .rodata        0x000414e8      0x380 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans2.ltrans.o
                 0x00041854                mesh_configuration_server_node_identity_set_gatt_fn
                 0x00041858                mesh_node_gatt_proxy_change_fn
                 0x0004185c                net_state
                 0x00041860                cfg_client_state
                 0x00041864                app_state
  .rodata.str1.1
-                0x00041868       0x46 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans2.ltrans.o
+                0x00041868       0x46 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans2.ltrans.o
                                  0x6f (size before relaxing)
  *fill*         0x000418ae        0x2 
- .rodata        0x000418b0       0x24 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans3.ltrans.o
+ .rodata        0x000418b0       0x24 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans3.ltrans.o
                 0x000418b3                nil_key.lto_priv.662
                 0x000418c4                beacon_state
                 0x000418c8                model_state
                 0x000418cc                bearer_state
                 0x000418d0                cfg_server_state
  .rodata.str1.1
-                0x000418d4       0x6d C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans3.ltrans.o
+                0x000418d4       0x6d C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans3.ltrans.o
                                  0xaa (size before relaxing)
  *fill*         0x00041941        0x7 
- .rodata        0x00041948       0xf0 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans4.ltrans.o
+ .rodata        0x00041948       0xf0 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans4.ltrans.o
                 0x00041a04                replay_state
                 0x00041a08                prov_oob_reqs
                 0x00041a0c                __mesh_memory_config
@@ -4154,25 +4154,25 @@ LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/
                 0x00041a30                mesh_proxy_gatt_send_fn
                 0x00041a34                foundation_state
  .rodata.str1.1
-                0x00041a38       0x32 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans4.ltrans.o
+                0x00041a38       0x32 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans4.ltrans.o
                                  0xc3 (size before relaxing)
  *fill*         0x00041a6a        0x2 
- .rodata        0x00041a6c      0x12e C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans5.ltrans.o
+ .rodata        0x00041a6c      0x12e C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans5.ltrans.o
  .rodata.str1.1
-                0x00041b9a     0x14b9 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans5.ltrans.o
+                0x00041b9a     0x14b9 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans5.ltrans.o
                                0x14d4 (size before relaxing)
  *fill*         0x00043053        0x1 
- .rodata        0x00043054      0x294 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans6.ltrans.o
+ .rodata        0x00043054      0x294 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans6.ltrans.o
                 0x000432e4                __mesh_dcd_len
  .rodata.str1.1
-                0x000432e8        0x8 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans6.ltrans.o
- .rodata        0x000432f0      0x160 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans7.ltrans.o
+                0x000432e8        0x8 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans6.ltrans.o
+ .rodata        0x000432f0      0x160 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans7.ltrans.o
                 0x000432f0                genprov_sm.lto_priv.586
                 0x00043308                mesh_pool_id_to_bg_pool_id.lto_priv.725
                 0x0004330c                ll_radioScaToPpm
                 0x00043330                ll_timing.lto_priv.744
                 0x0004344c                net_cache_state
- .rodata        0x00043450      0x5c5 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans8.ltrans.o
+ .rodata        0x00043450      0x5c5 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans8.ltrans.o
                 0x0004346c                mbedtls_cipher_definitions
                 0x000434cd                __mesh_dcd
                 0x00043824                crypto_devices.lto_priv.490
@@ -4198,7 +4198,7 @@ LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/
                 0x00043a10                nvm3_defaultHandle
                 0x00043a14                moduleInitialized.lto_priv.819
  .rodata.str1.1
-                0x00043a15       0x70 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans8.ltrans.o
+                0x00043a15       0x70 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans8.ltrans.o
                                  0x9e (size before relaxing)
  *fill*         0x00043a85        0x3 
  .rodata.RAIL_TxPowerCurvesDcdc
@@ -4358,7 +4358,7 @@ LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/
 
 .stack_dummy    0x20000000     0x1000
  *(.stack*)
- .stack         0x20000000     0x1000 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans5.ltrans.o
+ .stack         0x20000000     0x1000 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans5.ltrans.o
                 0x20001000                __StackTop = (ORIGIN (RAM) + SIZEOF (.stack_dummy))
                 0x20000000                __StackLimit = ORIGIN (RAM)
                 0x20001000                PROVIDE (__stack, __StackTop)
@@ -4368,20 +4368,20 @@ LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/
                 0x20001000                __data_start__ = .
  *(vtable)
  *(.data*)
- .data          0x20001000       0x20 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans0.ltrans.o
+ .data          0x20001000       0x20 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans0.ltrans.o
                 0x2000101c                recv_fn.lto_priv.809
- .data          0x20001020        0x6 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans1.ltrans.o
+ .data          0x20001020        0x6 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans1.ltrans.o
  *fill*         0x20001026        0x2 
- .data          0x20001028      0x120 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans2.ltrans.o
+ .data          0x20001028      0x120 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans2.ltrans.o
                 0x20001140                cancel_fn.lto_priv.709
                 0x20001144                net_send_fn.lto_priv.710
- .data          0x20001148        0x4 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans3.ltrans.o
+ .data          0x20001148        0x4 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans3.ltrans.o
                 0x20001148                mesh_node_get_device_key_fn.lto_priv.663
- .data          0x2000114c       0x18 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans5.ltrans.o
- .data          0x20001164        0x4 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans7.ltrans.o
+ .data          0x2000114c       0x18 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans5.ltrans.o
+ .data          0x20001164        0x4 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans7.ltrans.o
                 0x20001164                mesh_adv_repeat_packets.lto_priv.694
                 0x20001166                gatt_max_mtu_config
- .data          0x20001168       0x54 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans8.ltrans.o
+ .data          0x20001168       0x54 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans8.ltrans.o
                 0x20001168                saved_memory_config.lto_priv.460
                 0x20001188                current_db
                 0x2000118c                SystemHFXOClock.lto_priv.798
@@ -4421,7 +4421,7 @@ LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/
                 0x200011f8       0x60 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-impure.o)
                 0x20001258                . = ALIGN (0x4)
  *(.ram)
- .ram           0x20001258       0x90 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans5.ltrans.o
+ .ram           0x20001258       0x90 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans5.ltrans.o
                 0x20001258                MSC_ErasePage
                 0x200012e8                . = ALIGN (0x4)
                 0x200012e8                PROVIDE (__preinit_array_start, .)
@@ -4448,7 +4448,7 @@ LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/
                 0x20001300                __bss_start__ = .
  *(.bss*)
  .bss           0x20001300       0x1c c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
- .bss           0x2000131c       0xaa C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans0.ltrans.o
+ .bss           0x2000131c       0xaa C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans0.ltrans.o
                 0x2000139c                prov_ddb_list_fn.lto_priv.813
                 0x200013a8                bgbuf_out_of_memory.lto_priv.794
                 0x200013ac                alloc_noflow_cnt.lto_priv.793
@@ -4456,10 +4456,10 @@ LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/
                 0x200013b4                alloc_in_cnt.lto_priv.791
                 0x200013c4                mesh_stack_initialized.lto_priv.807
  *fill*         0x200013c6        0x2 
- .bss           0x200013c8      0x534 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans1.ltrans.o
+ .bss           0x200013c8      0x534 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans1.ltrans.o
                 0x200013dc                gecko_evt_msgs
                 0x20001518                gatt_client_handler.lto_priv.816
- .bss           0x200018fc       0x20 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans2.ltrans.o
+ .bss           0x200018fc       0x20 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans2.ltrans.o
                 0x200018fc                change_fn.lto_priv.666
                 0x20001900                generic_client_send_fn.lto_priv.669
                 0x20001904                generic_server_send_fn.lto_priv.664
@@ -4467,7 +4467,7 @@ LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/
                 0x20001910                status_cb_param.lto_priv.671
                 0x20001914                set_fn.lto_priv.665
                 0x20001918                db_allocate.lto_priv.696
- .bss           0x2000191c       0xe0 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans3.ltrans.o
+ .bss           0x2000191c       0xe0 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans3.ltrans.o
                 0x2000191c                friend_state.lto_priv.582
                 0x20001958                lighting_server_change_fn.lto_priv.668
                 0x2000195c                bg_message_current_run.lto_priv.795
@@ -4477,7 +4477,7 @@ LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/
                 0x200019f4                clear_timers.lto_priv.583
                 0x200019f8                timers.lto_priv.584
  *fill*         0x200019fc        0x4 
- .bss           0x20001a00      0x2cc C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans4.ltrans.o
+ .bss           0x20001a00      0x2cc C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans4.ltrans.o
                 0x20001a08                lighting_client_status_sb.lto_priv.673
                 0x20001a0c                lighting_client_status_sb_param.lto_priv.674
                 0x20001a10                appkey_blacklist.lto_priv.695
@@ -4488,8 +4488,8 @@ LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/
                 0x20001a94                heartbeat_subscribe_complete_cb_param.lto_priv.661
                 0x20001a98                snd_queue.lto_priv.640
                 0x20001cc8                mesh_node_key_refresh_periodic_task_fn.lto_priv.708
- .bss           0x20001ccc      0x2bc C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans5.ltrans.o
- .bss           0x20001f88       0x7d C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans6.ltrans.o
+ .bss           0x20001ccc      0x2bc C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans5.ltrans.o
+ .bss           0x20001f88       0x7d C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans6.ltrans.o
                 0x20001f88                mesh_generic_server_report_changes_fn.lto_priv.726
                 0x20001f8c                mesh_ddb_dump_state
                 0x20001f90                deferred_event_sender
@@ -4497,7 +4497,7 @@ LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/
                 0x20001fcc                cached_size.lto_priv.703
                 0x20002004                initialized.lto_priv.701
  *fill*         0x20002005        0x3 
- .bss           0x20002008      0x1ac C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans7.ltrans.o
+ .bss           0x20002008      0x1ac C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans7.ltrans.o
                 0x20002010                id.lto_priv.707
                 0x20002024                mesh_adv_cb.lto_priv.808
                 0x20002028                mesh_interval_min.lto_priv.692
@@ -4507,7 +4507,7 @@ LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/
                 0x20002180                usch
                 0x20002190                aes_context.lto_priv.520
  *fill*         0x200021b4       0x4c 
- .bss           0x20002200     0x59a1 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans8.ltrans.o
+ .bss           0x20002200     0x59a1 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans8.ltrans.o
                 0x2000224c                registered_bgapi_libs.lto_priv.780
                 0x20002250                glibContext.lto_priv.817
                 0x2000227c                graphLineNum.lto_priv.818
@@ -4733,12 +4733,12 @@ LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/
                 0x20007f70                end = __end__
                 0x20007f70                _end = __end__
  *(.heap*)
- .heap          0x20007f70     0x1200 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans5.ltrans.o
+ .heap          0x20007f70     0x1200 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans5.ltrans.o
                 0x20009170                __HeapLimit = .
 
 .nvm_dummy      0x00045a60     0x1000
  *(.simee)
- .simee         0x00045a60     0x1000 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans5.ltrans.o
+ .simee         0x00045a60     0x1000 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans5.ltrans.o
                 0x00045a60                nvm3Storage
                 0x0007f000                __nvm3Base = (0x80000 - SIZEOF (.nvm_dummy))
 OUTPUT(soc-btmesh-prov_new.axf elf32-littlearm)
@@ -4752,23 +4752,23 @@ OUTPUT(soc-btmesh-prov_new.axf elf32-littlearm)
  .ARM.attributes
                 0x00000054       0x20 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/crt0.o
  .ARM.attributes
-                0x00000074       0x35 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans0.ltrans.o
+                0x00000074       0x35 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans0.ltrans.o
  .ARM.attributes
-                0x000000a9       0x35 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans1.ltrans.o
+                0x000000a9       0x35 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans1.ltrans.o
  .ARM.attributes
-                0x000000de       0x35 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans2.ltrans.o
+                0x000000de       0x35 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans2.ltrans.o
  .ARM.attributes
-                0x00000113       0x35 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans3.ltrans.o
+                0x00000113       0x35 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans3.ltrans.o
  .ARM.attributes
-                0x00000148       0x35 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans4.ltrans.o
+                0x00000148       0x35 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans4.ltrans.o
  .ARM.attributes
-                0x0000017d       0x35 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans5.ltrans.o
+                0x0000017d       0x35 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans5.ltrans.o
  .ARM.attributes
-                0x000001b2       0x35 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans6.ltrans.o
+                0x000001b2       0x35 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans6.ltrans.o
  .ARM.attributes
-                0x000001e7       0x35 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans7.ltrans.o
+                0x000001e7       0x35 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans7.ltrans.o
  .ARM.attributes
-                0x0000021c       0x35 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans8.ltrans.o
+                0x0000021c       0x35 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans8.ltrans.o
  .ARM.attributes
                 0x00000251       0x1c C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\binapploader.o
  .ARM.attributes
@@ -4935,15 +4935,15 @@ OUTPUT(soc-btmesh-prov_new.axf elf32-littlearm)
                 0x00001237       0x22 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/softfp/crtn.o
 
 .comment        0x00000000       0x7e
- .comment       0x00000000       0x7f C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans0.ltrans.o
- .comment       0x00000000       0x7f C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans1.ltrans.o
- .comment       0x00000000       0x7f C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans2.ltrans.o
- .comment       0x00000000       0x7f C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans3.ltrans.o
- .comment       0x00000000       0x7f C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans4.ltrans.o
- .comment       0x00000000       0x7f C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans5.ltrans.o
- .comment       0x00000000       0x7f C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans6.ltrans.o
- .comment       0x00000000       0x7f C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans7.ltrans.o
- .comment       0x00000000       0x7f C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans8.ltrans.o
+ .comment       0x00000000       0x7f C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans0.ltrans.o
+ .comment       0x00000000       0x7f C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans1.ltrans.o
+ .comment       0x00000000       0x7f C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans2.ltrans.o
+ .comment       0x00000000       0x7f C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans3.ltrans.o
+ .comment       0x00000000       0x7f C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans4.ltrans.o
+ .comment       0x00000000       0x7f C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans5.ltrans.o
+ .comment       0x00000000       0x7f C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans6.ltrans.o
+ .comment       0x00000000       0x7f C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans7.ltrans.o
+ .comment       0x00000000       0x7f C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans8.ltrans.o
  .comment       0x00000000       0x7e C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(pa_conversions_efr32.o)
                                  0x7f (size before relaxing)
  .comment       0x0000007e       0x7f C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(pa_curves_efr32.o)
@@ -4980,110 +4980,110 @@ OUTPUT(soc-btmesh-prov_new.axf elf32-littlearm)
  .comment       0x0000007e       0x7f C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(generic_efr32xg13_seq.o)
 
 .debug_info     0x00000000   0x17543c
- .debug_info    0x00000000    0x2e9b7 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans0.ltrans.o
- .debug_info    0x0002e9b7    0x2abbf C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans1.ltrans.o
- .debug_info    0x00059576    0x2cac1 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans2.ltrans.o
- .debug_info    0x00086037    0x26bf6 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans3.ltrans.o
- .debug_info    0x000acc2d    0x22cb8 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans4.ltrans.o
- .debug_info    0x000cf8e5    0x3da8c C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans5.ltrans.o
- .debug_info    0x0010d371    0x21512 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans6.ltrans.o
- .debug_info    0x0012e883    0x286c4 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans7.ltrans.o
- .debug_info    0x00156f47    0x1e4f5 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans8.ltrans.o
+ .debug_info    0x00000000    0x2e9b7 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans0.ltrans.o
+ .debug_info    0x0002e9b7    0x2abbf C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans1.ltrans.o
+ .debug_info    0x00059576    0x2cac1 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans2.ltrans.o
+ .debug_info    0x00086037    0x26bf6 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans3.ltrans.o
+ .debug_info    0x000acc2d    0x22cb8 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans4.ltrans.o
+ .debug_info    0x000cf8e5    0x3da8c C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans5.ltrans.o
+ .debug_info    0x0010d371    0x21512 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans6.ltrans.o
+ .debug_info    0x0012e883    0x286c4 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans7.ltrans.o
+ .debug_info    0x00156f47    0x1e4f5 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans8.ltrans.o
 
 .debug_abbrev   0x00000000     0x6507
- .debug_abbrev  0x00000000      0xb08 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans0.ltrans.o
- .debug_abbrev  0x00000b08      0xc77 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans1.ltrans.o
- .debug_abbrev  0x0000177f      0xaf2 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans2.ltrans.o
- .debug_abbrev  0x00002271      0xc00 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans3.ltrans.o
- .debug_abbrev  0x00002e71      0xb14 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans4.ltrans.o
- .debug_abbrev  0x00003985      0xbaf C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans5.ltrans.o
- .debug_abbrev  0x00004534      0x92e C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans6.ltrans.o
- .debug_abbrev  0x00004e62      0xc36 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans7.ltrans.o
- .debug_abbrev  0x00005a98      0xa6f C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans8.ltrans.o
+ .debug_abbrev  0x00000000      0xb08 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans0.ltrans.o
+ .debug_abbrev  0x00000b08      0xc77 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans1.ltrans.o
+ .debug_abbrev  0x0000177f      0xaf2 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans2.ltrans.o
+ .debug_abbrev  0x00002271      0xc00 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans3.ltrans.o
+ .debug_abbrev  0x00002e71      0xb14 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans4.ltrans.o
+ .debug_abbrev  0x00003985      0xbaf C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans5.ltrans.o
+ .debug_abbrev  0x00004534      0x92e C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans6.ltrans.o
+ .debug_abbrev  0x00004e62      0xc36 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans7.ltrans.o
+ .debug_abbrev  0x00005a98      0xa6f C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans8.ltrans.o
 
 .debug_loc      0x00000000    0x781ff
- .debug_loc     0x00000000     0xc2e3 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans0.ltrans.o
- .debug_loc     0x0000c2e3     0xe4ea C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans1.ltrans.o
- .debug_loc     0x0001a7cd    0x132c7 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans2.ltrans.o
- .debug_loc     0x0002da94     0xfb8f C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans3.ltrans.o
- .debug_loc     0x0003d623     0xc70c C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans4.ltrans.o
- .debug_loc     0x00049d2f     0xa697 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans5.ltrans.o
- .debug_loc     0x000543c6     0xb7dd C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans6.ltrans.o
- .debug_loc     0x0005fba3     0xd4bc C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans7.ltrans.o
- .debug_loc     0x0006d05f     0xb1a0 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans8.ltrans.o
+ .debug_loc     0x00000000     0xc2e3 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans0.ltrans.o
+ .debug_loc     0x0000c2e3     0xe4ea C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans1.ltrans.o
+ .debug_loc     0x0001a7cd    0x132c7 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans2.ltrans.o
+ .debug_loc     0x0002da94     0xfb8f C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans3.ltrans.o
+ .debug_loc     0x0003d623     0xc70c C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans4.ltrans.o
+ .debug_loc     0x00049d2f     0xa697 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans5.ltrans.o
+ .debug_loc     0x000543c6     0xb7dd C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans6.ltrans.o
+ .debug_loc     0x0005fba3     0xd4bc C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans7.ltrans.o
+ .debug_loc     0x0006d05f     0xb1a0 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans8.ltrans.o
 
 .debug_aranges  0x00000000      0x158
  .debug_aranges
-                0x00000000       0x20 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans0.ltrans.o
+                0x00000000       0x20 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans0.ltrans.o
  .debug_aranges
-                0x00000020       0x20 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans1.ltrans.o
+                0x00000020       0x20 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans1.ltrans.o
  .debug_aranges
-                0x00000040       0x30 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans2.ltrans.o
+                0x00000040       0x30 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans2.ltrans.o
  .debug_aranges
-                0x00000070       0x30 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans3.ltrans.o
+                0x00000070       0x30 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans3.ltrans.o
  .debug_aranges
-                0x000000a0       0x20 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans4.ltrans.o
+                0x000000a0       0x20 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans4.ltrans.o
  .debug_aranges
-                0x000000c0       0x30 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans5.ltrans.o
+                0x000000c0       0x30 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans5.ltrans.o
  .debug_aranges
-                0x000000f0       0x28 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans6.ltrans.o
+                0x000000f0       0x28 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans6.ltrans.o
  .debug_aranges
-                0x00000118       0x20 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans7.ltrans.o
+                0x00000118       0x20 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans7.ltrans.o
  .debug_aranges
-                0x00000138       0x20 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans8.ltrans.o
+                0x00000138       0x20 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans8.ltrans.o
 
 .debug_ranges   0x00000000     0xe560
- .debug_ranges  0x00000000     0x2a20 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans0.ltrans.o
- .debug_ranges  0x00002a20     0x1cf8 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans1.ltrans.o
- .debug_ranges  0x00004718     0x1040 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans2.ltrans.o
- .debug_ranges  0x00005758     0x1670 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans3.ltrans.o
- .debug_ranges  0x00006dc8     0x1740 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans4.ltrans.o
- .debug_ranges  0x00008508     0x1fb8 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans5.ltrans.o
- .debug_ranges  0x0000a4c0     0x1a60 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans6.ltrans.o
- .debug_ranges  0x0000bf20     0x1118 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans7.ltrans.o
- .debug_ranges  0x0000d038     0x1528 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans8.ltrans.o
+ .debug_ranges  0x00000000     0x2a20 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans0.ltrans.o
+ .debug_ranges  0x00002a20     0x1cf8 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans1.ltrans.o
+ .debug_ranges  0x00004718     0x1040 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans2.ltrans.o
+ .debug_ranges  0x00005758     0x1670 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans3.ltrans.o
+ .debug_ranges  0x00006dc8     0x1740 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans4.ltrans.o
+ .debug_ranges  0x00008508     0x1fb8 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans5.ltrans.o
+ .debug_ranges  0x0000a4c0     0x1a60 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans6.ltrans.o
+ .debug_ranges  0x0000bf20     0x1118 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans7.ltrans.o
+ .debug_ranges  0x0000d038     0x1528 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans8.ltrans.o
 
 .debug_line     0x00000000    0x1e252
- .debug_line    0x00000000     0x409c C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans0.ltrans.o
- .debug_line    0x0000409c     0x3adf C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans1.ltrans.o
- .debug_line    0x00007b7b     0x2a3f C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans2.ltrans.o
- .debug_line    0x0000a5ba     0x32b4 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans3.ltrans.o
- .debug_line    0x0000d86e     0x2ac4 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans4.ltrans.o
- .debug_line    0x00010332     0x40c3 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans5.ltrans.o
- .debug_line    0x000143f5     0x2822 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans6.ltrans.o
- .debug_line    0x00016c17     0x378c C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans7.ltrans.o
- .debug_line    0x0001a3a3     0x3eaf C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans8.ltrans.o
+ .debug_line    0x00000000     0x409c C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans0.ltrans.o
+ .debug_line    0x0000409c     0x3adf C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans1.ltrans.o
+ .debug_line    0x00007b7b     0x2a3f C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans2.ltrans.o
+ .debug_line    0x0000a5ba     0x32b4 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans3.ltrans.o
+ .debug_line    0x0000d86e     0x2ac4 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans4.ltrans.o
+ .debug_line    0x00010332     0x40c3 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans5.ltrans.o
+ .debug_line    0x000143f5     0x2822 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans6.ltrans.o
+ .debug_line    0x00016c17     0x378c C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans7.ltrans.o
+ .debug_line    0x0001a3a3     0x3eaf C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans8.ltrans.o
 
 .debug_str      0x00000000    0x4ecd5
- .debug_str     0x00000000    0x20c86 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans0.ltrans.o
+ .debug_str     0x00000000    0x20c86 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans0.ltrans.o
                               0x221f5 (size before relaxing)
- .debug_str     0x00020c86     0x671f C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans1.ltrans.o
+ .debug_str     0x00020c86     0x671f C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans1.ltrans.o
                               0x20f40 (size before relaxing)
- .debug_str     0x000273a5     0x8864 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans2.ltrans.o
+ .debug_str     0x000273a5     0x8864 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans2.ltrans.o
                               0x1edbd (size before relaxing)
- .debug_str     0x0002fc09     0x58cb C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans3.ltrans.o
+ .debug_str     0x0002fc09     0x58cb C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans3.ltrans.o
                               0x1f57b (size before relaxing)
- .debug_str     0x000354d4     0x5f24 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans4.ltrans.o
+ .debug_str     0x000354d4     0x5f24 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans4.ltrans.o
                               0x1ea17 (size before relaxing)
- .debug_str     0x0003b3f8     0x6815 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans5.ltrans.o
+ .debug_str     0x0003b3f8     0x6815 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans5.ltrans.o
                               0x1facc (size before relaxing)
- .debug_str     0x00041c0d     0x4c2e C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans6.ltrans.o
+ .debug_str     0x00041c0d     0x4c2e C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans6.ltrans.o
                               0x1d163 (size before relaxing)
- .debug_str     0x0004683b     0x3d30 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans7.ltrans.o
+ .debug_str     0x0004683b     0x3d30 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans7.ltrans.o
                               0x1df89 (size before relaxing)
- .debug_str     0x0004a56b     0x476a C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans8.ltrans.o
+ .debug_str     0x0004a56b     0x476a C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans8.ltrans.o
                               0x13193 (size before relaxing)
 
 .debug_frame    0x00000000     0xa134
- .debug_frame   0x00000000      0x85c C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans0.ltrans.o
- .debug_frame   0x0000085c     0x1574 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans1.ltrans.o
- .debug_frame   0x00001dd0     0x1da8 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans2.ltrans.o
- .debug_frame   0x00003b78     0x16e4 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans3.ltrans.o
- .debug_frame   0x0000525c     0x1180 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans4.ltrans.o
- .debug_frame   0x000063dc      0x880 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans5.ltrans.o
- .debug_frame   0x00006c5c      0x88c C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans6.ltrans.o
- .debug_frame   0x000074e8     0x1480 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans7.ltrans.o
- .debug_frame   0x00008968      0xbc0 C:\Users\shzheng\AppData\Local\Temp\ccLgd7iB.ltrans8.ltrans.o
+ .debug_frame   0x00000000      0x85c C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans0.ltrans.o
+ .debug_frame   0x0000085c     0x1574 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans1.ltrans.o
+ .debug_frame   0x00001dd0     0x1da8 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans2.ltrans.o
+ .debug_frame   0x00003b78     0x16e4 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans3.ltrans.o
+ .debug_frame   0x0000525c     0x1180 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans4.ltrans.o
+ .debug_frame   0x000063dc      0x880 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans5.ltrans.o
+ .debug_frame   0x00006c5c      0x88c C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans6.ltrans.o
+ .debug_frame   0x000074e8     0x1480 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans7.ltrans.o
+ .debug_frame   0x00008968      0xbc0 C:\Users\shzheng\AppData\Local\Temp\ccVazljf.ltrans8.ltrans.o
  .debug_frame   0x00009528       0x30 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libm.a(lib_a-s_ceil.o)
  .debug_frame   0x00009558       0xac c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/softfp\libgcc.a(_arm_addsubdf3.o)
  .debug_frame   0x00009604       0xc4 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/softfp\libgcc.a(_arm_cmpdf2.o)

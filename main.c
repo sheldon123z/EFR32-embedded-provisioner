@@ -239,7 +239,7 @@ int main(void)
 //  {
 //    tx_buffer[i] = welcome_string[i];
 //  }
-  USART_IntSet(USART1, USART_IFS_TXC);
+//  USART_IntSet(USART1, USART_IFS_TXC);
 
   while (1) {
 	setCallBack();
