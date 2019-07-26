@@ -138,7 +138,7 @@ enum {
 	operationLength =1,
 	deviceNameLength = 10,
 	attributeNameLength=20,
-	attributeValueLength =5
+	attributeValueLength =10
 }packetBlockLength;
 struct mesh_generic_state current, target;
 
@@ -277,7 +277,6 @@ tsErrCode _sErrCodes[] = {
 
 const char err_unknown[] = "<?>";
 
-
 #include "cJSON.h"
 
 /* Include files for usart*/
@@ -393,28 +392,28 @@ void sendPacket (char *packet)
 {
 	uint32_t i;
 
-	for (i = 0; i <= strlen(packet); i++)
+	for (i = 0; i < strlen(packet); i++)
 	{
 		USART_Tx(USART1, packet[i]);
 	}
-	printf("packet %s has been sent ", packet);
+	printf("packet:%s has been sent\n", packet);
 	return;
 }
 
 
-#define ON_OFF_COMMAND_PACKET "%d%s%s%sx"
-#define ADJUST_VALUE_COMMAND_PACKET "%d%s%s%dx"
-#define PACKET_LENGTH 36
+#define ON_OFF_COMMAND_PACKET "%d%.*s%.*s%.*s"
+#define ADJUST_VALUE_COMMAND_PACKET "%d%.*s%.*s%dx"
+#define PACKET_LENGTH 100
 
 static char* createControlCommandPacket(int deviceType,const char* deviceName,
 								  int attributeType,const char* attributeName,const char* attributeValue)
 {
 
-	static char packet[PACKET_LENGTH]={'\0'};
+	static char packet[PACKET_LENGTH];
 	//blocks in the packet, it differs to the data input because we have to add end mart 'x'
 	char device[deviceNameLength]={'\0'};
 	char attribute[attributeNameLength]={'\0'};
-	char attriValue[attributeValueLength] ={'\0'};
+	char attriValue[10] ={'\0'};
 
 	strcpy(device,deviceName);
 	for(int i = strlen(deviceName); i < deviceNameLength;i++)
@@ -427,53 +426,69 @@ static char* createControlCommandPacket(int deviceType,const char* deviceName,
 		attribute[i]='x';
 	}
 	strcpy(attriValue,attributeValue);
-	for(int i = strlen(attributeValue); i < attributeValueLength-strlen(attributeValue); i++)
-	{
-		attriValue[i]='x';
-	}
+//	printf("attriValue is %s\n, attributeValue is %s\n, attributeValue length is %d\n",attriValue, attributeValue,strlen(attributeValue));
 
+	for(int i = strlen(attributeValue); i < attributeValueLength; i++)
+	{
+
+		attriValue[i]='x';
+
+	}
+//	printf("attributeValue is :%s\n", attriValue);
 	//constructing the packet
 	if(deviceType == Lights && attributeType == ON_OFF)
 	{
 		sprintf(packet,
 				ON_OFF_COMMAND_PACKET,
 				UPDATE,//1
-				device, //10 words
-				attribute,//20
-				attriValue);//5
+				deviceNameLength,
+				(const char*)device, //10 words
+				attributeNameLength,
+				(const char*)attribute,//20
+				attributeValueLength,
+				(const char*)attriValue);//5
+		printf("generated packet is:%s\n",packet);
 	}
 	if(deviceType == Lights && attributeType == LOCK_UNLOCK)
 	{
 		sprintf(packet,
 				ON_OFF_COMMAND_PACKET,
-				UPDATE,
-				device, //10 words
-				attribute,
-				attriValue);
+				UPDATE,//1
+				deviceNameLength,
+				(const char*)device, //10 words
+				attributeNameLength,
+				(const char*)attribute,//20
+				attributeValueLength,
+				(const char*)attriValue);//5
 	}
-
+	/*if the value for the attribute is not string, for example Temperature, using this one
+	 * to generate packet*/
 	if(deviceType == Lights && attributeType == TEMPERATURE)
 	{
 		sprintf(packet,
-				ADJUST_VALUE_COMMAND_PACKET,//because the temperature is a number, so it needs to be changed
-				UPDATE,
-				device, //10 words
-				attribute,
+				ADJUST_VALUE_COMMAND_PACKET,
+				UPDATE,//1
+				deviceNameLength,
+				(const char*)device, //10 words
+				attributeNameLength,
+				(const char*)attribute,//20
+				attributeValueLength,
 				atoi((const char*)attributeValue));
 	}
 	//add other control command generating codes
+	packet[PACKET_LENGTH]='\0';
 	return packet;
 
 }
 
-#define ADD_DEVICE_COMMAND_PACKET "%d%s%s%s" //length should be 1|10|15
+#define ADD_DEVICE_COMMAND_PACKET "%d%.*s%.*s%.*s" //length should be 1|10|15
 //add device command format
-//----1----|----10----|----20----|----5-----|
+//----1----|----10----|----20----|----10-----|
 //operation|deviceName|attribute |attriValue|
 
-static char* createUpdateCommandPacket(char* deviceName, char* attributeName, char* defaultAttributeValue)
+static char* createUpdateCommandPacket(const char* deviceName, const char* attributeName, const char* defaultAttributeValue)
 {
-	static char *packet[PACKET_LENGTH]={'\0'};
+	static char packet[PACKET_LENGTH]={'\0'};
 	char device[deviceNameLength]={'\0'};
 	char attribute[attributeNameLength]={'\0'};
 	char defaultValue[attributeValueLength] ={'\0'};
@@ -498,8 +513,11 @@ static char* createUpdateCommandPacket(char* deviceName, char* attributeName, ch
 	sprintf(packet,
 			ADD_DEVICE_COMMAND_PACKET,
 			ADD_DEVICE,
+			deviceNameLength,
 			device,
+			attributeNameLength,
 			attribute,
+			attributeValueLength,
 			defaultValue);
 
 	return packet;
@@ -1129,7 +1147,7 @@ static void send_onoff_directives(int retrans, uint8_t on_off)
  */
 static void handle_turn_onoff_event(uint8_t command)
 {
-	printf("Sending on_off directive");
+	printf("Sending on_off directive\r\n");
 	send_onoff_directives(0,command);
 	/* start a repeating soft timer to trigger re-transmission of the request after 50 ms delay */
 	//gecko_cmd_hardware_set_soft_timer(TIMER_MS_2_TIMERTICK(50), ONOFF_TIMER_ID_RETRANS, 0);
@@ -1617,7 +1635,6 @@ void handle_gecko_event(uint32_t evt_id, struct gecko_cmd_packet *evt)
             *         PubAddr   SubAddr
             * Light   0xC002    0xC001
             * Switch  0xC001    0xC002
-            * Light2  0xC005	0xC001
             *
             * If need to subscribe the message from Switch node, the provisioner's server model need to sub to 0xC001
             * If need to send control message to Light node, the provisioner's client model need to pub to 0xC001
@@ -1647,8 +1664,6 @@ void handle_gecko_event(uint32_t evt_id, struct gecko_cmd_packet *evt)
               struct gecko_msg_mesh_test_add_local_model_sub_rsp_t *addLocalModelRsp = gecko_cmd_mesh_test_add_local_model_sub(0, 0xffff, MESH_GENERIC_ON_OFF_SERVER_MODEL_ID, 0xC001);
               printf("gecko_cmd_mesh_test_add_local_model_sub %x\n\r", addLocalModelRsp->result);
 
-//              struct gecko_msg_mesh_test_add_local_model_sub_rsp_t *addLocalModelRsp2 = gecko_cmd_mesh_test_add_local_model_sub(0, 0xffff, MESH_GENERIC_ON_OFF_SERVER_MODEL_ID, 0xC002);
-//              printf("gecko_cmd_mesh_test_add_local_model_sub %x\n\r", addLocalModelRsp2->result);
             }
 
             /* Set the publication */
@@ -1669,13 +1684,21 @@ void handle_gecko_event(uint32_t evt_id, struct gecko_cmd_packet *evt)
               //publish to Light
               struct gecko_msg_mesh_test_set_local_model_pub_rsp_t *setLocalModelPubRsp = gecko_cmd_mesh_test_set_local_model_pub(0, appkey_id, 0xffff, MESH_GENERIC_ON_OFF_CLIENT_MODEL_ID, 0xC001, 5, 0, 0, 0);
               printf("gecko_cmd_mesh_test_set_local_model_pub %x\n\r", setLocalModelPubRsp->result);
+
+              //subscribe to light, light is server so here should be MESH_GENERIC_ON_OFF_CLIENT_MODEL_ID
+              struct gecko_msg_mesh_test_add_local_model_sub_rsp_t *addLocalModelRspX = gecko_cmd_mesh_test_add_local_model_sub(0, 0xffff, MESH_GENERIC_ON_OFF_CLIENT_MODEL_ID, 0xC002);
+              printf("gecko_cmd_mesh_test_add_local_model_sub %x\n\r", addLocalModelRspX->result);
             }
 
             // ------------------------------------------ //
             printf("---------------- Dump sub/pub infor here ----------------\r\n");
             sub_setting = gecko_cmd_mesh_test_get_local_model_sub(0, 0xFFFF, MESH_GENERIC_ON_OFF_SERVER_MODEL_ID);
             for(i=0; i<sub_setting->addresses.len; (i=i+2))
-              printf("gecko_cmd_mesh_test_get_local_model_sub sub_address: 0x%02x%02x\r\n", sub_setting->addresses.data[i+1], sub_setting->addresses.data[i]);
+              printf("gecko_cmd_mesh_test_get_local_model_sub onoff server model sub_address: 0x%02x%02x\r\n", sub_setting->addresses.data[i+1], sub_setting->addresses.data[i]);
+
+            sub_setting = gecko_cmd_mesh_test_get_local_model_sub(0, 0xFFFF, MESH_GENERIC_ON_OFF_CLIENT_MODEL_ID);
+            for(i=0; i<sub_setting->addresses.len; (i=i+2))
+              printf("gecko_cmd_mesh_test_get_local_model_sub onoff client model sub_address: 0x%02x%02x\r\n", sub_setting->addresses.data[i+1], sub_setting->addresses.data[i]);
 
             pub_setting = gecko_cmd_mesh_test_get_local_model_pub(0, 0xFFFF, MESH_GENERIC_ON_OFF_CLIENT_MODEL_ID);
             printf("gecko_cmd_mesh_test_get_local_model_pub pub_address: 0x%04x\r\n", pub_setting->pub_address);
@@ -1918,9 +1941,8 @@ void handle_gecko_event(uint32_t evt_id, struct gecko_cmd_packet *evt)
     {
       struct gecko_msg_mesh_generic_server_client_request_evt_t *genericRequestEvt = (struct gecko_msg_mesh_generic_server_client_request_evt_t*)&(evt->data);
       printf("evt gecko_evt_mesh_generic_server_client_request_id: client_addr 0x%04x server_addr 0x%04x\r\n", genericRequestEvt->client_address, genericRequestEvt->server_address);
-      printf("switch message parameter is%d\n model ID is %d",genericRequestEvt->parameters,genericRequestEvt->model_id);
-      char *packet = createControlCommandPacket(Lights ,"Lights",ON_OFF,"ON_OFF","OFF");
-      sendPacket(packet);
+
+
       break;
     }
 
@@ -1930,6 +1952,29 @@ void handle_gecko_event(uint32_t evt_id, struct gecko_cmd_packet *evt)
       server_state_changed(&(evt->data.evt_mesh_generic_server_state_changed));
 
       break;
+    }
+    case gecko_evt_mesh_generic_client_server_status_id:
+    {
+    	struct gecko_msg_mesh_generic_client_server_status_evt_t *genericClientServerStaEvt = (struct gecko_msg_mesh_generic_client_server_status_evt_t*)&(evt->data);
+
+    	printf("Received status from server:0x%04x\r\n",genericClientServerStaEvt->server_address);
+    	printf("evt gecko_evt_mesh_generic_client_server_status_id, elem_index 0x%04x\r\n, client_adr 0x%04x\r\n, server_adr 0x%04x\r\n, type 0x%02x\r\n, len %d\r\n, data 0x%02x\r\n",
+    			genericClientServerStaEvt->elem_index,
+				genericClientServerStaEvt->client_address,
+				genericClientServerStaEvt->server_address,
+				genericClientServerStaEvt->type,
+				genericClientServerStaEvt->parameters.len,
+				genericClientServerStaEvt->parameters.data[0]);
+    	char *onoff;
+
+    	if(genericClientServerStaEvt->parameters.data[0] == 0x01)
+    		onoff = "ON";
+    	else
+    		onoff = "OFF";
+
+        char *packet = createControlCommandPacket(Lights ,"Lights",ON_OFF,"ON_OFF",onoff);
+        sendPacket(packet);
+        break;
     }
 
     default:
