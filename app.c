@@ -1156,7 +1156,7 @@ static void handle_turn_onoff_event(uint8_t command)
 
 static void handle_turn_switch_onoff_command(uint8_t command)
 {
-	printf("Sending on_off directive");
+	printf("Sending on_off directive\r\n");
 	}
 
 /*******************************************************************************
@@ -1941,7 +1941,23 @@ void handle_gecko_event(uint32_t evt_id, struct gecko_cmd_packet *evt)
     {
       struct gecko_msg_mesh_generic_server_client_request_evt_t *genericRequestEvt = (struct gecko_msg_mesh_generic_server_client_request_evt_t*)&(evt->data);
       printf("evt gecko_evt_mesh_generic_server_client_request_id: client_addr 0x%04x server_addr 0x%04x\r\n", genericRequestEvt->client_address, genericRequestEvt->server_address);
-
+	  printf("Received status from Switch:0x%04x\r\n",genericRequestEvt->server_address);
+	  printf("evt gecko_evt_mesh_generic_client_server_status_id, elem_index 0x%04x\r\n, client_adr 0x%04x\r\n, server_adr 0x%04x\r\n, type 0x%02x\r\n, len %d\r\n, data 0x%02x\r\n",
+				genericRequestEvt->elem_index,
+				genericRequestEvt->client_address,
+				genericRequestEvt->server_address,
+				genericRequestEvt->type,
+				genericRequestEvt->parameters.len,
+				genericRequestEvt->parameters.data[0]);
+//		char *onoff;
+//
+//		if(genericRequestEvt->parameters.data[0] == 0x01)
+//			onoff = "ON";
+//		else
+//			onoff = "OFF";
+//
+//		  char *packet = createControlCommandPacket(Lights ,"Lights",ON_OFF,"ON_OFF",onoff);
+//		  sendPacket(packet);
 
       break;
     }
@@ -1957,8 +1973,8 @@ void handle_gecko_event(uint32_t evt_id, struct gecko_cmd_packet *evt)
     {
     	struct gecko_msg_mesh_generic_client_server_status_evt_t *genericClientServerStaEvt = (struct gecko_msg_mesh_generic_client_server_status_evt_t*)&(evt->data);
 
-    	printf("Received status from server:0x%04x\r\n",genericClientServerStaEvt->server_address);
-    	printf("evt gecko_evt_mesh_generic_client_server_status_id, elem_index 0x%04x\r\n, client_adr 0x%04x\r\n, server_adr 0x%04x\r\n, type 0x%02x\r\n, len %d\r\n, data 0x%02x\r\n",
+    	printf("Received status from Lights:0x%04x\r\n",genericClientServerStaEvt->server_address);
+    	printf("evt gecko_evt_mesh_generic_client_server_status_id, elem_index 0x%04x,\r\n client_adr 0x%04x,\r\n server_adr 0x%04x,\r\n type 0x%02x,\r\n len %d,\r\n data 0x%02x\r\n",
     			genericClientServerStaEvt->elem_index,
 				genericClientServerStaEvt->client_address,
 				genericClientServerStaEvt->server_address,
