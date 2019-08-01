@@ -767,27 +767,27 @@ static void config_check()
         printf("add the Generic On/Off Server model to sub/pub/bind list, elementIdx = %d\r\n",elementIdx);
       }
     // Just consider the Generic On/Off model for test
-//      else if(_sDCD.element[elementIdx].SIG_models[i] == DIM_SWITCH_MODEL_ID)
-//      {
-//        config_pub_add(DIM_SWITCH_MODEL_ID, 0xFFFF, LIGHT_CTRL_GRP_ADDR);
-//        config_sub_add(DIM_SWITCH_MODEL_ID, 0xFFFF, LIGHT_STATUS_GRP_ADDR);
-//        config_bind_add(DIM_SWITCH_MODEL_ID, 0xFFFF, 0, 0);
-//        printf("add the Light Lightness Client model to sub/pub/bind list\r\n");
-//      }
-//      else if(_sDCD.element[elementIdx].SIG_models[i] == DIM_LIGHT_MODEL_ID)
-//      {
-//        config_pub_add(DIM_LIGHT_MODEL_ID, 0xFFFF, LIGHT_STATUS_GRP_ADDR);
-//        config_sub_add(DIM_LIGHT_MODEL_ID, 0xFFFF, LIGHT_CTRL_GRP_ADDR);
-//        config_bind_add(DIM_LIGHT_MODEL_ID, 0xFFFF, 0, 0);
-//        printf("add the Light Lightness Server model to sub/pub/bind list\r\n");
-//      }
-//      else if(_sDCD.element[elementIdx].SIG_models[i] == LIGHT_CTL_TEMPERATURE_SERVER)
-//      {
-//        config_pub_add(LIGHT_CTL_TEMPERATURE_SERVER, 0xFFFF, elementIdx, LIGHT_CTL_STATUS_TEMPERATURE);
-//        config_sub_add(LIGHT_CTL_TEMPERATURE_SERVER, 0xFFFF, elementIdx, LIGHT_CTL_CTRL_TEMPERATURE);
-//        config_bind_add(LIGHT_CTL_TEMPERATURE_SERVER, 0xFFFF, elementIdx, 0, 0);
-//        printf("add the CTL temperature Server model to sub/pub/bind list, elementIdx = %d\r\n", elementIdx);
-//      }
+      else if(_sDCD.element[elementIdx].SIG_models[i] == DIM_SWITCH_MODEL_ID)
+      {
+        config_pub_add(DIM_SWITCH_MODEL_ID, 0xFFFF,elementIdx, LIGHT_CTRL_GRP_ADDR);
+        config_sub_add(DIM_SWITCH_MODEL_ID, 0xFFFF,elementIdx, LIGHT_STATUS_GRP_ADDR);
+        config_bind_add(DIM_SWITCH_MODEL_ID, 0xFFFF,elementIdx, 0, 0);
+        printf("add the Light Lightness Client model to sub/pub/bind list\r\n");
+      }
+      else if(_sDCD.element[elementIdx].SIG_models[i] == DIM_LIGHT_MODEL_ID)
+      {
+        config_pub_add(DIM_LIGHT_MODEL_ID, 0xFFFF,elementIdx, LIGHT_STATUS_GRP_ADDR);
+        config_sub_add(DIM_LIGHT_MODEL_ID, 0xFFFF,elementIdx, LIGHT_CTRL_GRP_ADDR);
+        config_bind_add(DIM_LIGHT_MODEL_ID, 0xFFFF, elementIdx, 0, 0);
+        printf("add the Light Lightness Server model to sub/pub/bind list\r\n");
+      }
+      else if(_sDCD.element[elementIdx].SIG_models[i] == LIGHT_CTL_TEMPERATURE_SERVER)
+      {
+        config_pub_add(LIGHT_CTL_TEMPERATURE_SERVER, 0xFFFF, elementIdx, LIGHT_CTL_STATUS_TEMPERATURE);
+        config_sub_add(LIGHT_CTL_TEMPERATURE_SERVER, 0xFFFF, elementIdx, LIGHT_CTL_CTRL_TEMPERATURE);
+        config_bind_add(LIGHT_CTL_TEMPERATURE_SERVER, 0xFFFF, elementIdx, 0, 0);
+        printf("add the CTL temperature Server model to sub/pub/bind list, elementIdx = %d\r\n", elementIdx);
+      }
 		else if(_sDCD.element[elementIdx].SIG_models[i] == SENSOR_CLIENT_MODEL_ID)
 		{
 			config_pub_add(SENSOR_CLIENT_MODEL_ID, 0xFFFF, elementIdx, SENSOR_GRP_ADDR);
@@ -883,7 +883,8 @@ static void DCD_decode(struct gecko_msg_mesh_config_client_dcd_data_evt_t *pDCD)
   memset(&_sDCD, 0, sizeof(_sDCD));
 
   pu16 = (uint16 *)&(pDCD->data.data[0]);
-
+  printf("pDCD->data.data[0] = 0x%2.2o",pDCD->data.data[0]);
+  printf("pDCD->data.len = %4d",pDCD->data.len);
   _sDCD.cid = *pu16++;
   _sDCD.pid = *pu16++;
   _sDCD.vid = *pu16++;
@@ -899,8 +900,12 @@ static void DCD_decode(struct gecko_msg_mesh_config_client_dcd_data_evt_t *pDCD)
 
   // calculate the number of elements
   // CID, PID, VID, CRPL, Features total 10 octets, grab elements from 11 octets
+  //
   for(i = 10; i < pDCD->data.len;)
   {
+	  //计算elements的个数，DCD packet的格式是
+	  // |cid 2|pid 2|vid 2|cprl 2|feature 2| elements= 2(Loc)+1(NumS)+1(NumV)+2*(NumS)+4*NumS |
+
     i = i + ((4 + pDCD->data.data[i+2]*2 + pDCD->data.data[i+3]*4));
     _sDCD.numElement++;
   }
@@ -909,14 +914,19 @@ static void DCD_decode(struct gecko_msg_mesh_config_client_dcd_data_evt_t *pDCD)
 
   for(i = 0; i<_sDCD.numElement; i++)
   {
+	 //一个指针是16位两个octets，所以指针加一便到了Loc的位置 注意，*p++先取值再给指针进行自增运算
+	 //所以指针取值后指向numS
     _sDCD.element[i].loc = *pu16++;
-
+     //和0x00FF按位与运算得到numS 保留了numS，把numV置零 因为numS和numV都是8位
     _sDCD.element[i].numS = (uint8)(*pu16 & 0x00FF);
+    // >> 由于pu16是16位的指针，而numV是uint8数据，所以这里使用>>右移运算将数值向右挪八位，也就是把numS给干掉只留下numV
     _sDCD.element[i].numV = (uint8)((*pu16 & 0xFF00) >> 8);
+    //将指针指向下一个16位数据，也就是SIG Model，每个SIG Model都是两个octets
     pu16++;
 
     printf(" ->->-> element %d information ->->-> \r\n",i);
     // grab the SIG models from the DCD data
+    //获取每一个SIG Model
     for(j=0; j<_sDCD.element[i].numS; j++)
     {
       _sDCD.element[i].SIG_models[j] = *pu16++;
@@ -924,6 +934,7 @@ static void DCD_decode(struct gecko_msg_mesh_config_client_dcd_data_evt_t *pDCD)
     }
 
     // grab the vendor models from the DCD data
+    //获取完SIG Model后再获取Vendor model，每个vendor model都是4个octet长
     for(j=0; j<_sDCD.element[i].numV; j++)
     {
       _sDCD.element[i].vendor_models[j].vendor_id = *pu16++;

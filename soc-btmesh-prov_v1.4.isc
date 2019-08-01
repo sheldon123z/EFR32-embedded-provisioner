@@ -1,8 +1,8 @@
 #ISD afv6
-# Simplicity Studio version: 5.2.0.201812261213-1413
+# Simplicity Studio version: 5.8.4.201906060959-1492
 
 # Application configuration
-stackId: com.silabs.sdk.stack.super
+stackId: com.silabs.sdk.stack.btmesh
 stackRoot: C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\blemesh\v1.4
 appId: btmesh
 frameworkRoot: app\bluetooth\appbuilder\fwk-mesh
@@ -27,7 +27,7 @@ appPlugin: slot-manager=false
 {setupId:additionalFiles
 }
 {setupId:bleGattConfigurator
-<?xml version="1.0" encoding="UTF-8"?><gatt generic_attribute_service="true" header="gatt_db.h" name="Custom BLE GATT" out="gatt_db.c" prefix="gattdb_">
+<?xml version="1.0" encoding="UTF-8"?><gatt gatt_caching="true" generic_attribute_service="true" header="gatt_db.h" name="Custom BLE GATT" out="gatt_db.c" prefix="gattdb_">
   <capabilities_declare>
     <capability enable="false">mesh_provisioning_service</capability>
     <capability enable="false">mesh_proxy_service</capability>
@@ -121,13 +121,13 @@ appPlugin: slot-manager=false
         "NumS": "4",
         "NumV": "0",
         "SIG Models": [
-          "1000",
+          "0x1000",
           "Generic OnOff Server",
-          "1001",
+          "0x1001",
           "Generic OnOff Client",
-          "1",
+          "0x0001",
           "Configuration Client",
-          "2",
+          "0x0002",
           "Health Server"]
         ,
         "Vendor Models": [
@@ -135,7 +135,7 @@ appPlugin: slot-manager=false
       \}]
   \},
   "Memory configuration": \{
-    "MAX_ELEMENTS": "2",
+    "MAX_ELEMENTS": "1",
     "MAX_MODELS": "4",
     "MAX_APP_BINDS": "4",
     "MAX_SUBSCRIPTIONS": "4",
