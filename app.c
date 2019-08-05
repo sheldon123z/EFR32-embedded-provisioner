@@ -527,21 +527,67 @@ static char* createUpdateCommandPacket(const char* deviceName, const char* attri
 void parse_message(char *message)
 {
 	printf("received message is: %s\n",message);
-	const char ON[]="\"ON\"";
-	const char OFF[]="\"OFF\"";
-	if(strcmp(message,ON)==0)
+	const char ON[]="ON";
+	const char OFF[]="OFF";
+
+	cJSON *json = cJSON_Parse(message);
+	char *out = cJSON_Print(json);
+
+	if(json->child != NULL)
 	{
-		Light_state = MESH_GENERIC_ON_OFF_STATE_ON;
-	}
-	else if(strcmp(message,OFF)==0)
-	{
-		Light_state = MESH_GENERIC_ON_OFF_STATE_OFF;
+		cJSON *Lights = cJSON_GetObjectItem(json,"Lights");
+
+		if(Lights->child != NULL)
+			{
+//				int itemNum = cJSON_GetArraySize(Lights);
+//				cJSON attributes[itemNum];
+//
+//				for(int i = 0; i< itemNum; i++)
+//				{
+//					attributes[i] = cJSON_GetObjectItem(Lights,i);
+//					printf("attributes are :%s",attributes[i]->valuestring);
+//					cJSON_Delete(attributes[i]);
+//				}
+
+
+				cJSON *ON_OFF = cJSON_GetObjectItem(Lights,"ON_OFF");
+
+				printf("ON_OFF:%s\r\n",ON_OFF->valuestring);
+
+				if(strcmp(ON_OFF->valuestring, ON)==0)
+				{
+					Light_state = MESH_GENERIC_ON_OFF_STATE_ON;
+				}
+				else if(strcmp(ON_OFF->valuestring, OFF)==0)
+				{
+					Light_state = MESH_GENERIC_ON_OFF_STATE_OFF;
+				}
+				else
+				{
+					printf("parse error: The command is neither on nor off\n");
+				}
+				printf("light state :%d\r\n",Light_state);
+
+			}
 
 	}
-	else
-	{
-		printf("parse error: The command is neither on nor off\n");
-	}
+	cJSON_Delete(json);
+
+
+
+//	if(strcmp(message,ON)==0)
+//	{
+//		Light_state = MESH_GENERIC_ON_OFF_STATE_ON;
+//	}
+//	else if(strcmp(message,OFF)==0)
+//	{
+//		Light_state = MESH_GENERIC_ON_OFF_STATE_OFF;
+//
+//	}
+//	else
+//	{
+//		printf("parse error: The command is neither on nor off\n");
+//	}
 
 }
 
@@ -549,7 +595,7 @@ void parse_message(char *message)
 
 void generate_external_signal()
 {
-	if(rx_data_ready && Light_state != INITIAL_COMMAND)
+	if(rx_data_ready && (Light_state != INITIAL_COMMAND))
 	{
 		if(Light_state == MESH_GENERIC_ON_OFF_STATE_ON)
 		{
@@ -567,10 +613,10 @@ void generate_external_signal()
 			printf("generate external signal error: check Light_state\n");
 			printf("the Light_state is %d\n", Light_state);
 		}
-		rx_data_ready = 0;
 		//clear buffer
 		memset(rx_buffer,0,BUFFER_SIZE*sizeof(char));
 	}
+	rx_data_ready = 0;
 }
 void setCallBack()
 {
