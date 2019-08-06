@@ -28,6 +28,7 @@
 /* GPIO peripheral library */
 #include <em_gpio.h>
 
+#include "mesh_lighting_model_capi_types.h"
 
 /* Display Interface header */
 #include "display_interface.h"
@@ -96,6 +97,10 @@ static uint8 conn_handle = 0xFF;
 /// Flag for indicating that initialization was performed
 //static uint8 init_done = 0;
 
+/// lightness level percentage
+static uint8 lightness_percent = 0;
+/// lightness level converted from percentage to actual value, range 0..65535
+static uint16 lightness_level = 0;
 
 /** global variables */
 
@@ -289,12 +294,14 @@ const char err_unknown[] = "<?>";
 #define EXTERNAL_SIGNAL_LIGHT_OFF	0x02
 #define EXTERNAL_SIGNAL_SWITCH_ON	0x03
 #define EXTERNAL_SIGNAL_SWITCH_OFF	0x04
+#define EXTERNAL_SIGNAL_LIGHTNESS	0x05
 /*variable for usart*/
 #define BUFFER_SIZE 100
 uint32_t rx_data_ready = 0;
 char rx_buffer[BUFFER_SIZE];
 char tx_buffer[BUFFER_SIZE];
 uint8_t Light_state =INITIAL_COMMAND;
+//static uint16 _elem_index = 0xffff;
 /***************************************************************************//**
  * Button initialization. Configure pushbuttons PB0, PB1 as inputs.
  ******************************************************************************/
@@ -359,31 +366,7 @@ void USART1_TX_IRQHandler(void)
 	}
 
 }
-/***************************************************************************//**
- * Main function.
- ******************************************************************************/
-void send_tx_value()
-{
-//	uint32_t i;
-//	if (rx_data_ready)
-//		{
-//		  USART_IntDisable(USART1, USART_IEN_RXDATAV);
-//		  USART_IntDisable(USART1, USART_IEN_TXC);
-//
-//		  for (i = 0; rx_buffer[i] != '\0' && i < BUFFER_SIZE-3; i++)
-//		  {
-//			tx_buffer[i] = rx_buffer[i];
-//		  }
-//
-//		  tx_buffer[i] = '\0';
-//		  tx_buffer[i++] = '\n';
-//		  rx_data_ready = 0;
-//
-//		  USART_IntEnable(USART1, USART_IEN_RXDATAV);
-//		  USART_IntEnable(USART1, USART_IEN_TXC);
-//		  USART_IntSet(USART1, USART_IFS_TXC);
-//		}
-}
+
 //the length of the packet is 36, the length of values shouldn't be greater than segment length
 //using 'x' to make up each blank position in each block
 //maximum length for attribute value is 4('x' as the end mark take 1 byte )
@@ -402,7 +385,7 @@ void sendPacket (char *packet)
 
 
 #define ON_OFF_COMMAND_PACKET "%d%.*s%.*s%.*s"
-#define ADJUST_VALUE_COMMAND_PACKET "%d%.*s%.*s%dx"
+#define ADJUST_VALUE_COMMAND_PACKET "%d%.*s%.*s%d"
 #define PACKET_LENGTH 100
 
 static char* createControlCommandPacket(int deviceType,const char* deviceName,
@@ -539,17 +522,6 @@ void parse_message(char *message)
 
 		if(Lights->child != NULL)
 			{
-//				int itemNum = cJSON_GetArraySize(Lights);
-//				cJSON attributes[itemNum];
-//
-//				for(int i = 0; i< itemNum; i++)
-//				{
-//					attributes[i] = cJSON_GetObjectItem(Lights,i);
-//					printf("attributes are :%s",attributes[i]->valuestring);
-//					cJSON_Delete(attributes[i]);
-//				}
-
-
 				cJSON *ON_OFF = cJSON_GetObjectItem(Lights,"ON_OFF");
 
 				printf("ON_OFF:%s\r\n",ON_OFF->valuestring);
@@ -566,28 +538,20 @@ void parse_message(char *message)
 				{
 					printf("parse error: The command is neither on nor off\n");
 				}
-				printf("light state :%d\r\n",Light_state);
-
+//				if(ON_OFF->next!=NULL || ON_OFF->prev!=NULL)
+//				{
+//					cJSON *brightness =ON_OFF->prev;
+//					if(brightness != NULL && (brightness->type==cJSON_Number))
+//					{
+//						lightness_percent = brightness->valueint;
+//						printf("brightness value is :%d\r\n",brightness->valueint);
+//					}
+//					cJSON_Delete(brightness);
+//				}
+				cJSON_Delete(ON_OFF);
 			}
-
 	}
 	cJSON_Delete(json);
-
-
-
-//	if(strcmp(message,ON)==0)
-//	{
-//		Light_state = MESH_GENERIC_ON_OFF_STATE_ON;
-//	}
-//	else if(strcmp(message,OFF)==0)
-//	{
-//		Light_state = MESH_GENERIC_ON_OFF_STATE_OFF;
-//
-//	}
-//	else
-//	{
-//		printf("parse error: The command is neither on nor off\n");
-//	}
 
 }
 
@@ -616,6 +580,10 @@ void generate_external_signal()
 		//clear buffer
 		memset(rx_buffer,0,BUFFER_SIZE*sizeof(char));
 	}
+//	if(rx_data_ready && (lightness_percent != 0))
+//	{
+//		gecko_external_signal(EXTERNAL_SIGNAL_LIGHTNESS);
+//	}
 	rx_data_ready = 0;
 }
 void setCallBack()
@@ -1197,6 +1165,40 @@ static void send_onoff_directives(int retrans, uint8_t on_off)
 
 }
 
+//void send_lightness_request(int retrans)
+//{
+//  uint16 resp;
+//  uint16 delay;
+//  struct mesh_generic_request req;
+//  static uint8_t trid = 0;
+//
+//  req.kind = mesh_lighting_request_lightness_actual;
+//  req.lightness = lightness_level;
+//
+//  // increment transaction ID for each request, unless it's a retransmission
+//  if (retrans == 0) {
+//    trid++;
+//  }
+//
+//  delay = 0;
+//  resp = gecko_cmd_mesh_generic_client_publish(
+//    MESH_LIGHTING_LIGHTNESS_CLIENT_MODEL_ID,
+//    0,
+//    trid,
+//    0,   // transition time in ms
+//    delay,
+//    0,     // flags
+//	mesh_lighting_request_lightness_actual,     // type
+//    1,     // param len
+//    &req.lightness     /// parameters data
+//    )->result;
+//
+//  if (resp) {
+//    printf("gecko_cmd_mesh_generic_client_publish failed,code %x\r\n", resp);
+//  } else {
+//    printf("request sent, trid = %u, delay = %d\r\n", trid, delay);
+//  }
+//}
 /**
  * handler to handle different commands for sending on off directives to node
  * invoked by the event geck_evt_external_signal_id
@@ -1206,9 +1208,19 @@ static void handle_turn_onoff_event(uint8_t command)
 {
 	printf("Sending on_off directive\r\n");
 	send_onoff_directives(0,command);
+
 	/* start a repeating soft timer to trigger re-transmission of the request after 50 ms delay */
 	//gecko_cmd_hardware_set_soft_timer(TIMER_MS_2_TIMERTICK(50), ONOFF_TIMER_ID_RETRANS, 0);
 }
+
+//void handle_set_brightness_event()
+//{
+//  lightness_level = lightness_percent * 0xFFFF / 100;
+//  printf("set light to %d %% / level %d\r\n", lightness_percent, lightness_level);
+//
+//  /* send the request (lightness request is sent only once in this example) */
+//  send_lightness_request(0);
+//}
 
 
 static void handle_turn_switch_onoff_command(uint8_t command)
@@ -1842,11 +1854,15 @@ void handle_gecko_event(uint32_t evt_id, struct gecko_cmd_packet *evt)
 	  			  ///write commands handler here
 	  		  	  handle_turn_switch_onoff_command(Light_state);
 	  			}
-	  	  if (evt->data.evt_system_external_signal.extsignals & EXTERNAL_SIGNAL_SWITCH_OFF) {
-	  			  ///write commands handler here
-	  		  	  handle_turn_switch_onoff_command(Light_state);
-	  			}
+	  if (evt->data.evt_system_external_signal.extsignals & EXTERNAL_SIGNAL_SWITCH_OFF) {
+			  ///write commands handler here
+			  handle_turn_switch_onoff_command(Light_state);
+			}
 	  /*add as many as the number of command handler as you want below*/
+	  if (evt->data.evt_system_external_signal.extsignals & EXTERNAL_SIGNAL_LIGHTNESS) {
+	  			  ///write commands handler here
+//		  	  handle_set_brightness_event();
+	  			}
       }
       break;
 

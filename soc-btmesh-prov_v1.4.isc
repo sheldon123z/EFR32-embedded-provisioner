@@ -118,7 +118,7 @@ appPlugin: slot-manager=false
       \{
         "Name": "Primary Element",
         "Loc": "0x0000",
-        "NumS": "4",
+        "NumS": "5",
         "NumV": "0",
         "SIG Models": [
           "0x1000",
@@ -128,7 +128,9 @@ appPlugin: slot-manager=false
           "0x0001",
           "Configuration Client",
           "0x0002",
-          "Health Server"]
+          "Health Server",
+          "0x1302",
+          "Light Lightness Client"]
         ,
         "Vendor Models": [
           ]
@@ -136,7 +138,7 @@ appPlugin: slot-manager=false
   \},
   "Memory configuration": \{
     "MAX_ELEMENTS": "1",
-    "MAX_MODELS": "4",
+    "MAX_MODELS": "5",
     "MAX_APP_BINDS": "4",
     "MAX_SUBSCRIPTIONS": "4",
     "MAX_NETKEYS": "4",

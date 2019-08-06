@@ -579,11 +579,11 @@ c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/.
 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-msizer.o)
                               c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-reallocr.o) (_malloc_usable_size_r)
 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/softfp\libgcc.a(_arm_fixdfsi.o)
-                              C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans3.ltrans.o (__aeabi_d2iz)
+                              C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans3.ltrans.o (__aeabi_d2iz)
 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-calloc.o)
-                              C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans8.ltrans.o (calloc)
+                              C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans8.ltrans.o (calloc)
 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-memcmp.o)
-                              C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans0.ltrans.o (memcmp)
+                              C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans0.ltrans.o (memcmp)
 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-callocr.o)
                               c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-calloc.o) (_calloc_r)
 
@@ -643,8 +643,8 @@ Discarded input sections
  .data          0x00000000        0x0 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/crt0.o
  .bss           0x00000000        0x0 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/crt0.o
  .ARM.extab     0x00000000        0x0 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/crt0.o
- .data          0x00000000        0x0 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans5.ltrans.o
- .data          0x00000000        0x0 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans7.ltrans.o
+ .data          0x00000000        0x0 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans5.ltrans.o
+ .data          0x00000000        0x0 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans7.ltrans.o
  .text          0x00000000        0x0 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\binapploader.o
  .data          0x00000000        0x0 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\binapploader.o
  .bss           0x00000000        0x0 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\binapploader.o
@@ -1987,15 +1987,15 @@ LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/
 LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
 LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/crt0.o
 START GROUP
-LOAD C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans0.ltrans.o
-LOAD C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans1.ltrans.o
-LOAD C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans2.ltrans.o
-LOAD C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans3.ltrans.o
-LOAD C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans4.ltrans.o
-LOAD C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans5.ltrans.o
-LOAD C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans6.ltrans.o
-LOAD C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans7.ltrans.o
-LOAD C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans8.ltrans.o
+LOAD C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans0.ltrans.o
+LOAD C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans1.ltrans.o
+LOAD C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans2.ltrans.o
+LOAD C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans3.ltrans.o
+LOAD C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans4.ltrans.o
+LOAD C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans5.ltrans.o
+LOAD C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans6.ltrans.o
+LOAD C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans7.ltrans.o
+LOAD C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans8.ltrans.o
 LOAD C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libpsstore.a
 LOAD C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\binapploader.o
 LOAD C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libcoex.a
@@ -2036,24 +2036,24 @@ LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/
                 0x0000a800                __text_start__ = .
 
 .text_application
-                0x0000a800    0x3ddc0
+                0x0000a800    0x3ddb0
  *(.vectors)
- .vectors       0x0000a800       0xfc C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans3.ltrans.o
+ .vectors       0x0000a800       0xfc C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans3.ltrans.o
                 0x0000a800                __Vectors
                 0x0000a8fc                __Vectors_End = .
                 0x000000fc                __Vectors_Size = (__Vectors_End - __Vectors)
                 0x0000a8fc                __end__ = .
  *(.application_properties)
  .application_properties
-                0x0000a8fc       0x40 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans3.ltrans.o
+                0x0000a8fc       0x40 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans3.ltrans.o
                 0x0000a8fc                bg_application_properties
  *(.gecko_configuration)
  *(.xo_configuration)
  *(.gatt_header)
- .gatt_header   0x0000a93c       0x34 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans6.ltrans.o
+ .gatt_header   0x0000a93c       0x34 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans6.ltrans.o
                 0x0000a93c                bg_gattdb_data
  *(.gatt_data)
- .gatt_data     0x0000a970      0x2bc C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans6.ltrans.o
+ .gatt_data     0x0000a970      0x2bc C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans6.ltrans.o
                 0x0000a970                bg_gattdb_data_attribute_field_30
                 0x0000a978                bg_gattdb_data_attribute_field_29
                 0x0000a98e                bg_gattdb_data_attribute_field_28
@@ -2093,7 +2093,7 @@ LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/
  .text          0x0000ac6c       0x74 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/crt0.o
                 0x0000ac6c                _mainCRTStartup
                 0x0000ac6c                _start
- .text          0x0000ace0     0x5350 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans0.ltrans.o
+ .text          0x0000ace0     0x5350 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans0.ltrans.o
                 0x0000ad74                BG_PRORTC_IRQHandler
                 0x0000adac                ll_task_default_callback.lto_priv.386
                 0x0000ae24                ubt_event_free
@@ -2128,7 +2128,7 @@ LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/
                 0x0000cb14                sli_bt_cmd_mesh_config_client_set_model_pub
                 0x0000cd80                sli_bt_cmd_mesh_prov_init
                 0x0000e764                gecko_priority_handle
- .text          0x00010030     0x5ba4 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans1.ltrans.o
+ .text          0x00010030     0x5ba4 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans1.ltrans.o
                 0x00010070                ll_radioTimerExpired.lto_priv.746
                 0x00010094                ll_llcpCallbackLocalTerminate.lto_priv.754
                 0x000100c4                bg_pre_sleep
@@ -2238,7 +2238,7 @@ LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/
                 0x000157e8                ll_llcpConnectionUpdate_sender.lto_priv.752
                 0x000158a0                ll_llcpCallbackConnectionUpdatePreListen.lto_priv.750
                 0x000158e0                ll_llcpHandlePacketCommon
- .text          0x00015bd4     0x63a0 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans2.ltrans.o
+ .text          0x00015bd4     0x63a0 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans2.ltrans.o
                 0x00015bd4                s81464a2878d09dbd2de6234ce8934184bf5116fd04efc613284ea48a9619bc39.lto_priv.723
                 0x00015d52                s0d9fb6afc7a5b3df58c0cb7bf23273dd9d8d3988520c8c4d91dc3aaadafd363d.lto_priv.731
                 0x00015da4                s19afc5aeb0fa3ad5437453e4974a9aca3c414191115ed0d8573b5b0b1457b096
@@ -2361,345 +2361,346 @@ LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/
                 0x0001be60                s630c48516aeb8590a31d7c39d77f44f92188e774044cf17033dea58668f1b433.lto_priv.840
                 0x0001bf18                s76cb0009c38d97748c40fb80af8eb69e087d975dcb9e945047195ce1b5cf8e07
  .text.unlikely
-                0x0001bf74       0xb8 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans2.ltrans.o
+                0x0001bf74       0xb8 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans2.ltrans.o
                 0x0001bf74                s1a8ee2bcac1599feb58e1b1ed33e45a95bd03febd32de637684d473d3eae735c.lto_priv.686
                 0x0001bfc8                seec249431fcb9d5d5ea133fee50277659005ff96792d0f1161e15cb24ac3da5c.lto_priv.687
  *fill*         0x0001c02c        0x4 
- .text          0x0001c030     0x3c90 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans3.ltrans.o
+ .text          0x0001c030     0x3c8c C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans3.ltrans.o
                 0x0001c3d4                sleepCallbackWrapper.lto_priv.385
                 0x0001c3e8                Default_Handler
                 0x0001c3e8                CRYPTO0_IRQHandler
                 0x0001c3e8                EMU_IRQHandler
                 0x0001c8f8                bgapi_ubt_listener
                 0x0001d030                Reset_Handler
-                0x0001d748                CORE_EnterCritical
-                0x0001d750                header_invalid
-                0x0001d76e                crc32_calc.lto_priv.422
-                0x0001d79c                find_obj
-                0x0001d7f8                flash_write_u32.lto_priv.421
-                0x0001d8c0                DMD_writeColor.part.2
-                0x0001f01c                USART_Reset
-                0x0001f06c                SYSTEM_ChipRevisionGet
-                0x0001f0a0                MSC_Deinit
-                0x0001f0b4                MSC_Init
-                0x0001f0d4                erase_db
-                0x0001f104                GPIO_PinModeSet
-                0x0001f188                EMU_DCDCLnRcoBandSet
-                0x0001f1b0                EMU_VScaleGet.lto_priv.438
-                0x0001f1c4                CORE_SetNvicRamTableHandler
-                0x0001f1d4                CORE_EnterAtomic
-                0x0001f1dc                CORE_ExitCritical
-                0x0001f1e2                bgbuf_free
-                0x0001f25c                bgbuf_alloc_int.lto_priv.440
-                0x0001f308                bgbuf_clone
-                0x0001f37a                bgbuf_alloc_copy_data
-                0x0001f3a4                bgbuf_alloc_size
-                0x0001f3b2                bgbuf_alloc
-                0x0001f3be                CORE_ExitAtomic
-                0x0001f3c2                CMU_OscillatorEnable
-                0x0001f534                SystemHFXOClockGet
-                0x0001f540                CMU_ClockSelectGet
-                0x0001f608                CMU_ClockEnable
-                0x0001f780                SystemULFRCOClockGet
-                0x0001f786                SystemLFXOClockGet
-                0x0001f790                SystemLFRCOClockGet
-                0x0001f796                CMU_UpdateWaitStates
-                0x0001f7b4                setHfLeConfig.lto_priv.439
-                0x0001f7f8                SystemHFClockGet
-                0x0001f840                EMU_VScaleEM01ByClock
-                0x0001f96c                CMU_ClockFreqGet
-                0x0001f9bc                CMU_ClockSelectSet
-                0x0001fb94                _write
-                0x0001fbd4                _sbrk
-                0x0001fbf8                _read
-                0x0001fc88                _lseek
-                0x0001fc8c                _isatty
-                0x0001fc90                _fstat
-                0x0001fc9a                _exit
-                0x0001fc9c                _close
-                0x0001fca0                cJSON_strdup.lto_priv.420
- .text.startup  0x0001fcc0     0x15a4 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans3.ltrans.o
-                0x0001fcc0                main
- .text          0x00021264     0x5c70 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans4.ltrans.o
-                0x0002137c                s811283eda8925aa908a29c0fb184c1693eb6e29d68029a5072949c207b4f7cb8.lto_priv.419
-                0x00021388                ccm_aes_setkey_wrap.lto_priv.416
-                0x0002138c                aes_ctx_free.lto_priv.415
-                0x000213a0                aes_ctx_alloc.lto_priv.414
-                0x000213b6                ccm_ctx_alloc.lto_priv.417
-                0x000213d0                aes_setkey_enc_wrap.lto_priv.412
-                0x000213d4                aes_crypt_ctr_wrap.lto_priv.411
-                0x00021418                aes_crypt_ecb_wrap.lto_priv.410
-                0x0002141c                ccm_ctx_free.lto_priv.418
-                0x0002142e                bgapi_test_lib_msg_handler
-                0x00021480                sli_bt_cmd_le_gap_set_advertise_configuration
-                0x00021548                sli_bt_cmd_le_gap_set_advertise_report_scan_request
-                0x000215b4                sli_bt_cmd_le_gap_set_advertise_channel_map
-                0x00021614                sli_bt_cmd_le_gap_set_discovery_type
-                0x0002166c                sli_bt_cmd_le_gap_set_discovery_timing
-                0x000216e8                sli_bt_cmd_le_gap_start_discovery
-                0x00021770                sli_bt_cmd_le_gap_end_procedure
-                0x000217b8                sli_bt_cmd_le_gap_start_advertising
-                0x00021bbe                sli_bt_cmd_le_gap_set_advertise_timing
-                0x00021c54                sli_bt_cmd_le_gap_bt5_set_adv_data
-                0x00021d80                s41cf796d48d7b53f8fa7d175a2a127293b7721f1e0ec3523449edaa208a8969d
-                0x00021d84                s1b49cd26019356c4c454a01517f002dc201ba322e198f3e78a2fcb7c8ad003c4
-                0x00021d88                s39306f0a0d9350665a5c86f8165bd54d865e6ef7333bd8c797eb65a1fe3d3b4d
-                0x00021d8c                sa5db633a61810b7b4e88e9a5213a81d5ba7ebefca2a78d7df1d0d08ca1e4089c
-                0x00021d90                scc1e99b60b7e9541180287ab3d84674f647171c0094f228159f4e1db85d79750
-                0x00021d94                s7fa5a335c460b33b60b9bf12f950cf0b87e4e5e1581f6561812f2a67a6b3815f
-                0x00021e5c                s5a9f6f074040ce74d93e3f684d76bca764d82305f4061ed5d88dfbc6574b4486
-                0x00021f88                s4ed80eb4c9e0990d91d711f47158efeab22935dcfb71e38ba6c10e05aa9130e1
-                0x00022460                s3ea5e3ec1b3dd59c69e4ba352b8f3cba76d5f8f595abc3770e933496ba25b55b
-                0x000224ac                cmac_xor_block.lto_priv.526
-                0x000224c2                cmac_multiply_by_u.lto_priv.527
-                0x0002250c                mbedtls_cipher_update
-                0x000225b0                mbedtls_cipher_setup
-                0x000225e4                mbedtls_cipher_free
-                0x00022614                mbedtls_mpi_cmp_mpi
-                0x00022694                mbedtls_mpi_cmp_int
-                0x000226ae                mbedtls_mpi_cmp_abs
-                0x00022710                mbedtls_mpi_bitlen
-                0x00022750                mbedtls_mpi_grow
-                0x000227a4                mbedtls_mpi_lset
-                0x000227cc                mbedtls_mpi_shift_r
-                0x00022840                mbedtls_mpi_safe_cond_assign
-                0x000228a8                mbedtls_mpi_shrink
-                0x00022916                mbedtls_mpi_free
-                0x00022942                mbedtls_mpi_read_binary
-                0x000229ae                mbedtls_mpi_copy
-                0x00022a02                mbedtls_mpi_mul_mpi
-                0x00023004                mbedtls_mpi_sub_abs
-                0x00023192                mbedtls_mpi_sub_mpi
-                0x000231d8                mbedtls_mpi_add_mpi
-                0x0002321c                bg_random_get_data
-                0x000232c0                s3aac575e28da0d7964dad5ad5d6c85d4997f65b29590a405fb0f8c020dbac66b
-                0x000233ba                bg_pool_free
-                0x0002340c                bg_pool_alloc
-                0x00023428                bg_message_run
-                0x000234b8                bg_message_call
-                0x000234e6                bg_message_remove_receivers
-                0x00023518                bg_message_enqueue_free_callback.lto_priv.425
-                0x000235c8                bg_message_send
-                0x0002360c                bg_message_cancel_matching
-                0x00023664                bg_malloc
-                0x00023682                bg_message_add_receiver
-                0x000236a6                bg_event_raise
-                0x000236d4                bg_event_allocate
-                0x000236fc                att_buf_send
-                0x00023718                att_send_pdu
-                0x00023724                att_alloc_pdu_copy_data
-                0x0002375e                att_alloc_buf
-                0x00023776                att_alloc_pdu
-                0x00023786                att_send_execute_write_response
-                0x000237a0                att_send_error_response
-                0x000237c6                acl_find_by_index
-                0x000237e0                acl_find_by_hci_handle
-                0x000237f8                acl_release_
-                0x000238a4                sde1a9ba2693b3ad6aac10ee8b861b8b7d7cd04179ce6c38a709765b6792f2330
-                0x000238d8                s6d380183df0b781240090db6d22dec74d362caf943d3f86b6a7a8dec2b7beb1e
-                0x00023934                se27ffd4e335c1b287068f894ab12cd726a9f6a2615712701a687f5fd281d4cff
-                0x0002395a                s209982b582be70cf7990f9b873281f2e890fc861caea8609036859f4f0205138
-                0x0002397c                sf7e2afdb3823d4035da9afeba95a4a5af41fd8124ffccc0f72e60a1fa3a01a9f.part.0
-                0x00023a84                s400811aa0cd11c4cb41e52ce55495c20a1bbba83da63015ee4f93f619f033e7b
-                0x00023acc                s3af4da5ae226a5fafe91e81ba2c31fb669ea28b51513723d8faa1123a21ee5d1
-                0x00023b14                s1f40accdd736e425e48d817527fb227caae2b320c9f97e70010bfc8cfe92324a
-                0x00023e3e                s01772fb76dbed7b3183333f0ce6d75f7231a12170ebba267e48e2c10a6f03513.part.6
-                0x00023e8e                sb1a0f761cc5f42b2788cab3ad9ca54ac472c702ee6f9d32aa9b48379c26abce8
-                0x00023ebc                s78100db7be33e72f198dd455e36a69667451e1481a8917036bb90e7f7efa52a0
-                0x00023f54                sb13f131771b26c25ba0fe8c84354089a2bb045683557277aba9ec535f6236b07.part.1
-                0x00024244                se527918f4c901aeb7216061e2ab885f1e1cff68b74e80ce6403486bd4f3b8099
-                0x0002427e                s97afb8527847f11a55577e950df24069f7e5a5b7f4ceff80ab51e912f6dab521
-                0x00024330                sa7f5314f00bfcc4521a7d1b365a6b91c07974c97dd4da76ba113d6e86800e261
-                0x000243a2                s5f5c3c304aac6756cdf41d57d95d8bc3ea5739f23dfff6bb027f9a2c284c4388
-                0x000243e8                sb67c72a8d289d4ba6fed3c33dec3e7e8b61af4dd0b87c24de750f5f7d271693c
-                0x0002449a                s3de5170f4552a3c69475eaf4560185b592e86ecaa1683d7edd54757fdc76e33f
-                0x000244f4                s671b6088cd303b07b712b0a1be2aedede858afd9462658e78c0cdbe2d753299a.lto_priv.547.lto_priv.643
-                0x000244f4                s671b6088cd303b07b712b0a1be2aedede858afd9462658e78c0cdbe2d753299a.lto_priv.540.lto_priv.665
-                0x000244f4                s671b6088cd303b07b712b0a1be2aedede858afd9462658e78c0cdbe2d753299a.lto_priv.543.lto_priv.659
-                0x000244f4                s671b6088cd303b07b712b0a1be2aedede858afd9462658e78c0cdbe2d753299a.lto_priv.545.lto_priv.656
-                0x000244f4                s671b6088cd303b07b712b0a1be2aedede858afd9462658e78c0cdbe2d753299a.lto_priv.550.lto_priv.693
-                0x000244f4                s671b6088cd303b07b712b0a1be2aedede858afd9462658e78c0cdbe2d753299a.lto_priv.446
-                0x000244f4                s671b6088cd303b07b712b0a1be2aedede858afd9462658e78c0cdbe2d753299a.lto_priv.538.lto_priv.647
-                0x000244f4                s671b6088cd303b07b712b0a1be2aedede858afd9462658e78c0cdbe2d753299a.lto_priv.542.lto_priv.660
-                0x000244f4                s671b6088cd303b07b712b0a1be2aedede858afd9462658e78c0cdbe2d753299a.lto_priv.539.lto_priv.668
-                0x000244f4                s671b6088cd303b07b712b0a1be2aedede858afd9462658e78c0cdbe2d753299a.lto_priv.536.lto_priv.646
-                0x000244f4                s671b6088cd303b07b712b0a1be2aedede858afd9462658e78c0cdbe2d753299a.lto_priv.541.lto_priv.662
-                0x000244f4                s671b6088cd303b07b712b0a1be2aedede858afd9462658e78c0cdbe2d753299a.lto_priv.544.lto_priv.658
-                0x000244f4                s671b6088cd303b07b712b0a1be2aedede858afd9462658e78c0cdbe2d753299a.lto_priv.549.lto_priv.641
-                0x000244f4                s671b6088cd303b07b712b0a1be2aedede858afd9462658e78c0cdbe2d753299a.lto_priv.548.lto_priv.642
-                0x000244f4                s671b6088cd303b07b712b0a1be2aedede858afd9462658e78c0cdbe2d753299a.lto_priv.537.lto_priv.669
-                0x000244f4                s671b6088cd303b07b712b0a1be2aedede858afd9462658e78c0cdbe2d753299a.lto_priv.546.lto_priv.702
-                0x00024518                s29429ac4445a8672f9894f8cb9e80d8079c3fd3b99c5a5a98ab30c5076ab5dbc
-                0x0002458e                s1cbe3fe16558876dc5e8411c6e00e76e73d0dc824929cdfa88bb3c699cc6be52
-                0x0002463e                sdea61585e18ca5ec2653cd57eba0f5f5cb260711df5713dc02714c82ca8cfa1f
-                0x00024778                s8cd570e7c4ed3e3540ac5c675077a70067e7bf80be7cabc7685a7c7bb44dff1b.part.4.lto_priv.696
-                0x000247dc                s68a2e0afa498fcd2704fb14ae53ceeb80b149f4e726c3ffc6d2123e5cbe977d2.part.2.lto_priv.692
-                0x0002480c                sde778c787f98f879fb24013e79bf2879330a17453cb0da1321a8695b37de5995.lto_priv.450
-                0x00024888                sd9038c93eed87bddb38a63c2f0e6d0e0c9a54e9ebc8659ec70537589ba45d407.lto_priv.695
-                0x000248bc                sa9fa4419e9b98f124930888065baf4e06b65a8189054d093682a52abbff1d8e7.lto_priv.622
-                0x000248d0                sc96c8ee327dbf4788de6c825351bb9921e20a75bff30be820055db7982e78ac4.lto_priv.626
-                0x000248e8                s4e7adfb85a0516b47aa7b4d1a2c14f2ebff439c70cb5c934109625c077ca51a3.lto_priv.621
-                0x00024928                s0954221c1a9f9708187a6b78840c6ef452f586287a276713ec25353eb8f9406a.lto_priv.691
-                0x00024954                sb01c0c6b5f7fad080c3b853b80a384592a7c04f998589695044f39b9dd8cc496
-                0x00024a04                sd09e90db062aba7a485b818a8b8292be87b116a80119968fb7e55f47408b4cf8.lto_priv.620
-                0x00024ab8                sefadbf67c58fb46c289d1ab9c5d80dc12486d7cee315da1c8833f928991bae32
-                0x00024ae8                s47d58c22dd520fdc4819aa8b4ba43c5e1bd5085d1d507c1ccc868cc96765a39d.lto_priv.624
-                0x00024b08                s82dd3ab8003cd2497ba2ed2c0c21b4458767185e45364604942182c9348f9aaa.lto_priv.553.lto_priv.837
-                0x00024b08                s82dd3ab8003cd2497ba2ed2c0c21b4458767185e45364604942182c9348f9aaa.lto_priv.445
-                0x00024b08                s82dd3ab8003cd2497ba2ed2c0c21b4458767185e45364604942182c9348f9aaa.lto_priv.554.lto_priv.628
-                0x00024b16                s14c4813b24e87bb88444bb6a3386809cb9a78b23a4513fc89a4ee471c67c6c08.lto_priv.625
-                0x00024b98                s113e2670c561fa1b518d06d7a71031984f646f284cc10f4d51f7b7cb1b8d3f20.part.11
-                0x00024bae                sd781d953cd4f054f4e694d937d5dc29ebbf7f8922d52a3e9252aba27db72d3c9
-                0x00024bc4                sa9857b5d797c92bedc6af155e7303a2b28fe0c67080bd8d007b028484be03fe0
-                0x00024bf4                s97883586fbc16cac6a15bf423cb4894369f84caca35876f6be3e2698e78f4cb8
-                0x00024c24                sefcf855296e3ebeb40461302ec77153dbc14d8b7343459d104494c055f36f37a
-                0x00024ca0                sb3ab9401e541618ef9464dc9dc279a39fe8a98408c8627c4657039eaab26f0de
-                0x00024ce4                s8987b89eb8d003cb3c46e146f226893cd7d4dc045215a206c1aa1d49e810f691
-                0x00024d20                s1050f3816948dec04ec1c09d009193abb842d1939e7d5426d2d4a9c153fa19e4
-                0x00024d50                sb0a0e7dcc0aff66940393115d537bebc9e159573c855ec5411edbeb12839bac0
-                0x00024d6c                sd589b776b3f7a27d2ad9980e25f89155292f3d2d0184175f503e08437ef8f345.lto_priv.694
-                0x00024db0                se98db4dd27ee87b19a138a390e62f7893fe203dbb85bab88a77cc8b8a614fb8f.lto_priv.667
-                0x00024de0                s2e706f4c17d4ea23e81bf66fdff240bb90fd55d0186c6d1eda5cbcb22504ad5e.lto_priv.623
-                0x00024ec0                s08c36e5c93079ccf4d81647e3db1428a7d5a579a54b1e6e7f35f8d273d18e26d
-                0x00024eec                sfc184ab84ea5e9956e3f0cb94dc3ae7f61c042516f939e8654763716d14a7a81
-                0x00024f18                s1902c353513a46e4cd63cc1f67ad9b3ed6b03db525594ff1190d66187c988aaa.lto_priv.424
-                0x00024f80                s31b72b6e17f66a75028f13e3b569068eab7b7f76390102ba2f9865df1577ae62
-                0x00024fbc                se263be2a0b7c61240fd9e57a89877d3f5530a3065eb9518d2e80626d679449e1
-                0x00024ff0                se91d2d306eb5d0ca273d89eef66266a6868c41357fc968635bd81cc32c64186a
-                0x0002509c                sbf2ac1065610d3d5d84bda651927927d88cb7a9e0ca536e5fd8e2941ebe14da2
-                0x00025114                se2ac50849b88f78cfc22b491336fffca4e4fd919eda671a79ff653737fdaeee5
-                0x00025188                s0a1bfc2a0c5d787842e86cdcb14f277dd1cacdc8dd398d0d81fe73935d236f0b
-                0x000251a0                secc6bf91f48f6e16151fd077159682ea379e98faa6c2e6e80454c04fb3c507d4
-                0x000251f8                s15c3aa335e4014577105e5f7ac7d6df0d79f2fc33405a5c6dc0a2a3b1c4da159
-                0x00025238                s187bcaadfa1d4bd2089d46791a381f7ca2a439c4c30cfa85d232cfc3df36bdd9.lto_priv.627
-                0x000252c0                s25929c1204e68b223c0255688b49ce994e55547f2bbfbdd52bc24fe9c8c4b42a.lto_priv.612
-                0x000252e8                s0c6bfff49a261ea18faf7e5beb1c85f478315014f2a74981dcb05064c886f467
-                0x000254d0                s2d25e67a1dff175339e8a52a5bfc7f39aefdd0e3e7af7e01f51a5a6470bd83cf
-                0x000255e4                s5df900385b51eb670f368b1ea2c786b3a6dc6727b4c5c9fb538f07fb23ed7df6
-                0x000256a8                s18ca20e6edd7b1dafa111ed259e869b324c456749ccf13e15a084847d5bff424
-                0x000257a4                sdae12e034c336a2007efc5ff5da68577c816387d0e5e9ac4bc409b4dd2ae493f
-                0x0002583c                sd9e94f8fc36e83d2d2b276da826a5a682079ce5f587c74329cc207f253f1f473
-                0x00025888                sb60ae40d295f456443d07c2a32c37c5a0e63f7321cd92bf5ac322a4d3a78b530
-                0x000258d4                s8633ed229e1c84f4429ddba42c890c6191d9c432c0e6a84977fc4264d4c644fc
-                0x00025930                sd9986e35a85516bf26ff6b1218cf202e6f1172c3527907ac829ee61275658a4a
-                0x00025984                sfc9cd36a1bbb920521ea04ce8c64ab351e3bc801eff8f04e8bc97e393a4dba42
-                0x000259a4                sdae43e33b155587c01dcd99a12efa714bd1bea37c2e312cdcf6f5d3015940365
-                0x000259d4                saad99ac0ad18b3524a4f97ecdae7c27474b69cf8f9a5152e1dca53104d5872f6
-                0x000259ec                sad25edc3cc896798a2dbff4577d09756b38b0ba95a822d83d4da80677cd8fd4e
-                0x00025a50                s4476b960ac1dbf2ac96d5a2c51857539a577e6cef3fd0127721ea1216eff0a2c
-                0x00025b34                s454e80092bb670d8ea836663e842b03a18eec19a32bfe4f8a0c65cad898738dd
-                0x00025c30                sa010cd761afb93ce24ca32913863e8806dbe6ba7274dae9953e7846a24bcc635
-                0x00025c94                sfb7bec1d149166c9890d3e0ce20dddbe96136e7a3fccd166ae1f48e6d15f6743
-                0x00026018                sccc159e0818bc3416cf5ea5e03b2db05ae2a5f61d3e670403df7b3380971840b
-                0x00026094                s798b40a10a9d0a2d1c74eedfa0b5ef0cb6434a48ab5a7e5e11a862555e73c3de
-                0x000260a2                s53d65179ce58217b8dbbda4d6a962b325730c74ab87b5d6e6462a55cdc28bc31
-                0x000260c0                aes_setkey_dec_wrap.lto_priv.413
-                0x0002616c                sfccfa04b675878208b0bdd7c5ae9bb6285224f7f9545ce4640a144450783d728
-                0x00026258                sc61fcdde71e46892d60e95ecb0602537c22b68b895619f4a46516071c6966c2b
-                0x00026438                sf18520a544a8bfb6e33c5f6b7b9192c354f1134662a3cab32accef9a53a74ea9
-                0x0002660c                s7ba794e11b8949de9e5275129b4ba633ce9f1faf54f25f6e280481b07fab0490
-                0x00026834                s13cabea84cbad62e2df1cf6ba1004329592d58650d6092e7d5d09b34d629a011
-                0x00026938                s55aa115f5304976b41d66a7ca64ddfff017dc83836a40847cf51b17a7c642872
-                0x00026d94                sbdab0a659a16ba137b7d899db62f0b250227ca35db821e3eae0ad86b6f52ca17
+                0x0001d744                CORE_EnterCritical
+                0x0001d74c                header_invalid
+                0x0001d76a                crc32_calc.lto_priv.422
+                0x0001d798                find_obj
+                0x0001d7f4                flash_write_u32.lto_priv.421
+                0x0001d8bc                DMD_writeColor.part.2
+                0x0001f018                USART_Reset
+                0x0001f068                SYSTEM_ChipRevisionGet
+                0x0001f09c                MSC_Deinit
+                0x0001f0b0                MSC_Init
+                0x0001f0d0                erase_db
+                0x0001f100                GPIO_PinModeSet
+                0x0001f184                EMU_DCDCLnRcoBandSet
+                0x0001f1ac                EMU_VScaleGet.lto_priv.438
+                0x0001f1c0                CORE_SetNvicRamTableHandler
+                0x0001f1d0                CORE_EnterAtomic
+                0x0001f1d8                CORE_ExitCritical
+                0x0001f1de                bgbuf_free
+                0x0001f258                bgbuf_alloc_int.lto_priv.440
+                0x0001f304                bgbuf_clone
+                0x0001f376                bgbuf_alloc_copy_data
+                0x0001f3a0                bgbuf_alloc_size
+                0x0001f3ae                bgbuf_alloc
+                0x0001f3ba                CORE_ExitAtomic
+                0x0001f3be                CMU_OscillatorEnable
+                0x0001f530                SystemHFXOClockGet
+                0x0001f53c                CMU_ClockSelectGet
+                0x0001f604                CMU_ClockEnable
+                0x0001f77c                SystemULFRCOClockGet
+                0x0001f782                SystemLFXOClockGet
+                0x0001f78c                SystemLFRCOClockGet
+                0x0001f792                CMU_UpdateWaitStates
+                0x0001f7b0                setHfLeConfig.lto_priv.439
+                0x0001f7f4                SystemHFClockGet
+                0x0001f83c                EMU_VScaleEM01ByClock
+                0x0001f968                CMU_ClockFreqGet
+                0x0001f9b8                CMU_ClockSelectSet
+                0x0001fb90                _write
+                0x0001fbd0                _sbrk
+                0x0001fbf4                _read
+                0x0001fc84                _lseek
+                0x0001fc88                _isatty
+                0x0001fc8c                _fstat
+                0x0001fc96                _exit
+                0x0001fc98                _close
+                0x0001fc9c                cJSON_strdup.lto_priv.420
+ .text.startup  0x0001fcbc     0x15a4 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans3.ltrans.o
+                0x0001fcbc                main
+ .text          0x00021260     0x5c70 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans4.ltrans.o
+                0x00021378                s811283eda8925aa908a29c0fb184c1693eb6e29d68029a5072949c207b4f7cb8.lto_priv.419
+                0x00021384                ccm_aes_setkey_wrap.lto_priv.416
+                0x00021388                aes_ctx_free.lto_priv.415
+                0x0002139c                aes_ctx_alloc.lto_priv.414
+                0x000213b2                ccm_ctx_alloc.lto_priv.417
+                0x000213cc                aes_setkey_enc_wrap.lto_priv.412
+                0x000213d0                aes_crypt_ctr_wrap.lto_priv.411
+                0x00021414                aes_crypt_ecb_wrap.lto_priv.410
+                0x00021418                ccm_ctx_free.lto_priv.418
+                0x0002142a                bgapi_test_lib_msg_handler
+                0x0002147c                sli_bt_cmd_le_gap_set_advertise_configuration
+                0x00021544                sli_bt_cmd_le_gap_set_advertise_report_scan_request
+                0x000215b0                sli_bt_cmd_le_gap_set_advertise_channel_map
+                0x00021610                sli_bt_cmd_le_gap_set_discovery_type
+                0x00021668                sli_bt_cmd_le_gap_set_discovery_timing
+                0x000216e4                sli_bt_cmd_le_gap_start_discovery
+                0x0002176c                sli_bt_cmd_le_gap_end_procedure
+                0x000217b4                sli_bt_cmd_le_gap_start_advertising
+                0x00021bba                sli_bt_cmd_le_gap_set_advertise_timing
+                0x00021c50                sli_bt_cmd_le_gap_bt5_set_adv_data
+                0x00021d7c                s41cf796d48d7b53f8fa7d175a2a127293b7721f1e0ec3523449edaa208a8969d
+                0x00021d80                s1b49cd26019356c4c454a01517f002dc201ba322e198f3e78a2fcb7c8ad003c4
+                0x00021d84                s39306f0a0d9350665a5c86f8165bd54d865e6ef7333bd8c797eb65a1fe3d3b4d
+                0x00021d88                sa5db633a61810b7b4e88e9a5213a81d5ba7ebefca2a78d7df1d0d08ca1e4089c
+                0x00021d8c                scc1e99b60b7e9541180287ab3d84674f647171c0094f228159f4e1db85d79750
+                0x00021d90                s7fa5a335c460b33b60b9bf12f950cf0b87e4e5e1581f6561812f2a67a6b3815f
+                0x00021e58                s5a9f6f074040ce74d93e3f684d76bca764d82305f4061ed5d88dfbc6574b4486
+                0x00021f84                s4ed80eb4c9e0990d91d711f47158efeab22935dcfb71e38ba6c10e05aa9130e1
+                0x0002245c                s3ea5e3ec1b3dd59c69e4ba352b8f3cba76d5f8f595abc3770e933496ba25b55b
+                0x000224a8                cmac_xor_block.lto_priv.526
+                0x000224be                cmac_multiply_by_u.lto_priv.527
+                0x00022508                mbedtls_cipher_update
+                0x000225ac                mbedtls_cipher_setup
+                0x000225e0                mbedtls_cipher_free
+                0x00022610                mbedtls_mpi_cmp_mpi
+                0x00022690                mbedtls_mpi_cmp_int
+                0x000226aa                mbedtls_mpi_cmp_abs
+                0x0002270c                mbedtls_mpi_bitlen
+                0x0002274c                mbedtls_mpi_grow
+                0x000227a0                mbedtls_mpi_lset
+                0x000227c8                mbedtls_mpi_shift_r
+                0x0002283c                mbedtls_mpi_safe_cond_assign
+                0x000228a4                mbedtls_mpi_shrink
+                0x00022912                mbedtls_mpi_free
+                0x0002293e                mbedtls_mpi_read_binary
+                0x000229aa                mbedtls_mpi_copy
+                0x000229fe                mbedtls_mpi_mul_mpi
+                0x00023000                mbedtls_mpi_sub_abs
+                0x0002318e                mbedtls_mpi_sub_mpi
+                0x000231d4                mbedtls_mpi_add_mpi
+                0x00023218                bg_random_get_data
+                0x000232bc                s3aac575e28da0d7964dad5ad5d6c85d4997f65b29590a405fb0f8c020dbac66b
+                0x000233b6                bg_pool_free
+                0x00023408                bg_pool_alloc
+                0x00023424                bg_message_run
+                0x000234b4                bg_message_call
+                0x000234e2                bg_message_remove_receivers
+                0x00023514                bg_message_enqueue_free_callback.lto_priv.425
+                0x000235c4                bg_message_send
+                0x00023608                bg_message_cancel_matching
+                0x00023660                bg_malloc
+                0x0002367e                bg_message_add_receiver
+                0x000236a2                bg_event_raise
+                0x000236d0                bg_event_allocate
+                0x000236f8                att_buf_send
+                0x00023714                att_send_pdu
+                0x00023720                att_alloc_pdu_copy_data
+                0x0002375a                att_alloc_buf
+                0x00023772                att_alloc_pdu
+                0x00023782                att_send_execute_write_response
+                0x0002379c                att_send_error_response
+                0x000237c2                acl_find_by_index
+                0x000237dc                acl_find_by_hci_handle
+                0x000237f4                acl_release_
+                0x000238a0                sde1a9ba2693b3ad6aac10ee8b861b8b7d7cd04179ce6c38a709765b6792f2330
+                0x000238d4                s6d380183df0b781240090db6d22dec74d362caf943d3f86b6a7a8dec2b7beb1e
+                0x00023930                se27ffd4e335c1b287068f894ab12cd726a9f6a2615712701a687f5fd281d4cff
+                0x00023956                s209982b582be70cf7990f9b873281f2e890fc861caea8609036859f4f0205138
+                0x00023978                sf7e2afdb3823d4035da9afeba95a4a5af41fd8124ffccc0f72e60a1fa3a01a9f.part.0
+                0x00023a80                s400811aa0cd11c4cb41e52ce55495c20a1bbba83da63015ee4f93f619f033e7b
+                0x00023ac8                s3af4da5ae226a5fafe91e81ba2c31fb669ea28b51513723d8faa1123a21ee5d1
+                0x00023b10                s1f40accdd736e425e48d817527fb227caae2b320c9f97e70010bfc8cfe92324a
+                0x00023e3a                s01772fb76dbed7b3183333f0ce6d75f7231a12170ebba267e48e2c10a6f03513.part.6
+                0x00023e8a                sb1a0f761cc5f42b2788cab3ad9ca54ac472c702ee6f9d32aa9b48379c26abce8
+                0x00023eb8                s78100db7be33e72f198dd455e36a69667451e1481a8917036bb90e7f7efa52a0
+                0x00023f50                sb13f131771b26c25ba0fe8c84354089a2bb045683557277aba9ec535f6236b07.part.1
+                0x00024240                se527918f4c901aeb7216061e2ab885f1e1cff68b74e80ce6403486bd4f3b8099
+                0x0002427a                s97afb8527847f11a55577e950df24069f7e5a5b7f4ceff80ab51e912f6dab521
+                0x0002432c                sa7f5314f00bfcc4521a7d1b365a6b91c07974c97dd4da76ba113d6e86800e261
+                0x0002439e                s5f5c3c304aac6756cdf41d57d95d8bc3ea5739f23dfff6bb027f9a2c284c4388
+                0x000243e4                sb67c72a8d289d4ba6fed3c33dec3e7e8b61af4dd0b87c24de750f5f7d271693c
+                0x00024496                s3de5170f4552a3c69475eaf4560185b592e86ecaa1683d7edd54757fdc76e33f
+                0x000244f0                s671b6088cd303b07b712b0a1be2aedede858afd9462658e78c0cdbe2d753299a.lto_priv.547.lto_priv.643
+                0x000244f0                s671b6088cd303b07b712b0a1be2aedede858afd9462658e78c0cdbe2d753299a.lto_priv.540.lto_priv.665
+                0x000244f0                s671b6088cd303b07b712b0a1be2aedede858afd9462658e78c0cdbe2d753299a.lto_priv.543.lto_priv.659
+                0x000244f0                s671b6088cd303b07b712b0a1be2aedede858afd9462658e78c0cdbe2d753299a.lto_priv.545.lto_priv.656
+                0x000244f0                s671b6088cd303b07b712b0a1be2aedede858afd9462658e78c0cdbe2d753299a.lto_priv.550.lto_priv.693
+                0x000244f0                s671b6088cd303b07b712b0a1be2aedede858afd9462658e78c0cdbe2d753299a.lto_priv.446
+                0x000244f0                s671b6088cd303b07b712b0a1be2aedede858afd9462658e78c0cdbe2d753299a.lto_priv.538.lto_priv.647
+                0x000244f0                s671b6088cd303b07b712b0a1be2aedede858afd9462658e78c0cdbe2d753299a.lto_priv.542.lto_priv.660
+                0x000244f0                s671b6088cd303b07b712b0a1be2aedede858afd9462658e78c0cdbe2d753299a.lto_priv.539.lto_priv.668
+                0x000244f0                s671b6088cd303b07b712b0a1be2aedede858afd9462658e78c0cdbe2d753299a.lto_priv.536.lto_priv.646
+                0x000244f0                s671b6088cd303b07b712b0a1be2aedede858afd9462658e78c0cdbe2d753299a.lto_priv.541.lto_priv.662
+                0x000244f0                s671b6088cd303b07b712b0a1be2aedede858afd9462658e78c0cdbe2d753299a.lto_priv.544.lto_priv.658
+                0x000244f0                s671b6088cd303b07b712b0a1be2aedede858afd9462658e78c0cdbe2d753299a.lto_priv.549.lto_priv.641
+                0x000244f0                s671b6088cd303b07b712b0a1be2aedede858afd9462658e78c0cdbe2d753299a.lto_priv.548.lto_priv.642
+                0x000244f0                s671b6088cd303b07b712b0a1be2aedede858afd9462658e78c0cdbe2d753299a.lto_priv.537.lto_priv.669
+                0x000244f0                s671b6088cd303b07b712b0a1be2aedede858afd9462658e78c0cdbe2d753299a.lto_priv.546.lto_priv.702
+                0x00024514                s29429ac4445a8672f9894f8cb9e80d8079c3fd3b99c5a5a98ab30c5076ab5dbc
+                0x0002458a                s1cbe3fe16558876dc5e8411c6e00e76e73d0dc824929cdfa88bb3c699cc6be52
+                0x0002463a                sdea61585e18ca5ec2653cd57eba0f5f5cb260711df5713dc02714c82ca8cfa1f
+                0x00024774                s8cd570e7c4ed3e3540ac5c675077a70067e7bf80be7cabc7685a7c7bb44dff1b.part.4.lto_priv.696
+                0x000247d8                s68a2e0afa498fcd2704fb14ae53ceeb80b149f4e726c3ffc6d2123e5cbe977d2.part.2.lto_priv.692
+                0x00024808                sde778c787f98f879fb24013e79bf2879330a17453cb0da1321a8695b37de5995.lto_priv.450
+                0x00024884                sd9038c93eed87bddb38a63c2f0e6d0e0c9a54e9ebc8659ec70537589ba45d407.lto_priv.695
+                0x000248b8                sa9fa4419e9b98f124930888065baf4e06b65a8189054d093682a52abbff1d8e7.lto_priv.622
+                0x000248cc                sc96c8ee327dbf4788de6c825351bb9921e20a75bff30be820055db7982e78ac4.lto_priv.626
+                0x000248e4                s4e7adfb85a0516b47aa7b4d1a2c14f2ebff439c70cb5c934109625c077ca51a3.lto_priv.621
+                0x00024924                s0954221c1a9f9708187a6b78840c6ef452f586287a276713ec25353eb8f9406a.lto_priv.691
+                0x00024950                sb01c0c6b5f7fad080c3b853b80a384592a7c04f998589695044f39b9dd8cc496
+                0x00024a00                sd09e90db062aba7a485b818a8b8292be87b116a80119968fb7e55f47408b4cf8.lto_priv.620
+                0x00024ab4                sefadbf67c58fb46c289d1ab9c5d80dc12486d7cee315da1c8833f928991bae32
+                0x00024ae4                s47d58c22dd520fdc4819aa8b4ba43c5e1bd5085d1d507c1ccc868cc96765a39d.lto_priv.624
+                0x00024b04                s82dd3ab8003cd2497ba2ed2c0c21b4458767185e45364604942182c9348f9aaa.lto_priv.553.lto_priv.837
+                0x00024b04                s82dd3ab8003cd2497ba2ed2c0c21b4458767185e45364604942182c9348f9aaa.lto_priv.445
+                0x00024b04                s82dd3ab8003cd2497ba2ed2c0c21b4458767185e45364604942182c9348f9aaa.lto_priv.554.lto_priv.628
+                0x00024b12                s14c4813b24e87bb88444bb6a3386809cb9a78b23a4513fc89a4ee471c67c6c08.lto_priv.625
+                0x00024b94                s113e2670c561fa1b518d06d7a71031984f646f284cc10f4d51f7b7cb1b8d3f20.part.11
+                0x00024baa                sd781d953cd4f054f4e694d937d5dc29ebbf7f8922d52a3e9252aba27db72d3c9
+                0x00024bc0                sa9857b5d797c92bedc6af155e7303a2b28fe0c67080bd8d007b028484be03fe0
+                0x00024bf0                s97883586fbc16cac6a15bf423cb4894369f84caca35876f6be3e2698e78f4cb8
+                0x00024c20                sefcf855296e3ebeb40461302ec77153dbc14d8b7343459d104494c055f36f37a
+                0x00024c9c                sb3ab9401e541618ef9464dc9dc279a39fe8a98408c8627c4657039eaab26f0de
+                0x00024ce0                s8987b89eb8d003cb3c46e146f226893cd7d4dc045215a206c1aa1d49e810f691
+                0x00024d1c                s1050f3816948dec04ec1c09d009193abb842d1939e7d5426d2d4a9c153fa19e4
+                0x00024d4c                sb0a0e7dcc0aff66940393115d537bebc9e159573c855ec5411edbeb12839bac0
+                0x00024d68                sd589b776b3f7a27d2ad9980e25f89155292f3d2d0184175f503e08437ef8f345.lto_priv.694
+                0x00024dac                se98db4dd27ee87b19a138a390e62f7893fe203dbb85bab88a77cc8b8a614fb8f.lto_priv.667
+                0x00024ddc                s2e706f4c17d4ea23e81bf66fdff240bb90fd55d0186c6d1eda5cbcb22504ad5e.lto_priv.623
+                0x00024ebc                s08c36e5c93079ccf4d81647e3db1428a7d5a579a54b1e6e7f35f8d273d18e26d
+                0x00024ee8                sfc184ab84ea5e9956e3f0cb94dc3ae7f61c042516f939e8654763716d14a7a81
+                0x00024f14                s1902c353513a46e4cd63cc1f67ad9b3ed6b03db525594ff1190d66187c988aaa.lto_priv.424
+                0x00024f7c                s31b72b6e17f66a75028f13e3b569068eab7b7f76390102ba2f9865df1577ae62
+                0x00024fb8                se263be2a0b7c61240fd9e57a89877d3f5530a3065eb9518d2e80626d679449e1
+                0x00024fec                se91d2d306eb5d0ca273d89eef66266a6868c41357fc968635bd81cc32c64186a
+                0x00025098                sbf2ac1065610d3d5d84bda651927927d88cb7a9e0ca536e5fd8e2941ebe14da2
+                0x00025110                se2ac50849b88f78cfc22b491336fffca4e4fd919eda671a79ff653737fdaeee5
+                0x00025184                s0a1bfc2a0c5d787842e86cdcb14f277dd1cacdc8dd398d0d81fe73935d236f0b
+                0x0002519c                secc6bf91f48f6e16151fd077159682ea379e98faa6c2e6e80454c04fb3c507d4
+                0x000251f4                s15c3aa335e4014577105e5f7ac7d6df0d79f2fc33405a5c6dc0a2a3b1c4da159
+                0x00025234                s187bcaadfa1d4bd2089d46791a381f7ca2a439c4c30cfa85d232cfc3df36bdd9.lto_priv.627
+                0x000252bc                s25929c1204e68b223c0255688b49ce994e55547f2bbfbdd52bc24fe9c8c4b42a.lto_priv.612
+                0x000252e4                s0c6bfff49a261ea18faf7e5beb1c85f478315014f2a74981dcb05064c886f467
+                0x000254cc                s2d25e67a1dff175339e8a52a5bfc7f39aefdd0e3e7af7e01f51a5a6470bd83cf
+                0x000255e0                s5df900385b51eb670f368b1ea2c786b3a6dc6727b4c5c9fb538f07fb23ed7df6
+                0x000256a4                s18ca20e6edd7b1dafa111ed259e869b324c456749ccf13e15a084847d5bff424
+                0x000257a0                sdae12e034c336a2007efc5ff5da68577c816387d0e5e9ac4bc409b4dd2ae493f
+                0x00025838                sd9e94f8fc36e83d2d2b276da826a5a682079ce5f587c74329cc207f253f1f473
+                0x00025884                sb60ae40d295f456443d07c2a32c37c5a0e63f7321cd92bf5ac322a4d3a78b530
+                0x000258d0                s8633ed229e1c84f4429ddba42c890c6191d9c432c0e6a84977fc4264d4c644fc
+                0x0002592c                sd9986e35a85516bf26ff6b1218cf202e6f1172c3527907ac829ee61275658a4a
+                0x00025980                sfc9cd36a1bbb920521ea04ce8c64ab351e3bc801eff8f04e8bc97e393a4dba42
+                0x000259a0                sdae43e33b155587c01dcd99a12efa714bd1bea37c2e312cdcf6f5d3015940365
+                0x000259d0                saad99ac0ad18b3524a4f97ecdae7c27474b69cf8f9a5152e1dca53104d5872f6
+                0x000259e8                sad25edc3cc896798a2dbff4577d09756b38b0ba95a822d83d4da80677cd8fd4e
+                0x00025a4c                s4476b960ac1dbf2ac96d5a2c51857539a577e6cef3fd0127721ea1216eff0a2c
+                0x00025b30                s454e80092bb670d8ea836663e842b03a18eec19a32bfe4f8a0c65cad898738dd
+                0x00025c2c                sa010cd761afb93ce24ca32913863e8806dbe6ba7274dae9953e7846a24bcc635
+                0x00025c90                sfb7bec1d149166c9890d3e0ce20dddbe96136e7a3fccd166ae1f48e6d15f6743
+                0x00026014                sccc159e0818bc3416cf5ea5e03b2db05ae2a5f61d3e670403df7b3380971840b
+                0x00026090                s798b40a10a9d0a2d1c74eedfa0b5ef0cb6434a48ab5a7e5e11a862555e73c3de
+                0x0002609e                s53d65179ce58217b8dbbda4d6a962b325730c74ab87b5d6e6462a55cdc28bc31
+                0x000260bc                aes_setkey_dec_wrap.lto_priv.413
+                0x00026168                sfccfa04b675878208b0bdd7c5ae9bb6285224f7f9545ce4640a144450783d728
+                0x00026254                sc61fcdde71e46892d60e95ecb0602537c22b68b895619f4a46516071c6966c2b
+                0x00026434                sf18520a544a8bfb6e33c5f6b7b9192c354f1134662a3cab32accef9a53a74ea9
+                0x00026608                s7ba794e11b8949de9e5275129b4ba633ce9f1faf54f25f6e280481b07fab0490
+                0x00026830                s13cabea84cbad62e2df1cf6ba1004329592d58650d6092e7d5d09b34d629a011
+                0x00026934                s55aa115f5304976b41d66a7ca64ddfff017dc83836a40847cf51b17a7c642872
+                0x00026d90                sbdab0a659a16ba137b7d899db62f0b250227ca35db821e3eae0ad86b6f52ca17
  .text.unlikely
-                0x00026ed4       0xa0 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans4.ltrans.o
-                0x00026ed4                mbedtls_mpi_shift_l
-                0x00026f62                sb757ea2164791fd86a5ee7def8113152704c255e6fc33d18b31fd6b63f0e7dfb.lto_priv.664
- .text          0x00026f74     0x52f4 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans5.ltrans.o
-                0x00026f94                s203c11a0e296da6702f974aa7096ebe966ea61a0ec7b70ba6d359e8bda6a59aa.lto_priv.761
-                0x00026ff8                s64ec19537b527aa778a6ec009b06ebbe07b609befdc684ca07977921956276c2.lto_priv.760
-                0x00027028                s005973216bcb99fc86eb4ed314903a24bab65fe7bae1a6fa154d0eaba59507a5
-                0x00027080                s9509cad1f456d59cc5150bfdea7c49c330c5cf96288e7ca6269a009a5fe14525.lto_priv.472
-                0x000270b8                s8ef4b9ac3d309209e66d2226bce04413939e3e1624b0e39e6489d7577688b80b.lto_priv.757
-                0x00027152                sba37ae8601690b0896cea959395272b96624ac4b5aad20973574360601a0ed90.lto_priv.726
-                0x000276f0                sb49906d77020e8eaa1b54b4f4fca378c8eacaaf023408ef9b7a29e38c8e2ae00.lto_priv.756
-                0x00027898                s195bd06d3d7dced800230fa572adb64d223a3b6c1382fc621c40b28a20ce051a
-                0x0002789c                s8d64c438403c36792474ee14f02ef44de28731e5538b6b61deb7027fb9f1213d
-                0x000278a0                sef1316e1438ae2cf117c40ca6556dc740ddd34034083b129a49abc7f7a4a9153
-                0x000278a4                s5519abc2b89ababc4364a73ca9bf14192bbaf331bb8f600cb502ad89d69dc189
-                0x00027bf8                s8f0aab60a3fbcd802f9fed3db875d19b8cb1f50f4f88cf48c5f223c481ff8068
-                0x00027d14                s7d71c9802e3958162b5fdd55fa253c867fa29d2fb4c4ba23cdcbc795d5c42be2
-                0x00027d74                sfba4a69959f432b6a16997869735d5345a408c9f4f869c7678226c11563073aa.lto_priv.586
-                0x00027e68                s90457651413029d1b805c9791502f80dad2bc331f03b9db5ed195366407d1399.lto_priv.585
-                0x00027ecc                s6595fbcfaef90445a8a7fe8b1058808e3c4bf4a91e1235f3abbf289f9d80551a
-                0x00027ef8                s48391b375243824efb73ec6dd3ead576df93eaa7e3ccbb6390c54c7f7943dce1.lto_priv.442
-                0x00027f40                s9ff64dc159da670e77c85b13eee3f9cbfaa7038e9c63174821f1d22e366c436c.lto_priv.601.lto_priv.697
-                0x00027f40                s9ff64dc159da670e77c85b13eee3f9cbfaa7038e9c63174821f1d22e366c436c.lto_priv.600.lto_priv.766
-                0x00027f40                s9ff64dc159da670e77c85b13eee3f9cbfaa7038e9c63174821f1d22e366c436c.lto_priv.426.lto_priv.468
-                0x00027f40                s9ff64dc159da670e77c85b13eee3f9cbfaa7038e9c63174821f1d22e366c436c.lto_priv.427.lto_priv.428
-                0x00027f50                sc0bbe4f47f33af52dada84dab2be3fc53ee775c69299aff02a8271f1c942b4fb.lto_priv.589
-                0x00027f80                sc0b927b5dab52591298ea90e5bafc5313839b5ed12b0d58d571261e45a9b3b28
-                0x00028040                s033743affbe89c62aec89e2ef002f98eda2e968afa369e1474fb9500aad6eb05
-                0x00028076                sf365a46675558c2f81c154bfd91549a0b25271febea7a3335ac1aa340784dcfd
-                0x000280f0                s679d72007eb32f71aba107132f47390d6606383fd5a0a51bd02d786edf6f1055
-                0x00028110                s8afa8bd57a010aaa072e78cbb63f2f498a52b945ba2ab92e73978fbb5a72aff7
-                0x0002817c                s142612325e982800554450aa041378f4a8504d71b5dd193dd4a126296bae52a1
-                0x000281b8                s3c8561c978fd97690e535f33470c7a4cae732740e95669ae53f051876cf36cf6
-                0x000281b8                bgbuf_copy_to
-                0x000289a4                s7a2ef2cf9caf09b2e7bf287f1aab8a6e6825474a67084bfad2c92beb912ebc6a
-                0x000289ec                swapl.lto_priv.583
-                0x000289f0                s947f6669e09c6036614206fb2c14e49b1ae9d094fa52d588c71a512d123143d2
-                0x00028b90                s1e8e801ca7427338dc34d3e97947e5bfe3d14495fcb70cb319c4b8281406ab6e
-                0x00028d20                sdc528b59434616cacd0b3a6d4e3017e72844ba46e00cfb5cbc5115adf3488bcc
-                0x00028e88                s998ea7f5216b6e1ca0e897fe0feb989b23cf8c68c723b283079a5d8c035fa2a2
-                0x00029030                s1c8bb5f1550650306aab296e8862df91c69b6ffa3e6906f99102c7b26fc89414.lto_priv.451
-                0x00029084                s34fbf48579147efba8ae800ebb75fe70c3b70da86ede68139bcfdd890a68d444.lto_priv.767
-                0x000292b8                bgbuf_chain_links.lto_priv.606.lto_priv.663
-                0x000292b8                bgbuf_chain_links.lto_priv.605.lto_priv.698
-                0x000292b8                bgbuf_chain_links.lto_priv.434.lto_priv.435
-                0x000292b8                bgbuf_chain_links.lto_priv.607.lto_priv.657
-                0x000292b8                bgbuf_chain_links.lto_priv.604.lto_priv.801
-                0x000292b8                bgbuf_chain_links.lto_priv.433.lto_priv.470
-                0x00029334                s49a5aef00ed35d07789c1a79de9e63fc357b634005e3f893e064f4a74e900002.lto_priv.763
-                0x00029336                sc1caa8d631e234034408bfda5382abeb136472432d5432eb4abfc0f4c4b28078
-                0x00029450                s89514f25042a56d1f6d876f640c2de839850d5baeae349e3d922d77a14be4872
-                0x00029474                s15a8e3b6fcc9da0cc72a5c562b5f743a4f4be5adc234b47cf314c1a381c4b9b4.lto_priv.762
-                0x00029504                s1e6876ced0d548b56d377ef41dc0f3f0b12b41ce6a9494dc8c35c87e8e3b22d7.lto_priv.764
-                0x00029542                s3033267058558a9277cf69c7eeac6de89f91399fd2564e66cdfa2e0f949820b8.lto_priv.834
-                0x000295ca                sa36264136eaef7bbdc807fb560b6eda803241d39164a2730557470734ef84f43.lto_priv.765
-                0x00029630                s8681d0293da3d4e9319e50b9d093b5eed863ee1d4c03d481b4634a636ecc899a.lto_priv.759
-                0x00029686                s262d060773e899a6be2dace8de0c67edeba542acbdb5ed7bfef1868a039bafd4
-                0x00029730                s217a21a7a8f3f1091596dbf4f08a61fd3c16462ef6f203ac78993ce8701dc5dd
-                0x00029748                sc15e72523a4fff591eb1c022dda22a453478a0af2d8130b937420b069e3b7fb1
-                0x00029764                sd8a21cfa0a7aa956f6c22fc1950b44e920a03eec22249fc0b05680e2c5b406e9
-                0x0002977c                s1ee9b56ab38b39eefe77c768c6fb6fddfac9d7e905cc009948dce405026bda2a
-                0x0002984c                s7ae258203eebfbaaaaaa28f4a7f0e29f3444686b97ed7d00e4196a644b70ff9b.lto_priv.689
-                0x0002986c                sd77738b41f860799fd52f2514eb6f59f3efc0192ddfd7b83755c1bf4311d15ed.lto_priv.690
-                0x00029888                se056d6ad4bc905c0d7e7668c45efc58a601a7f9acbc82512b49f4a00da725978.lto_priv.661
-                0x00029898                s61fa9467253c29a9338eb58eb8c5b76571e4a1d231c64732156dc5c669825e2c
-                0x000298f4                sb7363b9be572e36de0710513bade175b535417dd45fb4477e006a11698462f0b
-                0x00029906                s7511782b6bff733265fdc80150f483bb1a5d0f42f56c21cff7ea617278ca4bb0.lto_priv.758
-                0x00029938                s5e290897ff78a4ad7bd82581b9c65827804f5ec06f676a869310df758b520ef0.lto_priv.457
-                0x00029d6e                se8fdcc5ebebb2334f8147607aaedca497aabf1a2f0fda9e3453c5bc59ef66f3a
-                0x00029df0                s591a9d3cb97d7811692b6a6021ab401f26f51c579983fb0160bc789a43c9f31b.lto_priv.458
-                0x00029e20                s8b5065da1c624e6b155427ded5f11e0bb6982d11672f4d51c0870e5d8eae9f18.lto_priv.389
-                0x00029e46                s9f70271461b894a5b87688c6623a275bc4aa51fdf1911c0861c253b26d2e5b8d.lto_priv.701
-                0x00029e6c                scf693e2c0b279b154d67dd44d9403714592aefeeb7b25ed901c1737727362cc5
-                0x00029ebc                s776b64871e16c5fe4fd0ce9b7c158901e9ee87f3d75d954796a56d0090cebfc3.lto_priv.587
-                0x0002a02c                s6062338c4e5acca2f7fd6a19f8db1a69bf6bd45f2ce1aa73909386af8c2ebce5.lto_priv.833
-                0x0002a0a4                s7363c4a1809b88f585f1a98af055457294968d3f2103b534d684d54ef15926d8.lto_priv.588
-                0x0002a11a                sb5e3f4eb369f16c4402c3b1112765b69eb90375593ae58bc3f93192c54da5e3f
-                0x0002a270                s3277fbf5ab0c15a80b6b614e5aa3e78205fc99258e41a17ccc003a0c86a182cf.lto_priv.725
-                0x0002a428                s9d53c1a2ffea051bd6441e519f88905446467a57e789caff4796045f80852b69
-                0x0002a454                sa4a3dd4d9c89d330f1ed88b0ab06f5ce086e9510afbb612cc8bcfb63dcee141b
-                0x0002a4b2                sf0565216273da3f4f72c20fec26d2e0647b3b064af3e75fbb354b3fef1f61a80
-                0x0002a51c                s14394823fdb1a4dd6c5f0097ea0f4fa3ca90f45831c90889c96e2be2e299fb7f
-                0x0002a6b0                s6f57eb6a7c74529af588693aa5038e89b6815648f3a1132e31b95a690f78472a
-                0x0002a732                s5cb4210b3e08c6887fc9d1d25cf45b4247e34312f4c813ceb3edbc8c31061806
-                0x0002a7b4                sfb236dad0e3b9a6ba5f71bf6154df58253ecfeeddf8ab1c9e230f8ce02543e59
-                0x0002a8e8                s15a0a36617ab2c00edef932b212592c232eef8642d944829cc0bfe4e7e296016
-                0x0002a972                s0d70aa0b448be667b438bb513c65613c732fa5051f0a702e0c113acb7cdca1e6
-                0x0002a9f8                sd197966131b96fedbbe10724ff77a88880847d9dd59b96f5a4210833cd3175e0.lto_priv.727
-                0x0002aa44                s815b4ab54b5d66d4f4c099599897597aab9547f6f150416983323418fbcfcd63.lto_priv.688
-                0x0002abdc                s200c6d33388bd70e28fea2ed27096296cd2454fa4a17f18b07f8eb83b666fb74
-                0x0002ad08                s0c051ca4cd653994c4bdbefc91d4a2de441889bfd6d8701556b78812eeb7d5ce
-                0x0002ad7c                sb4abdc41eb49b8e076241efa49704a180ff0e0d6e8eaefdba762fb55a4ac2ca3
-                0x0002ae44                scfc0e2e1128071105522c23c9451e1bb2465ed08baa33cf1d9181b1d53169813
-                0x0002ae92                s449e7a51a7e703ed2efe63cbb5046a7a7e9db7e8d0813ad844005c51e298a967
-                0x0002aef4                s680ca2cdc74432d47b868ed0a6658cac2b21c8f60b9eef4d342f00260234efbd
-                0x0002af28                s4e0e563de4943801a7497127e88f346bae5b856bfb1a2a22b704fd5999e6e691
-                0x0002b134                s52a958eed992c5285bed4345ee3d727bb229196b3be3728a0283b14bea5bbfac
- .text          0x0002c268     0x4d54 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans6.ltrans.o
+                0x00026ed0       0xa0 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans4.ltrans.o
+                0x00026ed0                mbedtls_mpi_shift_l
+                0x00026f5e                sb757ea2164791fd86a5ee7def8113152704c255e6fc33d18b31fd6b63f0e7dfb.lto_priv.664
+ .text          0x00026f70     0x52f4 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans5.ltrans.o
+                0x00026f90                s203c11a0e296da6702f974aa7096ebe966ea61a0ec7b70ba6d359e8bda6a59aa.lto_priv.761
+                0x00026ff4                s64ec19537b527aa778a6ec009b06ebbe07b609befdc684ca07977921956276c2.lto_priv.760
+                0x00027024                s005973216bcb99fc86eb4ed314903a24bab65fe7bae1a6fa154d0eaba59507a5
+                0x0002707c                s9509cad1f456d59cc5150bfdea7c49c330c5cf96288e7ca6269a009a5fe14525.lto_priv.472
+                0x000270b4                s8ef4b9ac3d309209e66d2226bce04413939e3e1624b0e39e6489d7577688b80b.lto_priv.757
+                0x0002714e                sba37ae8601690b0896cea959395272b96624ac4b5aad20973574360601a0ed90.lto_priv.726
+                0x000276ec                sb49906d77020e8eaa1b54b4f4fca378c8eacaaf023408ef9b7a29e38c8e2ae00.lto_priv.756
+                0x00027894                s195bd06d3d7dced800230fa572adb64d223a3b6c1382fc621c40b28a20ce051a
+                0x00027898                s8d64c438403c36792474ee14f02ef44de28731e5538b6b61deb7027fb9f1213d
+                0x0002789c                sef1316e1438ae2cf117c40ca6556dc740ddd34034083b129a49abc7f7a4a9153
+                0x000278a0                s5519abc2b89ababc4364a73ca9bf14192bbaf331bb8f600cb502ad89d69dc189
+                0x00027bf4                s8f0aab60a3fbcd802f9fed3db875d19b8cb1f50f4f88cf48c5f223c481ff8068
+                0x00027d10                s7d71c9802e3958162b5fdd55fa253c867fa29d2fb4c4ba23cdcbc795d5c42be2
+                0x00027d70                sfba4a69959f432b6a16997869735d5345a408c9f4f869c7678226c11563073aa.lto_priv.586
+                0x00027e64                s90457651413029d1b805c9791502f80dad2bc331f03b9db5ed195366407d1399.lto_priv.585
+                0x00027ec8                s6595fbcfaef90445a8a7fe8b1058808e3c4bf4a91e1235f3abbf289f9d80551a
+                0x00027ef4                s48391b375243824efb73ec6dd3ead576df93eaa7e3ccbb6390c54c7f7943dce1.lto_priv.442
+                0x00027f3c                s9ff64dc159da670e77c85b13eee3f9cbfaa7038e9c63174821f1d22e366c436c.lto_priv.601.lto_priv.697
+                0x00027f3c                s9ff64dc159da670e77c85b13eee3f9cbfaa7038e9c63174821f1d22e366c436c.lto_priv.600.lto_priv.766
+                0x00027f3c                s9ff64dc159da670e77c85b13eee3f9cbfaa7038e9c63174821f1d22e366c436c.lto_priv.426.lto_priv.468
+                0x00027f3c                s9ff64dc159da670e77c85b13eee3f9cbfaa7038e9c63174821f1d22e366c436c.lto_priv.427.lto_priv.428
+                0x00027f4c                sc0bbe4f47f33af52dada84dab2be3fc53ee775c69299aff02a8271f1c942b4fb.lto_priv.589
+                0x00027f7c                sc0b927b5dab52591298ea90e5bafc5313839b5ed12b0d58d571261e45a9b3b28
+                0x0002803c                s033743affbe89c62aec89e2ef002f98eda2e968afa369e1474fb9500aad6eb05
+                0x00028072                sf365a46675558c2f81c154bfd91549a0b25271febea7a3335ac1aa340784dcfd
+                0x000280ec                s679d72007eb32f71aba107132f47390d6606383fd5a0a51bd02d786edf6f1055
+                0x0002810c                s8afa8bd57a010aaa072e78cbb63f2f498a52b945ba2ab92e73978fbb5a72aff7
+                0x00028178                s142612325e982800554450aa041378f4a8504d71b5dd193dd4a126296bae52a1
+                0x000281b4                s3c8561c978fd97690e535f33470c7a4cae732740e95669ae53f051876cf36cf6
+                0x000281b4                bgbuf_copy_to
+                0x000289a0                s7a2ef2cf9caf09b2e7bf287f1aab8a6e6825474a67084bfad2c92beb912ebc6a
+                0x000289e8                swapl.lto_priv.583
+                0x000289ec                s947f6669e09c6036614206fb2c14e49b1ae9d094fa52d588c71a512d123143d2
+                0x00028b8c                s1e8e801ca7427338dc34d3e97947e5bfe3d14495fcb70cb319c4b8281406ab6e
+                0x00028d1c                sdc528b59434616cacd0b3a6d4e3017e72844ba46e00cfb5cbc5115adf3488bcc
+                0x00028e84                s998ea7f5216b6e1ca0e897fe0feb989b23cf8c68c723b283079a5d8c035fa2a2
+                0x0002902c                s1c8bb5f1550650306aab296e8862df91c69b6ffa3e6906f99102c7b26fc89414.lto_priv.451
+                0x00029080                s34fbf48579147efba8ae800ebb75fe70c3b70da86ede68139bcfdd890a68d444.lto_priv.767
+                0x000292b4                bgbuf_chain_links.lto_priv.606.lto_priv.663
+                0x000292b4                bgbuf_chain_links.lto_priv.605.lto_priv.698
+                0x000292b4                bgbuf_chain_links.lto_priv.434.lto_priv.435
+                0x000292b4                bgbuf_chain_links.lto_priv.607.lto_priv.657
+                0x000292b4                bgbuf_chain_links.lto_priv.604.lto_priv.801
+                0x000292b4                bgbuf_chain_links.lto_priv.433.lto_priv.470
+                0x00029330                s49a5aef00ed35d07789c1a79de9e63fc357b634005e3f893e064f4a74e900002.lto_priv.763
+                0x00029332                sc1caa8d631e234034408bfda5382abeb136472432d5432eb4abfc0f4c4b28078
+                0x0002944c                s89514f25042a56d1f6d876f640c2de839850d5baeae349e3d922d77a14be4872
+                0x00029470                s15a8e3b6fcc9da0cc72a5c562b5f743a4f4be5adc234b47cf314c1a381c4b9b4.lto_priv.762
+                0x00029500                s1e6876ced0d548b56d377ef41dc0f3f0b12b41ce6a9494dc8c35c87e8e3b22d7.lto_priv.764
+                0x0002953e                s3033267058558a9277cf69c7eeac6de89f91399fd2564e66cdfa2e0f949820b8.lto_priv.834
+                0x000295c6                sa36264136eaef7bbdc807fb560b6eda803241d39164a2730557470734ef84f43.lto_priv.765
+                0x0002962c                s8681d0293da3d4e9319e50b9d093b5eed863ee1d4c03d481b4634a636ecc899a.lto_priv.759
+                0x00029682                s262d060773e899a6be2dace8de0c67edeba542acbdb5ed7bfef1868a039bafd4
+                0x0002972c                s217a21a7a8f3f1091596dbf4f08a61fd3c16462ef6f203ac78993ce8701dc5dd
+                0x00029744                sc15e72523a4fff591eb1c022dda22a453478a0af2d8130b937420b069e3b7fb1
+                0x00029760                sd8a21cfa0a7aa956f6c22fc1950b44e920a03eec22249fc0b05680e2c5b406e9
+                0x00029778                s1ee9b56ab38b39eefe77c768c6fb6fddfac9d7e905cc009948dce405026bda2a
+                0x00029848                s7ae258203eebfbaaaaaa28f4a7f0e29f3444686b97ed7d00e4196a644b70ff9b.lto_priv.689
+                0x00029868                sd77738b41f860799fd52f2514eb6f59f3efc0192ddfd7b83755c1bf4311d15ed.lto_priv.690
+                0x00029884                se056d6ad4bc905c0d7e7668c45efc58a601a7f9acbc82512b49f4a00da725978.lto_priv.661
+                0x00029894                s61fa9467253c29a9338eb58eb8c5b76571e4a1d231c64732156dc5c669825e2c
+                0x000298f0                sb7363b9be572e36de0710513bade175b535417dd45fb4477e006a11698462f0b
+                0x00029902                s7511782b6bff733265fdc80150f483bb1a5d0f42f56c21cff7ea617278ca4bb0.lto_priv.758
+                0x00029934                s5e290897ff78a4ad7bd82581b9c65827804f5ec06f676a869310df758b520ef0.lto_priv.457
+                0x00029d6a                se8fdcc5ebebb2334f8147607aaedca497aabf1a2f0fda9e3453c5bc59ef66f3a
+                0x00029dec                s591a9d3cb97d7811692b6a6021ab401f26f51c579983fb0160bc789a43c9f31b.lto_priv.458
+                0x00029e1c                s8b5065da1c624e6b155427ded5f11e0bb6982d11672f4d51c0870e5d8eae9f18.lto_priv.389
+                0x00029e42                s9f70271461b894a5b87688c6623a275bc4aa51fdf1911c0861c253b26d2e5b8d.lto_priv.701
+                0x00029e68                scf693e2c0b279b154d67dd44d9403714592aefeeb7b25ed901c1737727362cc5
+                0x00029eb8                s776b64871e16c5fe4fd0ce9b7c158901e9ee87f3d75d954796a56d0090cebfc3.lto_priv.587
+                0x0002a028                s6062338c4e5acca2f7fd6a19f8db1a69bf6bd45f2ce1aa73909386af8c2ebce5.lto_priv.833
+                0x0002a0a0                s7363c4a1809b88f585f1a98af055457294968d3f2103b534d684d54ef15926d8.lto_priv.588
+                0x0002a116                sb5e3f4eb369f16c4402c3b1112765b69eb90375593ae58bc3f93192c54da5e3f
+                0x0002a26c                s3277fbf5ab0c15a80b6b614e5aa3e78205fc99258e41a17ccc003a0c86a182cf.lto_priv.725
+                0x0002a424                s9d53c1a2ffea051bd6441e519f88905446467a57e789caff4796045f80852b69
+                0x0002a450                sa4a3dd4d9c89d330f1ed88b0ab06f5ce086e9510afbb612cc8bcfb63dcee141b
+                0x0002a4ae                sf0565216273da3f4f72c20fec26d2e0647b3b064af3e75fbb354b3fef1f61a80
+                0x0002a518                s14394823fdb1a4dd6c5f0097ea0f4fa3ca90f45831c90889c96e2be2e299fb7f
+                0x0002a6ac                s6f57eb6a7c74529af588693aa5038e89b6815648f3a1132e31b95a690f78472a
+                0x0002a72e                s5cb4210b3e08c6887fc9d1d25cf45b4247e34312f4c813ceb3edbc8c31061806
+                0x0002a7b0                sfb236dad0e3b9a6ba5f71bf6154df58253ecfeeddf8ab1c9e230f8ce02543e59
+                0x0002a8e4                s15a0a36617ab2c00edef932b212592c232eef8642d944829cc0bfe4e7e296016
+                0x0002a96e                s0d70aa0b448be667b438bb513c65613c732fa5051f0a702e0c113acb7cdca1e6
+                0x0002a9f4                sd197966131b96fedbbe10724ff77a88880847d9dd59b96f5a4210833cd3175e0.lto_priv.727
+                0x0002aa40                s815b4ab54b5d66d4f4c099599897597aab9547f6f150416983323418fbcfcd63.lto_priv.688
+                0x0002abd8                s200c6d33388bd70e28fea2ed27096296cd2454fa4a17f18b07f8eb83b666fb74
+                0x0002ad04                s0c051ca4cd653994c4bdbefc91d4a2de441889bfd6d8701556b78812eeb7d5ce
+                0x0002ad78                sb4abdc41eb49b8e076241efa49704a180ff0e0d6e8eaefdba762fb55a4ac2ca3
+                0x0002ae40                scfc0e2e1128071105522c23c9451e1bb2465ed08baa33cf1d9181b1d53169813
+                0x0002ae8e                s449e7a51a7e703ed2efe63cbb5046a7a7e9db7e8d0813ad844005c51e298a967
+                0x0002aef0                s680ca2cdc74432d47b868ed0a6658cac2b21c8f60b9eef4d342f00260234efbd
+                0x0002af24                s4e0e563de4943801a7497127e88f346bae5b856bfb1a2a22b704fd5999e6e691
+                0x0002b130                s52a958eed992c5285bed4345ee3d727bb229196b3be3728a0283b14bea5bbfac
+ *fill*         0x0002c264        0x4 
+ .text          0x0002c268     0x4d54 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans6.ltrans.o
                 0x0002c546                sd69063ac414aa9b182b3715be7c99e550c11a43ab43002cd16895150daad7b64
                 0x0002c590                config_pub_add.constprop.382
                 0x0002c5c4                config_sub_add.constprop.381
@@ -2790,7 +2791,7 @@ LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/
                 0x00030e82                s27d8feef5a0463c17bbd05963737d3704575411a97f83a4f7c6a3ea78c9bed6b.constprop.271
                 0x00030ef2                sd4677bf4f06b8b19a17bcc5b67deaae5de05c115d09c753f37f476dfca88290b.constprop.273
                 0x00030f4a                s049e1d01f06c5f833f1916c8aa37af2664c3060cc97b8154e5e981264e5c3cfd.constprop.127
- .text          0x00030fbc     0x50a8 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans7.ltrans.o
+ .text          0x00030fbc     0x50a8 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans7.ltrans.o
                 0x00030fbc                s9a038438b96a59eed64aababe6ec97f449cc898c03ab04d2c74a7f7c4bbc2e05.lto_priv.729
                 0x0003104c                s57c5640bfee223650e674e78dbd5151760c9d90d8f8237f6f1859df9e8569b27.lto_priv.599
                 0x0003133c                s0c6edf4f07cfb851a379f0548f82fb1ee757c5198913c6efe66b0133af5b6da5
@@ -2838,10 +2839,10 @@ LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/
                 0x00034fcc                s8f611065e0c9bc6023b9164d9f68d2ec67a5c05ebeaa8547ea295b13df3b6a3c.lto_priv.634
                 0x00035020                s2d8d60151f84e2fe74c36f9345a673a736f6d41e148e924262ba779b16ff2942
  .text.unlikely
-                0x00036064       0x3a C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans7.ltrans.o
+                0x00036064       0x3a C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans7.ltrans.o
                 0x00036064                s13c87fcd1e7b3daa26d5cd11518ed7984adeafe4dfd73084375b248b53f47225
  *fill*         0x0003609e        0x2 
- .text          0x000360a0     0x4f64 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans8.ltrans.o
+ .text          0x000360a0     0x4f64 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans8.ltrans.o
                 0x000360a0                s5ad1fa4191f3ccb36fb97c2ef6225191588ef0fd75f8cc98a16e688db40d5bfa.lto_priv.613
                 0x000360f6                s5152318604d3b3e95e664e84eb14a56c721d1c0cc372c068ae948753661e95a5
                 0x0003645c                se70c2aa28d2f59c7577823c670ab2389ad7d7455a3313477adcd39c3bac98240
@@ -4105,291 +4106,291 @@ LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
  *(.rodata*)
- .rodata        0x00043950      0x1f8 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans0.ltrans.o
+ .rodata        0x00043950      0x1f8 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans0.ltrans.o
                 0x00043b40                CSWTCH.4.lto_priv.789
                 0x00043b44                CSWTCH.1.lto_priv.790
  .rodata.str1.1
-                0x00043b48       0x11 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans0.ltrans.o
+                0x00043b48       0x11 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans0.ltrans.o
  *fill*         0x00043b59        0x3 
- .rodata        0x00043b5c       0x4a C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans1.ltrans.o
+ .rodata        0x00043b5c       0x4a C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans1.ltrans.o
  *fill*         0x00043ba6        0x2 
- .rodata        0x00043ba8      0x380 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans2.ltrans.o
+ .rodata        0x00043ba8      0x380 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans2.ltrans.o
                 0x00043f14                mesh_configuration_server_node_identity_set_gatt_fn
                 0x00043f18                mesh_node_gatt_proxy_change_fn
                 0x00043f1c                net_state
                 0x00043f20                cfg_client_state
                 0x00043f24                app_state
  .rodata.str1.1
-                0x00043f28       0x46 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans2.ltrans.o
+                0x00043f28       0x46 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans2.ltrans.o
                                  0x6f (size before relaxing)
  *fill*         0x00043f6e        0x2 
- .rodata        0x00043f70      0x136 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans3.ltrans.o
+ .rodata        0x00043f70      0x136 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans3.ltrans.o
  .rodata.str1.1
-                0x000440a6     0x1808 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans3.ltrans.o
-                               0x1829 (size before relaxing)
- *fill*         0x000458ae        0x2 
- .rodata        0x000458b0       0x24 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans4.ltrans.o
-                0x000458b3                nil_key.lto_priv.673
-                0x000458c4                beacon_state
-                0x000458c8                model_state
-                0x000458cc                bearer_state
-                0x000458d0                cfg_server_state
+                0x000440a6     0x17f8 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans3.ltrans.o
+                               0x1819 (size before relaxing)
+ *fill*         0x0004589e        0x2 
+ .rodata        0x000458a0       0x24 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans4.ltrans.o
+                0x000458a3                nil_key.lto_priv.673
+                0x000458b4                beacon_state
+                0x000458b8                model_state
+                0x000458bc                bearer_state
+                0x000458c0                cfg_server_state
  .rodata.str1.1
-                0x000458d4       0x6d C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans4.ltrans.o
+                0x000458c4       0x6d C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans4.ltrans.o
                                  0xaa (size before relaxing)
- *fill*         0x00045941        0x7 
- .rodata        0x00045948       0xf0 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans5.ltrans.o
-                0x00045a04                replay_state
-                0x00045a08                prov_oob_reqs
-                0x00045a0c                __mesh_memory_config
-                0x00045a28                vendor_state
-                0x00045a2c                pbadv_state
-                0x00045a30                mesh_proxy_gatt_send_fn
-                0x00045a34                foundation_state
+ *fill*         0x00045931        0x7 
+ .rodata        0x00045938       0xf0 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans5.ltrans.o
+                0x000459f4                replay_state
+                0x000459f8                prov_oob_reqs
+                0x000459fc                __mesh_memory_config
+                0x00045a18                vendor_state
+                0x00045a1c                pbadv_state
+                0x00045a20                mesh_proxy_gatt_send_fn
+                0x00045a24                foundation_state
  .rodata.str1.1
-                0x00045a38       0x32 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans5.ltrans.o
+                0x00045a28       0x32 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans5.ltrans.o
                                  0xc3 (size before relaxing)
- *fill*         0x00045a6a        0x2 
- .rodata        0x00045a6c      0x5d0 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans6.ltrans.o
-                0x00045a88                mbedtls_cipher_definitions
-                0x00045ae9                __mesh_dcd
-                0x00045e40                crypto_devices.lto_priv.501
-                0x00045e98                config
-                0x00045edc                ccm_aes_info.lto_priv.566
-                0x00045ef8                aes_info.lto_priv.565
-                0x00045f14                aes_256_ccm_info.lto_priv.564
-                0x00045f30                aes_192_ccm_info.lto_priv.563
-                0x00045f4c                aes_128_ccm_info.lto_priv.562
-                0x00045f68                aes_256_ctr_info.lto_priv.561
-                0x00045f84                aes_192_ctr_info.lto_priv.560
-                0x00045fa0                aes_128_ctr_info.lto_priv.559
-                0x00045fbc                aes_256_ecb_info.lto_priv.558
-                0x00045fd8                aes_192_ecb_info.lto_priv.557
-                0x00045ff4                aes_128_ecb_info.lto_priv.556
-                0x00046010                genprov_state
-                0x00046014                __mesh_dcd_ptr
-                0x00046018                health_state
-                0x0004601c                mesh_stats
-                0x00046020                trans_state
-                0x00046024                prov_state
-                0x00046028                prov_prv_state
-                0x0004602c                nvm3_defaultHandle
-                0x00046030                moduleInitialized.lto_priv.830
-                0x00046034                cJSON_free.lto_priv.832
-                0x00046038                cJSON_malloc.lto_priv.831
+ *fill*         0x00045a5a        0x2 
+ .rodata        0x00045a5c      0x5d0 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans6.ltrans.o
+                0x00045a78                mbedtls_cipher_definitions
+                0x00045ad9                __mesh_dcd
+                0x00045e30                crypto_devices.lto_priv.501
+                0x00045e88                config
+                0x00045ecc                ccm_aes_info.lto_priv.566
+                0x00045ee8                aes_info.lto_priv.565
+                0x00045f04                aes_256_ccm_info.lto_priv.564
+                0x00045f20                aes_192_ccm_info.lto_priv.563
+                0x00045f3c                aes_128_ccm_info.lto_priv.562
+                0x00045f58                aes_256_ctr_info.lto_priv.561
+                0x00045f74                aes_192_ctr_info.lto_priv.560
+                0x00045f90                aes_128_ctr_info.lto_priv.559
+                0x00045fac                aes_256_ecb_info.lto_priv.558
+                0x00045fc8                aes_192_ecb_info.lto_priv.557
+                0x00045fe4                aes_128_ecb_info.lto_priv.556
+                0x00046000                genprov_state
+                0x00046004                __mesh_dcd_ptr
+                0x00046008                health_state
+                0x0004600c                mesh_stats
+                0x00046010                trans_state
+                0x00046014                prov_state
+                0x00046018                prov_prv_state
+                0x0004601c                nvm3_defaultHandle
+                0x00046020                moduleInitialized.lto_priv.830
+                0x00046024                cJSON_free.lto_priv.832
+                0x00046028                cJSON_malloc.lto_priv.831
  .rodata.str1.1
-                0x0004603c       0x92 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans6.ltrans.o
+                0x0004602c       0x92 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans6.ltrans.o
                                  0xd0 (size before relaxing)
- *fill*         0x000460ce        0x2 
- .rodata        0x000460d0      0x294 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans7.ltrans.o
-                0x00046360                __mesh_dcd_len
+ *fill*         0x000460be        0x2 
+ .rodata        0x000460c0      0x294 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans7.ltrans.o
+                0x00046350                __mesh_dcd_len
  .rodata.str1.1
-                0x00046364        0x8 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans7.ltrans.o
- .rodata        0x0004636c      0x160 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans8.ltrans.o
-                0x0004636c                genprov_sm.lto_priv.597
-                0x00046384                mesh_pool_id_to_bg_pool_id.lto_priv.736
-                0x00046388                ll_radioScaToPpm
-                0x000463ac                ll_timing.lto_priv.755
-                0x000464c8                net_cache_state
+                0x00046354        0x8 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans7.ltrans.o
+ .rodata        0x0004635c      0x160 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans8.ltrans.o
+                0x0004635c                genprov_sm.lto_priv.597
+                0x00046374                mesh_pool_id_to_bg_pool_id.lto_priv.736
+                0x00046378                ll_radioScaToPpm
+                0x0004639c                ll_timing.lto_priv.755
+                0x000464b8                net_cache_state
  .rodata.RAIL_TxPowerCurvesDcdc
-                0x000464cc       0x20 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(pa_curves_efr32.o)
-                0x000464cc                RAIL_TxPowerCurvesDcdc
+                0x000464bc       0x20 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(pa_curves_efr32.o)
+                0x000464bc                RAIL_TxPowerCurvesDcdc
  .rodata.RAIL_TxPowerCurvesVbat
-                0x000464ec       0x20 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(pa_curves_efr32.o)
-                0x000464ec                RAIL_TxPowerCurvesVbat
+                0x000464dc       0x20 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(pa_curves_efr32.o)
+                0x000464dc                RAIL_TxPowerCurvesVbat
  .rodata.RAIL_curves24LpDcdc
-                0x0004650c        0xe C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(pa_curves_efr32.o)
+                0x000464fc        0xe C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(pa_curves_efr32.o)
  .rodata.RAIL_curves24LpVbat
-                0x0004651a        0xe C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(pa_curves_efr32.o)
+                0x0004650a        0xe C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(pa_curves_efr32.o)
  .rodata.RAIL_piecewiseDataHpDcdc
-                0x00046528       0x44 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(pa_curves_efr32.o)
+                0x00046518       0x44 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(pa_curves_efr32.o)
  .rodata.RAIL_piecewiseDataHpVbat
-                0x0004656c       0x44 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(pa_curves_efr32.o)
+                0x0004655c       0x44 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(pa_curves_efr32.o)
  .rodata.RAIL_piecewiseDataSgDcdc
-                0x000465b0       0x44 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(pa_curves_efr32.o)
+                0x000465a0       0x44 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(pa_curves_efr32.o)
  .rodata.RAIL_piecewiseDataSgVbat
-                0x000465f4       0x44 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(pa_curves_efr32.o)
+                0x000465e4       0x44 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(pa_curves_efr32.o)
  .rodata.ble_LR_DSA_125kb_timing
-                0x00046638        0x8 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(rail_ble_rf_hal.o)
-                0x00046638                ble_LR_DSA_125kb_timing
+                0x00046628        0x8 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(rail_ble_rf_hal.o)
+                0x00046628                ble_LR_DSA_125kb_timing
  .rodata.ble_LR_DSA_500kb_timing
-                0x00046640        0x8 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(rail_ble_rf_hal.o)
-                0x00046640                ble_LR_DSA_500kb_timing
+                0x00046630        0x8 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(rail_ble_rf_hal.o)
+                0x00046630                ble_LR_DSA_500kb_timing
  .rodata.ble_viterbi1M_timing
-                0x00046648        0x8 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(rail_ble_rf_hal.o)
-                0x00046648                ble_viterbi1M_timing
+                0x00046638        0x8 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(rail_ble_rf_hal.o)
+                0x00046638                ble_viterbi1M_timing
  .rodata.ble_viterbi2M_timing
-                0x00046650        0x8 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(rail_ble_rf_hal.o)
-                0x00046650                ble_viterbi2M_timing
+                0x00046640        0x8 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(rail_ble_rf_hal.o)
+                0x00046640                ble_viterbi2M_timing
  .rodata.CSWTCH.206
-                0x00046658        0xc C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(rail_rf_hal.o)
+                0x00046648        0xc C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(rail_rf_hal.o)
  .rodata.rfhalTimerCb
-                0x00046664       0x28 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(rail_singleprotocol.o)
+                0x00046654       0x28 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(rail_singleprotocol.o)
  .rodata.paCtunes
-                0x0004668c        0xa C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(rfhal_pa.o)
+                0x0004667c        0xa C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(rfhal_pa.o)
  .rodata.regBases
-                0x00046696        0x4 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(rfhal_radio.o)
+                0x00046686        0x4 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(rfhal_radio.o)
  .rodata.divLookup
-                0x0004669a        0x9 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(rfhal_synth.o)
- *fill*         0x000466a3        0x1 
+                0x0004668a        0x9 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(rfhal_synth.o)
+ *fill*         0x00046693        0x1 
  .rodata.ble_1M_modemConfigBase
-                0x000466a4      0x114 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(ble_efr32xg13_configurator_out.o)
-                0x000466a4                RAILINT_0948d0e7b18f5057ec0771a6caca7fa3
+                0x00046694      0x114 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(ble_efr32xg13_configurator_out.o)
+                0x00046694                RAILINT_0948d0e7b18f5057ec0771a6caca7fa3
  .rodata.ble_LR_DSA_125kb_channelConfig
-                0x000467b8       0x14 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(ble_efr32xg13_configurator_out.o)
-                0x000467b8                RAILINT_caf3b6762d71f93ef040bbb1b7539a40
+                0x000467a8       0x14 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(ble_efr32xg13_configurator_out.o)
+                0x000467a8                RAILINT_caf3b6762d71f93ef040bbb1b7539a40
  .rodata.ble_LR_DSA_125kb_channels
-                0x000467cc       0x18 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(ble_efr32xg13_configurator_out.o)
-                0x000467cc                RAILINT_23523f3453ef8e3ac2aaa95547ce9ec8
+                0x000467bc       0x18 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(ble_efr32xg13_configurator_out.o)
+                0x000467bc                RAILINT_23523f3453ef8e3ac2aaa95547ce9ec8
  .rodata.ble_LR_DSA_125kb_modemConfig
-                0x000467e4      0x124 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(ble_efr32xg13_configurator_out.o)
-                0x000467e4                RAILINT_619b69b2ff076847a1040f34db8c106a
+                0x000467d4      0x124 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(ble_efr32xg13_configurator_out.o)
+                0x000467d4                RAILINT_619b69b2ff076847a1040f34db8c106a
  .rodata.ble_LR_DSA_500kb_channelConfig
-                0x00046908       0x14 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(ble_efr32xg13_configurator_out.o)
-                0x00046908                RAILINT_f4a6abaf13951cb3629f3332596b8f2e
+                0x000468f8       0x14 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(ble_efr32xg13_configurator_out.o)
+                0x000468f8                RAILINT_f4a6abaf13951cb3629f3332596b8f2e
  .rodata.ble_LR_DSA_500kb_channels
-                0x0004691c       0x18 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(ble_efr32xg13_configurator_out.o)
-                0x0004691c                RAILINT_818082925041f439537fa38a6767ea53
+                0x0004690c       0x18 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(ble_efr32xg13_configurator_out.o)
+                0x0004690c                RAILINT_818082925041f439537fa38a6767ea53
  .rodata.ble_LR_DSA_500kb_modemConfig
-                0x00046934      0x124 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(ble_efr32xg13_configurator_out.o)
-                0x00046934                RAILINT_c8161dbb3cd21d34cc0e3f1236faff84
+                0x00046924      0x124 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(ble_efr32xg13_configurator_out.o)
+                0x00046924                RAILINT_c8161dbb3cd21d34cc0e3f1236faff84
  .rodata.ble_viterbi1M_0_36_modemConfig
-                0x00046a58      0x124 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(ble_efr32xg13_configurator_out.o)
-                0x00046a58                RAILINT_01fb37dd5f0de1e01ddbb3b6596c7b0f
+                0x00046a48      0x124 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(ble_efr32xg13_configurator_out.o)
+                0x00046a48                RAILINT_01fb37dd5f0de1e01ddbb3b6596c7b0f
  .rodata.ble_viterbi1M_channelConfig
-                0x00046b7c       0x14 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(ble_efr32xg13_configurator_out.o)
-                0x00046b7c                RAILINT_cee9421be9b0da8d57d5b2c7286bb9d0
+                0x00046b6c       0x14 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(ble_efr32xg13_configurator_out.o)
+                0x00046b6c                RAILINT_cee9421be9b0da8d57d5b2c7286bb9d0
  .rodata.ble_viterbi1M_channels
-                0x00046b90       0x60 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(ble_efr32xg13_configurator_out.o)
-                0x00046b90                RAILINT_b898139161a1e2f71633ae065694927a
+                0x00046b80       0x60 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(ble_efr32xg13_configurator_out.o)
+                0x00046b80                RAILINT_b898139161a1e2f71633ae065694927a
  .rodata.ble_viterbi2M_0_34_modemConfig
-                0x00046bf0      0x124 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(ble_efr32xg13_configurator_out.o)
-                0x00046bf0                RAILINT_4cbe2ca438f2a60ee31c9b1f5e2ad7bd
+                0x00046be0      0x124 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(ble_efr32xg13_configurator_out.o)
+                0x00046be0                RAILINT_4cbe2ca438f2a60ee31c9b1f5e2ad7bd
  .rodata.ble_viterbi2M_channelConfig
-                0x00046d14       0x14 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(ble_efr32xg13_configurator_out.o)
-                0x00046d14                RAILINT_79980f40e4f7eaf72d02208e26eb11d3
+                0x00046d04       0x14 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(ble_efr32xg13_configurator_out.o)
+                0x00046d04                RAILINT_79980f40e4f7eaf72d02208e26eb11d3
  .rodata.ble_viterbi2M_channels
-                0x00046d28       0x90 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(ble_efr32xg13_configurator_out.o)
-                0x00046d28                RAILINT_df44ad13d22332494b9d9bbe76c1696b
+                0x00046d18       0x90 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(ble_efr32xg13_configurator_out.o)
+                0x00046d18                RAILINT_df44ad13d22332494b9d9bbe76c1696b
  .rodata.irCalConfig
-                0x00046db8       0x19 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(ble_efr32xg13_configurator_out.o)
- *fill*         0x00046dd1        0x3 
+                0x00046da8       0x19 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(ble_efr32xg13_configurator_out.o)
+ *fill*         0x00046dc1        0x3 
  .rodata.phyInfo_2
-                0x00046dd4       0x28 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(ble_efr32xg13_configurator_out.o)
+                0x00046dc4       0x28 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(ble_efr32xg13_configurator_out.o)
  .rodata.phyInfo_3
-                0x00046dfc       0x28 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(ble_efr32xg13_configurator_out.o)
+                0x00046dec       0x28 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(ble_efr32xg13_configurator_out.o)
  .rodata.phyInfo_4
-                0x00046e24       0x28 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(ble_efr32xg13_configurator_out.o)
+                0x00046e14       0x28 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(ble_efr32xg13_configurator_out.o)
  .rodata.phyInfo_5
-                0x00046e4c       0x28 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(ble_efr32xg13_configurator_out.o)
+                0x00046e3c       0x28 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(ble_efr32xg13_configurator_out.o)
  .rodata.genericSeqProg
-                0x00046e74     0x1588 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(generic_efr32xg13_seq.o)
-                0x00046e74                RAILINT_0cdb976df793f6799e20dfa42e2be4c6
+                0x00046e64     0x1588 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(generic_efr32xg13_seq.o)
+                0x00046e64                RAILINT_0cdb976df793f6799e20dfa42e2be4c6
  .rodata.genericSeqProg_size
-                0x000483fc        0x4 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(generic_efr32xg13_seq.o)
-                0x000483fc                RAILINT_9ddc548f8cc13ce471f7904212de4bec
+                0x000483ec        0x4 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(generic_efr32xg13_seq.o)
+                0x000483ec                RAILINT_9ddc548f8cc13ce471f7904212de4bec
  .rodata.pow.str1.4
-                0x00048400        0x4 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libm.a(lib_a-w_pow.o)
+                0x000483f0        0x4 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libm.a(lib_a-w_pow.o)
  .rodata.__ieee754_pow.str1.4
-                0x00048404        0x4 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libm.a(lib_a-e_pow.o)
+                0x000483f4        0x4 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libm.a(lib_a-e_pow.o)
                                   0x1 (size before relaxing)
- .rodata.TWO52  0x00048408       0x10 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libm.a(lib_a-s_rint.o)
+ .rodata.TWO52  0x000483f8       0x10 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libm.a(lib_a-s_rint.o)
  .rodata.__sf_fake_stderr
-                0x00048418       0x20 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-findfp.o)
-                0x00048418                __sf_fake_stderr
+                0x00048408       0x20 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-findfp.o)
+                0x00048408                __sf_fake_stderr
  .rodata.__sf_fake_stdin
-                0x00048438       0x20 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-findfp.o)
-                0x00048438                __sf_fake_stdin
+                0x00048428       0x20 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-findfp.o)
+                0x00048428                __sf_fake_stdin
  .rodata.__sf_fake_stdout
-                0x00048458       0x20 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-findfp.o)
-                0x00048458                __sf_fake_stdout
+                0x00048448       0x20 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-findfp.o)
+                0x00048448                __sf_fake_stdout
  .rodata._global_impure_ptr
-                0x00048478        0x4 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-impure.o)
-                0x00048478                _global_impure_ptr
+                0x00048468        0x4 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-impure.o)
+                0x00048468                _global_impure_ptr
  .rodata._setlocale_r.str1.1
-                0x0004847c        0x8 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-locale.o)
+                0x0004846c        0x8 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-locale.o)
                                   0x9 (size before relaxing)
  .rodata.str1.1
-                0x00048484        0x2 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-locale.o)
+                0x00048474        0x2 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-locale.o)
  .rodata._ctype_
-                0x00048486      0x101 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-ctype_.o)
-                0x00048486                _ctype_
+                0x00048476      0x101 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-ctype_.o)
+                0x00048476                _ctype_
  .rodata._svfprintf_r.str1.1
-                0x00048587       0x11 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-svfprintf.o)
+                0x00048577       0x11 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-svfprintf.o)
  .rodata._vfprintf_r.str1.1
-                0x00048598       0x11 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-vfprintf.o)
+                0x00048588       0x11 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-vfprintf.o)
  .rodata._printf_i.str1.1
-                0x00048598       0x22 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x00048588       0x22 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libc_nano.a(lib_a-nano-vfprintf_i.o)
  *(.eh_frame*)
- *fill*         0x000485ba        0x2 
- .eh_frame      0x000485bc        0x0 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
- .eh_frame      0x000485bc        0x4 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/softfp/crtend.o
-                0x000485c0                . = ALIGN (0x4)
+ *fill*         0x000485aa        0x2 
+ .eh_frame      0x000485ac        0x0 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
+ .eh_frame      0x000485ac        0x4 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/softfp/crtend.o
+                0x000485b0                . = ALIGN (0x4)
 
-.glue_7         0x000485c0        0x0
- .glue_7        0x000485c0        0x0 linker stubs
+.glue_7         0x000485b0        0x0
+ .glue_7        0x000485b0        0x0 linker stubs
 
-.glue_7t        0x000485c0        0x0
- .glue_7t       0x000485c0        0x0 linker stubs
+.glue_7t        0x000485b0        0x0
+ .glue_7t       0x000485b0        0x0 linker stubs
 
-.vfp11_veneer   0x000485c0        0x0
- .vfp11_veneer  0x000485c0        0x0 linker stubs
+.vfp11_veneer   0x000485b0        0x0
+ .vfp11_veneer  0x000485b0        0x0 linker stubs
 
-.v4_bx          0x000485c0        0x0
- .v4_bx         0x000485c0        0x0 linker stubs
+.v4_bx          0x000485b0        0x0
+ .v4_bx         0x000485b0        0x0 linker stubs
 
-.iplt           0x000485c0        0x0
- .iplt          0x000485c0        0x0 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
+.iplt           0x000485b0        0x0
+ .iplt          0x000485b0        0x0 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
 
-.igot.plt       0x000485c0        0x0
- .igot.plt      0x000485c0        0x0 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
+.igot.plt       0x000485b0        0x0
+ .igot.plt      0x000485b0        0x0 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
 
 .text_application_ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x000485c0                __exidx_start = .
+                0x000485b0                __exidx_start = .
 
 .text_application_ARM.exidx
-                0x000485c0        0x8
+                0x000485b0        0x8
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
- .ARM.exidx     0x000485c0        0x8 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/crt0.o
- .ARM.exidx     0x000485c8        0x0 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/softfp\libgcc.a(_udivmoddi4.o)
+ .ARM.exidx     0x000485b0        0x8 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/crt0.o
+ .ARM.exidx     0x000485b8        0x0 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/softfp\libgcc.a(_udivmoddi4.o)
                                   0x8 (size before relaxing)
-                0x000485c8                __exidx_end = .
-                0x000485c8                __etext = .
+                0x000485b8                __exidx_end = .
+                0x000485b8                __etext = .
 
-.rel.dyn        0x000485c8        0x0
- .rel.iplt      0x000485c8        0x0 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
+.rel.dyn        0x000485b8        0x0
+ .rel.iplt      0x000485b8        0x0 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
 
 .stack_dummy    0x20000000     0x1000
  *(.stack*)
- .stack         0x20000000     0x1000 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans3.ltrans.o
+ .stack         0x20000000     0x1000 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans3.ltrans.o
                 0x20001000                __StackTop = (ORIGIN (RAM) + SIZEOF (.stack_dummy))
                 0x20000000                __StackLimit = ORIGIN (RAM)
                 0x20001000                PROVIDE (__stack, __StackTop)
 
 .text_application_data
-                0x20001000      0x460 load address 0x000485c8
+                0x20001000      0x460 load address 0x000485b8
                 0x20001000                __data_start__ = .
  *(vtable)
  *(.data*)
- .data          0x20001000       0x20 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans0.ltrans.o
+ .data          0x20001000       0x20 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans0.ltrans.o
                 0x2000101c                recv_fn.lto_priv.820
- .data          0x20001020        0x6 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans1.ltrans.o
+ .data          0x20001020        0x6 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans1.ltrans.o
  *fill*         0x20001026        0x2 
- .data          0x20001028      0x120 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans2.ltrans.o
+ .data          0x20001028      0x120 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans2.ltrans.o
                 0x20001140                cancel_fn.lto_priv.720
                 0x20001144                net_send_fn.lto_priv.721
- .data          0x20001148       0x18 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans3.ltrans.o
- .data          0x20001160        0x4 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans4.ltrans.o
+ .data          0x20001148       0x18 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans3.ltrans.o
+ .data          0x20001160        0x4 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans4.ltrans.o
                 0x20001160                mesh_node_get_device_key_fn.lto_priv.674
- .data          0x20001164       0x54 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans6.ltrans.o
+ .data          0x20001164       0x54 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans6.ltrans.o
                 0x20001164                saved_memory_config.lto_priv.471
                 0x20001184                current_db
                 0x20001188                SystemHFXOClock.lto_priv.809
                 0x2000118c                linklayer_priorities.lto_priv.817
                 0x2000119c                bg_gattdb_data_attribute_field_10_data
                 0x200011b4                mesh_node_device_key_count_fn.lto_priv.555
- .data          0x200011b8        0x4 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans8.ltrans.o
+ .data          0x200011b8        0x4 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans8.ltrans.o
                 0x200011b8                mesh_adv_repeat_packets.lto_priv.705
                 0x200011ba                gatt_max_mtu_config
  .data.radioConfigChangedCb
@@ -4432,7 +4433,7 @@ LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/
                 0x2000125c                __global_locale
                 0x200013c8                . = ALIGN (0x4)
  *(.ram)
- .ram           0x200013c8       0x90 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans3.ltrans.o
+ .ram           0x200013c8       0x90 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans3.ltrans.o
                 0x200013c8                MSC_ErasePage
                 0x20001458                . = ALIGN (0x4)
                 0x20001458                PROVIDE (__preinit_array_start, .)
@@ -4459,7 +4460,7 @@ LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/
                 0x20001500                __bss_start__ = .
  *(.bss*)
  .bss           0x20001500       0x1c c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
- .bss           0x2000151c       0xaa C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans0.ltrans.o
+ .bss           0x2000151c       0xaa C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans0.ltrans.o
                 0x2000159c                prov_ddb_list_fn.lto_priv.824
                 0x200015a8                bgbuf_out_of_memory.lto_priv.805
                 0x200015ac                alloc_noflow_cnt.lto_priv.804
@@ -4467,10 +4468,10 @@ LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/
                 0x200015b4                alloc_in_cnt.lto_priv.802
                 0x200015c4                mesh_stack_initialized.lto_priv.818
  *fill*         0x200015c6        0x2 
- .bss           0x200015c8      0x534 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans1.ltrans.o
+ .bss           0x200015c8      0x534 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans1.ltrans.o
                 0x200015dc                gecko_evt_msgs
                 0x20001718                gatt_client_handler.lto_priv.827
- .bss           0x20001afc       0x20 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans2.ltrans.o
+ .bss           0x20001afc       0x20 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans2.ltrans.o
                 0x20001afc                change_fn.lto_priv.677
                 0x20001b00                generic_client_send_fn.lto_priv.680
                 0x20001b04                generic_server_send_fn.lto_priv.675
@@ -4478,8 +4479,8 @@ LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/
                 0x20001b10                status_cb_param.lto_priv.682
                 0x20001b14                set_fn.lto_priv.676
                 0x20001b18                db_allocate.lto_priv.707
- .bss           0x20001b1c      0x2c4 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans3.ltrans.o
- .bss           0x20001de0       0xe0 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans4.ltrans.o
+ .bss           0x20001b1c      0x2c4 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans3.ltrans.o
+ .bss           0x20001de0       0xe0 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans4.ltrans.o
                 0x20001de0                friend_state.lto_priv.593
                 0x20001e1c                lighting_server_change_fn.lto_priv.679
                 0x20001e20                bg_message_current_run.lto_priv.806
@@ -4488,7 +4489,7 @@ LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/
                 0x20001eb4                lighting_server_set_fn.lto_priv.678
                 0x20001eb8                clear_timers.lto_priv.594
                 0x20001ebc                timers.lto_priv.595
- .bss           0x20001ec0      0x2cc C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans5.ltrans.o
+ .bss           0x20001ec0      0x2cc C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans5.ltrans.o
                 0x20001ec8                lighting_client_status_sb.lto_priv.684
                 0x20001ecc                lighting_client_status_sb_param.lto_priv.685
                 0x20001ed0                appkey_blacklist.lto_priv.706
@@ -4500,7 +4501,7 @@ LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/
                 0x20001f58                snd_queue.lto_priv.651
                 0x20002188                mesh_node_key_refresh_periodic_task_fn.lto_priv.719
  *fill*         0x2000218c       0x74 
- .bss           0x20002200     0x5999 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans6.ltrans.o
+ .bss           0x20002200     0x5999 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans6.ltrans.o
                 0x2000224c                _sConfig
                 0x200022ac                gecko_cmd_msg_buf
                 0x200022b0                gecko_rsp_msg_buf
@@ -4565,7 +4566,7 @@ LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/
                 0x20002da5                bg_gattdb_data_attribute_field_2_data
                 0x20002da9                bluetooth_stack_heap
  *fill*         0x20007b99        0x3 
- .bss           0x20007b9c       0x7d C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans7.ltrans.o
+ .bss           0x20007b9c       0x7d C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans7.ltrans.o
                 0x20007b9c                mesh_generic_server_report_changes_fn.lto_priv.737
                 0x20007ba0                mesh_ddb_dump_state
                 0x20007ba4                deferred_event_sender
@@ -4573,7 +4574,7 @@ LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/
                 0x20007be0                cached_size.lto_priv.714
                 0x20007c18                initialized.lto_priv.712
  *fill*         0x20007c19        0x7 
- .bss           0x20007c20      0x1ac C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans8.ltrans.o
+ .bss           0x20007c20      0x1ac C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans8.ltrans.o
                 0x20007c28                id.lto_priv.718
                 0x20007c3c                mesh_adv_cb.lto_priv.819
                 0x20007c40                mesh_interval_min.lto_priv.703
@@ -4744,13 +4745,13 @@ LOAD c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/
                 0x20008198                end = __end__
                 0x20008198                _end = __end__
  *(.heap*)
- .heap          0x20008198     0x1200 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans3.ltrans.o
+ .heap          0x20008198     0x1200 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans3.ltrans.o
                 0x20009398                __HeapLimit = .
 
-.nvm_dummy      0x000485c8     0x1000
+.nvm_dummy      0x000485b8     0x1000
  *(.simee)
- .simee         0x000485c8     0x1000 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans3.ltrans.o
-                0x000485c8                nvm3Storage
+ .simee         0x000485b8     0x1000 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans3.ltrans.o
+                0x000485b8                nvm3Storage
                 0x0007f000                __nvm3Base = (0x80000 - SIZEOF (.nvm_dummy))
 OUTPUT(soc-btmesh-prov_new.axf elf32-littlearm)
 
@@ -4763,23 +4764,23 @@ OUTPUT(soc-btmesh-prov_new.axf elf32-littlearm)
  .ARM.attributes
                 0x00000054       0x20 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/crt0.o
  .ARM.attributes
-                0x00000074       0x35 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans0.ltrans.o
+                0x00000074       0x35 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans0.ltrans.o
  .ARM.attributes
-                0x000000a9       0x35 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans1.ltrans.o
+                0x000000a9       0x35 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans1.ltrans.o
  .ARM.attributes
-                0x000000de       0x35 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans2.ltrans.o
+                0x000000de       0x35 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans2.ltrans.o
  .ARM.attributes
-                0x00000113       0x35 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans3.ltrans.o
+                0x00000113       0x35 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans3.ltrans.o
  .ARM.attributes
-                0x00000148       0x35 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans4.ltrans.o
+                0x00000148       0x35 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans4.ltrans.o
  .ARM.attributes
-                0x0000017d       0x35 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans5.ltrans.o
+                0x0000017d       0x35 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans5.ltrans.o
  .ARM.attributes
-                0x000001b2       0x35 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans6.ltrans.o
+                0x000001b2       0x35 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans6.ltrans.o
  .ARM.attributes
-                0x000001e7       0x35 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans7.ltrans.o
+                0x000001e7       0x35 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans7.ltrans.o
  .ARM.attributes
-                0x0000021c       0x35 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans8.ltrans.o
+                0x0000021c       0x35 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans8.ltrans.o
  .ARM.attributes
                 0x00000251       0x1c C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\binapploader.o
  .ARM.attributes
@@ -4992,15 +4993,15 @@ OUTPUT(soc-btmesh-prov_new.axf elf32-littlearm)
                 0x00001685       0x22 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/fpv4-sp/softfp/crtn.o
 
 .comment        0x00000000       0x7e
- .comment       0x00000000       0x7f C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans0.ltrans.o
- .comment       0x00000000       0x7f C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans1.ltrans.o
- .comment       0x00000000       0x7f C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans2.ltrans.o
- .comment       0x00000000       0x7f C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans3.ltrans.o
- .comment       0x00000000       0x7f C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans4.ltrans.o
- .comment       0x00000000       0x7f C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans5.ltrans.o
- .comment       0x00000000       0x7f C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans6.ltrans.o
- .comment       0x00000000       0x7f C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans7.ltrans.o
- .comment       0x00000000       0x7f C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans8.ltrans.o
+ .comment       0x00000000       0x7f C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans0.ltrans.o
+ .comment       0x00000000       0x7f C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans1.ltrans.o
+ .comment       0x00000000       0x7f C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans2.ltrans.o
+ .comment       0x00000000       0x7f C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans3.ltrans.o
+ .comment       0x00000000       0x7f C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans4.ltrans.o
+ .comment       0x00000000       0x7f C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans5.ltrans.o
+ .comment       0x00000000       0x7f C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans6.ltrans.o
+ .comment       0x00000000       0x7f C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans7.ltrans.o
+ .comment       0x00000000       0x7f C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans8.ltrans.o
  .comment       0x00000000       0x7e C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(pa_conversions_efr32.o)
                                  0x7f (size before relaxing)
  .comment       0x0000007e       0x7f C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(pa_curves_efr32.o)
@@ -5036,111 +5037,111 @@ OUTPUT(soc-btmesh-prov_new.axf elf32-littlearm)
  .comment       0x0000007e       0x7f C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(rail_ieee802154_rf_hal.o)
  .comment       0x0000007e       0x7f C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\lib\EFR32XG13X\GCC\libbluetooth_mesh.a(generic_efr32xg13_seq.o)
 
-.debug_info     0x00000000   0x183e25
- .debug_info    0x00000000    0x2e9b7 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans0.ltrans.o
- .debug_info    0x0002e9b7    0x2abbf C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans1.ltrans.o
- .debug_info    0x00059576    0x2cac1 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans2.ltrans.o
- .debug_info    0x00086037    0x3e7df C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans3.ltrans.o
- .debug_info    0x000c4816    0x26bf6 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans4.ltrans.o
- .debug_info    0x000eb40c    0x22cb8 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans5.ltrans.o
- .debug_info    0x0010e0c4    0x2c18b C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans6.ltrans.o
- .debug_info    0x0013a24f    0x21512 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans7.ltrans.o
- .debug_info    0x0015b761    0x286c4 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans8.ltrans.o
+.debug_info     0x00000000   0x183e26
+ .debug_info    0x00000000    0x2e9b7 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans0.ltrans.o
+ .debug_info    0x0002e9b7    0x2abbf C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans1.ltrans.o
+ .debug_info    0x00059576    0x2cac1 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans2.ltrans.o
+ .debug_info    0x00086037    0x3e7e0 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans3.ltrans.o
+ .debug_info    0x000c4817    0x26bf6 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans4.ltrans.o
+ .debug_info    0x000eb40d    0x22cb8 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans5.ltrans.o
+ .debug_info    0x0010e0c5    0x2c18b C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans6.ltrans.o
+ .debug_info    0x0013a250    0x21512 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans7.ltrans.o
+ .debug_info    0x0015b762    0x286c4 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans8.ltrans.o
 
 .debug_abbrev   0x00000000     0x6538
- .debug_abbrev  0x00000000      0xb08 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans0.ltrans.o
- .debug_abbrev  0x00000b08      0xc77 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans1.ltrans.o
- .debug_abbrev  0x0000177f      0xaf2 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans2.ltrans.o
- .debug_abbrev  0x00002271      0xbd3 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans3.ltrans.o
- .debug_abbrev  0x00002e44      0xc00 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans4.ltrans.o
- .debug_abbrev  0x00003a44      0xb14 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans5.ltrans.o
- .debug_abbrev  0x00004558      0xa7c C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans6.ltrans.o
- .debug_abbrev  0x00004fd4      0x92e C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans7.ltrans.o
- .debug_abbrev  0x00005902      0xc36 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans8.ltrans.o
+ .debug_abbrev  0x00000000      0xb08 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans0.ltrans.o
+ .debug_abbrev  0x00000b08      0xc77 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans1.ltrans.o
+ .debug_abbrev  0x0000177f      0xaf2 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans2.ltrans.o
+ .debug_abbrev  0x00002271      0xbd3 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans3.ltrans.o
+ .debug_abbrev  0x00002e44      0xc00 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans4.ltrans.o
+ .debug_abbrev  0x00003a44      0xb14 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans5.ltrans.o
+ .debug_abbrev  0x00004558      0xa7c C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans6.ltrans.o
+ .debug_abbrev  0x00004fd4      0x92e C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans7.ltrans.o
+ .debug_abbrev  0x00005902      0xc36 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans8.ltrans.o
 
 .debug_loc      0x00000000    0x79c93
- .debug_loc     0x00000000     0xc2e3 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans0.ltrans.o
- .debug_loc     0x0000c2e3     0xe4ea C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans1.ltrans.o
- .debug_loc     0x0001a7cd    0x132c7 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans2.ltrans.o
- .debug_loc     0x0002da94     0xb103 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans3.ltrans.o
- .debug_loc     0x00038b97     0xfb8f C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans4.ltrans.o
- .debug_loc     0x00048726     0xc70c C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans5.ltrans.o
- .debug_loc     0x00054e32     0xc1c8 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans6.ltrans.o
- .debug_loc     0x00060ffa     0xb7dd C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans7.ltrans.o
- .debug_loc     0x0006c7d7     0xd4bc C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans8.ltrans.o
+ .debug_loc     0x00000000     0xc2e3 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans0.ltrans.o
+ .debug_loc     0x0000c2e3     0xe4ea C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans1.ltrans.o
+ .debug_loc     0x0001a7cd    0x132c7 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans2.ltrans.o
+ .debug_loc     0x0002da94     0xb103 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans3.ltrans.o
+ .debug_loc     0x00038b97     0xfb8f C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans4.ltrans.o
+ .debug_loc     0x00048726     0xc70c C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans5.ltrans.o
+ .debug_loc     0x00054e32     0xc1c8 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans6.ltrans.o
+ .debug_loc     0x00060ffa     0xb7dd C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans7.ltrans.o
+ .debug_loc     0x0006c7d7     0xd4bc C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans8.ltrans.o
 
 .debug_aranges  0x00000000      0x158
  .debug_aranges
-                0x00000000       0x20 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans0.ltrans.o
+                0x00000000       0x20 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans0.ltrans.o
  .debug_aranges
-                0x00000020       0x20 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans1.ltrans.o
+                0x00000020       0x20 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans1.ltrans.o
  .debug_aranges
-                0x00000040       0x30 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans2.ltrans.o
+                0x00000040       0x30 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans2.ltrans.o
  .debug_aranges
-                0x00000070       0x30 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans3.ltrans.o
+                0x00000070       0x30 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans3.ltrans.o
  .debug_aranges
-                0x000000a0       0x30 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans4.ltrans.o
+                0x000000a0       0x30 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans4.ltrans.o
  .debug_aranges
-                0x000000d0       0x20 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans5.ltrans.o
+                0x000000d0       0x20 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans5.ltrans.o
  .debug_aranges
-                0x000000f0       0x20 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans6.ltrans.o
+                0x000000f0       0x20 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans6.ltrans.o
  .debug_aranges
-                0x00000110       0x28 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans7.ltrans.o
+                0x00000110       0x28 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans7.ltrans.o
  .debug_aranges
-                0x00000138       0x20 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans8.ltrans.o
+                0x00000138       0x20 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans8.ltrans.o
 
 .debug_ranges   0x00000000     0xe720
- .debug_ranges  0x00000000     0x2a20 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans0.ltrans.o
- .debug_ranges  0x00002a20     0x1cf8 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans1.ltrans.o
- .debug_ranges  0x00004718     0x1040 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans2.ltrans.o
- .debug_ranges  0x00005758     0x20d8 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans3.ltrans.o
- .debug_ranges  0x00007830     0x1670 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans4.ltrans.o
- .debug_ranges  0x00008ea0     0x1740 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans5.ltrans.o
- .debug_ranges  0x0000a5e0     0x15c8 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans6.ltrans.o
- .debug_ranges  0x0000bba8     0x1a60 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans7.ltrans.o
- .debug_ranges  0x0000d608     0x1118 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans8.ltrans.o
+ .debug_ranges  0x00000000     0x2a20 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans0.ltrans.o
+ .debug_ranges  0x00002a20     0x1cf8 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans1.ltrans.o
+ .debug_ranges  0x00004718     0x1040 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans2.ltrans.o
+ .debug_ranges  0x00005758     0x20d8 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans3.ltrans.o
+ .debug_ranges  0x00007830     0x1670 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans4.ltrans.o
+ .debug_ranges  0x00008ea0     0x1740 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans5.ltrans.o
+ .debug_ranges  0x0000a5e0     0x15c8 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans6.ltrans.o
+ .debug_ranges  0x0000bba8     0x1a60 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans7.ltrans.o
+ .debug_ranges  0x0000d608     0x1118 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans8.ltrans.o
 
-.debug_line     0x00000000    0x1e4e6
- .debug_line    0x00000000     0x409c C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans0.ltrans.o
- .debug_line    0x0000409c     0x3adf C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans1.ltrans.o
- .debug_line    0x00007b7b     0x2a3f C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans2.ltrans.o
- .debug_line    0x0000a5ba     0x41dc C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans3.ltrans.o
- .debug_line    0x0000e796     0x32b4 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans4.ltrans.o
- .debug_line    0x00011a4a     0x2ac4 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans5.ltrans.o
- .debug_line    0x0001450e     0x402a C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans6.ltrans.o
- .debug_line    0x00018538     0x2822 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans7.ltrans.o
- .debug_line    0x0001ad5a     0x378c C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans8.ltrans.o
+.debug_line     0x00000000    0x1e4e2
+ .debug_line    0x00000000     0x409c C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans0.ltrans.o
+ .debug_line    0x0000409c     0x3adf C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans1.ltrans.o
+ .debug_line    0x00007b7b     0x2a3f C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans2.ltrans.o
+ .debug_line    0x0000a5ba     0x41d8 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans3.ltrans.o
+ .debug_line    0x0000e792     0x32b4 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans4.ltrans.o
+ .debug_line    0x00011a46     0x2ac4 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans5.ltrans.o
+ .debug_line    0x0001450a     0x402a C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans6.ltrans.o
+ .debug_line    0x00018534     0x2822 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans7.ltrans.o
+ .debug_line    0x0001ad56     0x378c C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans8.ltrans.o
 
 .debug_str      0x00000000    0x4f05a
- .debug_str     0x00000000    0x20c86 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans0.ltrans.o
+ .debug_str     0x00000000    0x20c86 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans0.ltrans.o
                               0x221f5 (size before relaxing)
- .debug_str     0x00020c86     0x6718 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans1.ltrans.o
+ .debug_str     0x00020c86     0x6718 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans1.ltrans.o
                               0x20f40 (size before relaxing)
- .debug_str     0x0002739e     0x8864 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans2.ltrans.o
+ .debug_str     0x0002739e     0x8864 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans2.ltrans.o
                               0x1edbd (size before relaxing)
- .debug_str     0x0002fc02     0x7286 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans3.ltrans.o
+ .debug_str     0x0002fc02     0x7286 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans3.ltrans.o
                               0x1fcc1 (size before relaxing)
- .debug_str     0x00036e88     0x50af C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans4.ltrans.o
+ .debug_str     0x00036e88     0x50af C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans4.ltrans.o
                               0x1f57b (size before relaxing)
- .debug_str     0x0003bf37     0x5e85 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans5.ltrans.o
+ .debug_str     0x0003bf37     0x5e85 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans5.ltrans.o
                               0x1ea17 (size before relaxing)
- .debug_str     0x00041dbc     0x4e12 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans6.ltrans.o
+ .debug_str     0x00041dbc     0x4e12 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans6.ltrans.o
                               0x233c8 (size before relaxing)
- .debug_str     0x00046bce     0x4894 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans7.ltrans.o
+ .debug_str     0x00046bce     0x4894 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans7.ltrans.o
                               0x1d163 (size before relaxing)
- .debug_str     0x0004b462     0x3bf8 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans8.ltrans.o
+ .debug_str     0x0004b462     0x3bf8 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans8.ltrans.o
                               0x1df89 (size before relaxing)
 
 .debug_frame    0x00000000     0xa6b8
- .debug_frame   0x00000000      0x85c C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans0.ltrans.o
- .debug_frame   0x0000085c     0x1574 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans1.ltrans.o
- .debug_frame   0x00001dd0     0x1da8 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans2.ltrans.o
- .debug_frame   0x00003b78      0x904 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans3.ltrans.o
- .debug_frame   0x0000447c     0x16e4 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans4.ltrans.o
- .debug_frame   0x00005b60     0x1180 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans5.ltrans.o
- .debug_frame   0x00006ce0      0xca0 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans6.ltrans.o
- .debug_frame   0x00007980      0x88c C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans7.ltrans.o
- .debug_frame   0x0000820c     0x1480 C:\Users\shzheng\AppData\Local\Temp\cc9Dgzd8.ltrans8.ltrans.o
+ .debug_frame   0x00000000      0x85c C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans0.ltrans.o
+ .debug_frame   0x0000085c     0x1574 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans1.ltrans.o
+ .debug_frame   0x00001dd0     0x1da8 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans2.ltrans.o
+ .debug_frame   0x00003b78      0x904 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans3.ltrans.o
+ .debug_frame   0x0000447c     0x16e4 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans4.ltrans.o
+ .debug_frame   0x00005b60     0x1180 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans5.ltrans.o
+ .debug_frame   0x00006ce0      0xca0 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans6.ltrans.o
+ .debug_frame   0x00007980      0x88c C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans7.ltrans.o
+ .debug_frame   0x0000820c     0x1480 C:\Users\shzheng\AppData\Local\Temp\cchNy5AL.ltrans8.ltrans.o
  .debug_frame   0x0000968c       0x30 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libm.a(lib_a-s_ceil.o)
  .debug_frame   0x000096bc       0x20 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libm.a(lib_a-s_fabs.o)
  .debug_frame   0x000096dc       0x30 c:/siliconlabs/simplicitystudio/v4/developer/toolchains/gnu_arm/7.2_2017q4/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libm.a(lib_a-s_floor.o)

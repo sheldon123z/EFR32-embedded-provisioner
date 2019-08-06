@@ -71,6 +71,7 @@ app.o: ../app.c \
  C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\bt_mesh\inc\common/bg_gattdb_def.h \
  C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\bt_mesh\inc/mesh_generic_model_capi_types.h \
  C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\bt_mesh\inc/mesh_lib.h \
+ C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\bt_mesh\inc/mesh_lighting_model_capi_types.h \
  ../display_interface.h ../ble-configuration.h ../lcd_driver.h \
  ../hal-config.h ../led_driver.h ../app.h ../cJSON.h \
  C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\platform\emlib\inc/em_usart.h
@@ -218,6 +219,8 @@ C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\blue
 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\bt_mesh\inc/mesh_generic_model_capi_types.h:
 
 C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\bt_mesh\inc/mesh_lib.h:
+
+C:\Users\shzheng\SimplicityStudio\v4_workspace\soc-btmesh-prov_new\protocol\bluetooth\bt_mesh\inc/mesh_lighting_model_capi_types.h:
 
 ../display_interface.h:
 
