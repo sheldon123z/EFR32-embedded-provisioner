@@ -83,6 +83,8 @@
 #define TIMER_ID_SYS_FACTORY_RESET  1
 #define TIMER_ID_SYS_RESTART        2
 #define TIMER_ID_SYS_BUTTON_POLL    3
+#define TIMER_ID_SEND_LIGHT_PACKET  4
+#define TIMER_ID_SEND_SWITCH_PACKET	5
 
 #define ONOFF_TIMER_ID_RETRANS 4
 
@@ -98,9 +100,9 @@ static uint8 conn_handle = 0xFF;
 //static uint8 init_done = 0;
 
 /// lightness level percentage
-static uint8 lightness_percent = 0;
+//static uint8 lightness_percent = 0;
 /// lightness level converted from percentage to actual value, range 0..65535
-static uint16 lightness_level = 0;
+//static uint16 lightness_level = 0;
 
 /** global variables */
 
@@ -124,7 +126,8 @@ enum {
 
 enum {
 	ADD_DEVICE = 0,
-	UPDATE =1
+	UPDATE =1,
+	UPDATE_DESIRED_AND_REPORTED
 }operation;
 
 enum {
@@ -238,6 +241,12 @@ typedef struct
 
 // config data to be sent to last provisioned node:
 tsConfig _sConfig;
+enum {
+	BUTTON_ADDRESS,
+	LIGHT_ADDRESS
+}address;
+
+
 
 #define LIGHT_CTRL_GRP_ADDR     0xC001
 #define LIGHT_STATUS_GRP_ADDR   0xC002
@@ -282,6 +291,8 @@ tsErrCode _sErrCodes[] = {
 
 const char err_unknown[] = "<?>";
 
+
+
 #include "cJSON.h"
 
 /* Include files for usart*/
@@ -295,12 +306,20 @@ const char err_unknown[] = "<?>";
 #define EXTERNAL_SIGNAL_SWITCH_ON	0x03
 #define EXTERNAL_SIGNAL_SWITCH_OFF	0x04
 #define EXTERNAL_SIGNAL_LIGHTNESS	0x05
+
 /*variable for usart*/
 #define BUFFER_SIZE 100
+#define PACKET_SIZE 100
 uint32_t rx_data_ready = 0;
 char rx_buffer[BUFFER_SIZE];
 char tx_buffer[BUFFER_SIZE];
 uint8_t Light_state =INITIAL_COMMAND;
+
+static char PACKET_BUFFER[PACKET_SIZE];
+
+
+//the light on off
+
 //static uint16 _elem_index = 0xffff;
 /***************************************************************************//**
  * Button initialization. Configure pushbuttons PB0, PB1 as inputs.
@@ -366,33 +385,38 @@ void USART1_TX_IRQHandler(void)
 	}
 
 }
-
 //the length of the packet is 36, the length of values shouldn't be greater than segment length
 //using 'x' to make up each blank position in each block
 //maximum length for attribute value is 4('x' as the end mark take 1 byte )
 
-void sendPacket (char *packet)
+
+void sendPacket (char *receivedPacket)
 {
 	uint32_t i;
 
-	for (i = 0; i < strlen(packet); i++)
+	for (i = 0; i < strlen(receivedPacket); i++)
 	{
-		USART_Tx(USART1, packet[i]);
+		USART_Tx(USART1, receivedPacket[i]);
 	}
-	printf("packet:%s has been sent\n", packet);
+	printf("packet:%s has been sent\n", receivedPacket);
 	return;
 }
 
 
 #define ON_OFF_COMMAND_PACKET "%d%.*s%.*s%.*s"
 #define ADJUST_VALUE_COMMAND_PACKET "%d%.*s%.*s%d"
-#define PACKET_LENGTH 100
 
-static char* createControlCommandPacket(int deviceType,const char* deviceName,
-								  int attributeType,const char* attributeName,const char* attributeValue)
+
+
+//add device command format
+//----1----|----10----|----20----|----10-----|
+//operation|deviceName|attribute |attriValue|
+
+
+static void createControlCommandPacket(int deviceType,const char* deviceName,int attributeType,const char* attributeName,const char* attributeValue)
 {
 
-	static char packet[PACKET_LENGTH];
+
 	//blocks in the packet, it differs to the data input because we have to add end mart 'x'
 	char device[deviceNameLength]={'\0'};
 	char attribute[attributeNameLength]={'\0'};
@@ -418,10 +442,11 @@ static char* createControlCommandPacket(int deviceType,const char* deviceName,
 
 	}
 //	printf("attributeValue is :%s\n", attriValue);
-	//constructing the packet
+	//constructing the packet, the packet is printed into the buffer packet
+
 	if(deviceType == Lights && attributeType == ON_OFF)
 	{
-		sprintf(packet,
+		sprintf(PACKET_BUFFER,
 				ON_OFF_COMMAND_PACKET,
 				UPDATE,//1
 				deviceNameLength,
@@ -430,11 +455,13 @@ static char* createControlCommandPacket(int deviceType,const char* deviceName,
 				(const char*)attribute,//20
 				attributeValueLength,
 				(const char*)attriValue);//5
-		printf("generated packet is:%s\n",packet);
+		printf("generated packet is:%s\n",PACKET_BUFFER);
+		//use timer to send the packet
+		gecko_cmd_hardware_set_soft_timer(32768/3,TIMER_ID_SEND_LIGHT_PACKET,1);
 	}
 	if(deviceType == Lights && attributeType == LOCK_UNLOCK)
 	{
-		sprintf(packet,
+		sprintf(PACKET_BUFFER,
 				ON_OFF_COMMAND_PACKET,
 				UPDATE,//1
 				deviceNameLength,
@@ -448,7 +475,7 @@ static char* createControlCommandPacket(int deviceType,const char* deviceName,
 	 * to generate packet*/
 	if(deviceType == Lights && attributeType == TEMPERATURE)
 	{
-		sprintf(packet,
+		sprintf(PACKET_BUFFER,
 				ADJUST_VALUE_COMMAND_PACKET,
 				UPDATE,//1
 				deviceNameLength,
@@ -458,54 +485,60 @@ static char* createControlCommandPacket(int deviceType,const char* deviceName,
 				attributeValueLength,
 				atoi((const char*)attributeValue));
 	}
+	if(deviceType == Switch && attributeType == ON_OFF)
+		{
+			sprintf(PACKET_BUFFER,
+					ON_OFF_COMMAND_PACKET,
+					UPDATE_DESIRED_AND_REPORTED,//1
+					deviceNameLength,
+					(const char*)device, //10 words
+					attributeNameLength,
+					(const char*)attribute,//20
+					attributeValueLength,
+					(const char*)attriValue);//5
+			printf("generated packet is:%s\n",PACKET_BUFFER);
+			//use timer to send the packet
+			gecko_cmd_hardware_set_soft_timer(32768/3,TIMER_ID_SEND_SWITCH_PACKET,1);
+		}
+
 	//add other control command generating codes
-	packet[PACKET_LENGTH]='\0';
-	return packet;
+	//set the last bit as '\0'
+	PACKET_BUFFER[PACKET_SIZE]='\0';
+
+
+	return;
 
 }
+
+void sendLightSignal(const char* command)
+{
+	createControlCommandPacket(Lights ,"Lights",ON_OFF,"ON_OFF",command);
+}
+
+void sendButtonSignal(const char* command)
+{
+    createControlCommandPacket(Switch ,"Lights",ON_OFF,"ON_OFF",command);
+}
+
+void prepareToSendPacket(int address, const char* command)
+{
+	switch (address)
+	{
+	case LIGHT_ADDRESS:
+		sendLightSignal(command);
+		break;
+	case BUTTON_ADDRESS:
+		sendButtonSignal(command);
+		break;
+	default:
+		printf("nothing to send");
+		break;
+	}
+}
+
 
 #define ADD_DEVICE_COMMAND_PACKET "%d%.*s%.*s%.*s" //length should be 1|10|15
-//add device command format
-//----1----|----10----|----20----|----10-----|
-//operation|deviceName|attribute |attriValue|
 
-static char* createUpdateCommandPacket(const char* deviceName, const char* attributeName, const char* defaultAttributeValue)
-{
-	static char packet[PACKET_LENGTH]={'\0'};
-	char device[deviceNameLength]={'\0'};
-	char attribute[attributeNameLength]={'\0'};
-	char defaultValue[attributeValueLength] ={'\0'};
-
-
-	strcpy(device,deviceName);
-	for(int i = strlen(deviceName); i<deviceNameLength;i++)
-	{
-		device[i]='x';
-	}
-	strcpy(attribute,attributeName);
-	for(int i = strlen(attributeName); i<attributeNameLength; i++)
-	{
-		attribute[i]='x';
-	}
-	strcpy(defaultValue,defaultAttributeValue);
-	for(int i = strlen(defaultAttributeValue); i<attributeValueLength;i++)
-	{
-		defaultValue[i]='x';
-	}
-
-	sprintf(packet,
-			ADD_DEVICE_COMMAND_PACKET,
-			ADD_DEVICE,
-			deviceNameLength,
-			device,
-			attributeNameLength,
-			attribute,
-			attributeValueLength,
-			defaultValue);
-
-	return packet;
-
-}
 
 void parse_message(char *message)
 {
@@ -515,6 +548,7 @@ void parse_message(char *message)
 
 	cJSON *json = cJSON_Parse(message);
 	char *out = cJSON_Print(json);
+	printf("json message is :%s\r\n",out);
 
 	if(json->child != NULL)
 	{
@@ -533,6 +567,7 @@ void parse_message(char *message)
 				else if(strcmp(ON_OFF->valuestring, OFF)==0)
 				{
 					Light_state = MESH_GENERIC_ON_OFF_STATE_OFF;
+
 				}
 				else
 				{
@@ -1239,7 +1274,7 @@ void handle_gecko_event(uint32_t evt_id, struct gecko_cmd_packet *evt)
   if (NULL == evt) {
     return;
   }
-
+  static int enableLightSend = 0;
   switch (evt_id) {
     case gecko_evt_system_boot_id:
       // check pushbutton state at startup. If either PB0 or PB1 is held down then do factory reset
@@ -1485,6 +1520,18 @@ void handle_gecko_event(uint32_t evt_id, struct gecko_cmd_packet *evt)
         case TIMER_ID_SYS_RESTART:
           gecko_cmd_system_reset(0);
           break;
+
+        case TIMER_ID_SEND_LIGHT_PACKET:
+        	gecko_cmd_hardware_set_soft_timer(0, TIMER_ID_SEND_LIGHT_PACKET,1);
+        	sendPacket(PACKET_BUFFER);
+        	memset(PACKET_BUFFER,0,PACKET_SIZE*sizeof(char));
+        	break;
+
+        case TIMER_ID_SEND_SWITCH_PACKET:
+        	gecko_cmd_hardware_set_soft_timer(0, TIMER_ID_SEND_SWITCH_PACKET,1);
+        	sendPacket(PACKET_BUFFER);
+        	memset(PACKET_BUFFER,0,PACKET_SIZE*sizeof(char));
+        	break;
 
         default:
           break;
@@ -1863,8 +1910,9 @@ void handle_gecko_event(uint32_t evt_id, struct gecko_cmd_packet *evt)
 	  			  ///write commands handler here
 //		  	  handle_set_brightness_event();
 	  			}
-      }
+
       break;
+      }
 
     case gecko_evt_mesh_prov_initialized_id:
     {
@@ -2013,24 +2061,39 @@ void handle_gecko_event(uint32_t evt_id, struct gecko_cmd_packet *evt)
     case gecko_evt_mesh_generic_server_client_request_id:
     {
       struct gecko_msg_mesh_generic_server_client_request_evt_t *genericRequestEvt = (struct gecko_msg_mesh_generic_server_client_request_evt_t*)&(evt->data);
-      printf("evt gecko_evt_mesh_generic_server_client_request_id: client_addr 0x%04x server_addr 0x%04x\r\n", genericRequestEvt->client_address, genericRequestEvt->server_address);
-	  printf("Received status from Switch:0x%04x\r\n",genericRequestEvt->server_address);
-	  printf("evt gecko_evt_mesh_generic_client_server_status_id, elem_index 0x%04x\r\n, client_adr 0x%04x\r\n, server_adr 0x%04x\r\n, type 0x%02x\r\n, len %d\r\n, data 0x%02x\r\n",
+      printf("\r\n---------------------------------------------------\r\n");
+      printf("evt gecko_evt_mesh_generic_server_client_request_id: client_addr 0x%04x server_addr 0x%04x\r\n"
+    		  , genericRequestEvt->client_address, genericRequestEvt->server_address);
+
+      printf("Received status from Switch:0x%04x\r\n",genericRequestEvt->client_address);
+	  printf("event information:\r\n"
+				  "model_id 0x%04x\r\n "
+				  "elem_index 0x%04x\r\n "
+				  "client_adr 0x%04x\r\n "
+				  "server_adr 0x%04x\r\n "
+				  "type 0x%02x\r\n "
+				  "len %d\r\n "
+				  "data 0x%02x\r\n",
+				genericRequestEvt->model_id,
 				genericRequestEvt->elem_index,
 				genericRequestEvt->client_address,
 				genericRequestEvt->server_address,
 				genericRequestEvt->type,
 				genericRequestEvt->parameters.len,
 				genericRequestEvt->parameters.data[0]);
-//		char *onoff;
-//
-//		if(genericRequestEvt->parameters.data[0] == 0x01)
-//			onoff = "ON";
-//		else
-//			onoff = "OFF";
-//
-//		  char *packet = createControlCommandPacket(Lights ,"Lights",ON_OFF,"ON_OFF",onoff);
-//		  sendPacket(packet);
+
+
+	  	if(genericRequestEvt->model_id == MESH_GENERIC_ON_OFF_SERVER_MODEL_ID)
+	  	{
+	  		enableLightSend = 2;
+	  		printf("enableLightSend flag is %d\r\n",enableLightSend);
+	  		printf("-----------------------------------------------\r\n");
+
+			if(genericRequestEvt->parameters.data[0] == 0x01)
+				prepareToSendPacket(BUTTON_ADDRESS,"ON");
+			else
+				prepareToSendPacket(BUTTON_ADDRESS,"OFF");
+	  	}
 
       break;
     }
@@ -2045,24 +2108,42 @@ void handle_gecko_event(uint32_t evt_id, struct gecko_cmd_packet *evt)
     case gecko_evt_mesh_generic_client_server_status_id:
     {
     	struct gecko_msg_mesh_generic_client_server_status_evt_t *genericClientServerStaEvt = (struct gecko_msg_mesh_generic_client_server_status_evt_t*)&(evt->data);
-
+    	printf("\r\n---------------------------------------------------\r\n");
+    	printf("evt gecko_evt_mesh_generic_client_server_status_id: client_addr 0x%04x server_addr 0x%04x\r\n"
+    	    		  , genericClientServerStaEvt->client_address, genericClientServerStaEvt->server_address);
     	printf("Received status from Lights:0x%04x\r\n",genericClientServerStaEvt->server_address);
-    	printf("evt gecko_evt_mesh_generic_client_server_status_id, elem_index 0x%04x,\r\n client_adr 0x%04x,\r\n server_adr 0x%04x,\r\n type 0x%02x,\r\n len %d,\r\n data 0x%02x\r\n",
+    	printf("event information:\r\n"
+    			"model_id 0x%04x\r\n "
+    			"elem_index 0x%04x\r\n "
+    			"client_adr 0x%04x\r\n "
+    			"server_adr 0x%04x,\r\n "
+    			"type 0x%02x,\r\n len %d"
+    			"\r\n data 0x%02x\r\n",
+				genericClientServerStaEvt->model_id,
     			genericClientServerStaEvt->elem_index,
 				genericClientServerStaEvt->client_address,
 				genericClientServerStaEvt->server_address,
 				genericClientServerStaEvt->type,
 				genericClientServerStaEvt->parameters.len,
 				genericClientServerStaEvt->parameters.data[0]);
-    	char *onoff;
 
-    	if(genericClientServerStaEvt->parameters.data[0] == 0x01)
-    		onoff = "ON";
-    	else
-    		onoff = "OFF";
 
-        char *packet = createControlCommandPacket(Lights ,"Lights",ON_OFF,"ON_OFF",onoff);
-        sendPacket(packet);
+	  	if(genericClientServerStaEvt->model_id == MESH_GENERIC_ON_OFF_CLIENT_MODEL_ID)
+	  	{
+	  		if(enableLightSend > 0 )
+	  		{
+	  			enableLightSend--;
+	  			printf("enableLightSend flag is %d\r\n",enableLightSend);
+	  			printf("-----------------------------------------------\r\n");
+	  		}
+	  		else
+	  		{
+				if(genericClientServerStaEvt->parameters.data[0] == 0x01)
+					prepareToSendPacket(LIGHT_ADDRESS,"ON");
+				else
+					prepareToSendPacket(LIGHT_ADDRESS,"OFF");
+	  		}
+	  	}
         break;
     }
 
@@ -2071,6 +2152,7 @@ void handle_gecko_event(uint32_t evt_id, struct gecko_cmd_packet *evt)
       break;
   }
 }
+
 
 /** @} (end addtogroup app) */
 /** @} (end addtogroup Application) */
