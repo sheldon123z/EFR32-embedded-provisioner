@@ -125,6 +125,11 @@ enum {
 } state;
 
 enum {
+	FAIL=0,
+	SUCCESS=1,
+}status;
+
+enum {
 	ADD_DEVICE = 0,
 	UPDATE =1,
 	UPDATE_DESIRED_AND_REPORTED
@@ -345,13 +350,6 @@ void USART1_RX_IRQHandler(void)
     i = 0;
     printf("buffer is %s\n",rx_buffer);
   }
-  if (rx_buffer[i - 1] == '\r' || rx_buffer[i - 1] == '\n')
-  {
-    rx_data_ready = 1;
-    rx_buffer[i - 1] = '\0'; // Overwrite CR or LF character
-    i = 0;
-    printf("buffer is %s\n",rx_buffer);
-  }
 
   if ( i >= BUFFER_SIZE - 2 )
   {
@@ -540,93 +538,175 @@ void prepareToSendPacket(int address, const char* command)
 #define ADD_DEVICE_COMMAND_PACKET "%d%.*s%.*s%.*s" //length should be 1|10|15
 
 
-void parse_message(char *message)
+int parse_message(char *message)
 {
 	printf("received message is: %s\n",message);
-	const char ON[]="ON";
-	const char OFF[]="OFF";
-
 	cJSON *json = cJSON_Parse(message);
-	char *out = cJSON_Print(json);
-	printf("json message is :%s\r\n",out);
-
-	if(json->child != NULL)
+	char *out = NULL;
+	int status = FAIL;
+	//check if the parse success
+    if (json == NULL)
+    {
+        const char *error_ptr = cJSON_GetErrorPtr();
+        if (error_ptr != NULL)
+        {
+            fprintf(stderr, "Error parse message, the message is not JSON: %s\n", error_ptr);
+        }
+        status = FAIL;
+        goto end;
+    }
+    //show how many devices are modified
+    printf("json has %d devices are modified\r\n",cJSON_GetArraySize(json));
+	//json has child and json's child has child
+	if((json->child!=NULL) && cJSON_IsObject(json->child))
 	{
-		cJSON *Lights = cJSON_GetObjectItem(json,"Lights");
+		out = cJSON_Print(json);
+		if(out!=NULL)
+		{
+			printf("json message is :\r\n%s\r\n",out);
+		}
+		else
+		{
+			printf("json has child number type, which is not supported to print yet\r\n");
+		}
+		/*get attributes of Lights*/
+		cJSON *Lights = cJSON_GetObjectItemCaseSensitive(json,"Lights");
+		if(cJSON_IsObject(Lights) && (Lights->child!= NULL))
+		{
+			//show how many attributes are changed in the Lights
+		    printf("Lights has %d attributes are changed\r\n",cJSON_GetArraySize(Lights));
+			/*getting the attributes from lights*/
+		    if(cJSON_HasObjectItem(Lights,"ON_OFF"))
+		    {
+				cJSON *ON_OFF = cJSON_GetObjectItemCaseSensitive(Lights,"ON_OFF");
 
-		if(Lights->child != NULL)
-			{
-				cJSON *ON_OFF = cJSON_GetObjectItem(Lights,"ON_OFF");
-
-				printf("ON_OFF:%s\r\n",ON_OFF->valuestring);
-
-				if(strcmp(ON_OFF->valuestring, ON)==0)
+				//if this is the deepest layer, it is cJSONstring
+				if(cJSON_IsString(ON_OFF))
 				{
-					Light_state = MESH_GENERIC_ON_OFF_STATE_ON;
-				}
-				else if(strcmp(ON_OFF->valuestring, OFF)==0)
-				{
-					Light_state = MESH_GENERIC_ON_OFF_STATE_OFF;
-
+					printf("ON_OFF:%s\r\n",ON_OFF->valuestring);
+					if(strcmp(ON_OFF->valuestring, "ON")==0)
+					{
+						Light_state = MESH_GENERIC_ON_OFF_STATE_ON;
+						status = SUCCESS;
+					}
+					else if(strcmp(ON_OFF->valuestring, "OFF")==0)
+					{
+						Light_state = MESH_GENERIC_ON_OFF_STATE_OFF;
+						status = SUCCESS;
+					}
+					else
+					{
+						printf("parse error: The command is neither on nor off\n");
+						status = FAIL;
+					}
 				}
 				else
 				{
-					printf("parse error: The command is neither on nor off\n");
+					printf("error get ON_OFF \r\n");
+					printf("ON_OFF type is %d\r\n",ON_OFF->type);
+					status = FAIL;
+					cJSON_Delete(ON_OFF);
+					goto end;
 				}
-//				if(ON_OFF->next!=NULL || ON_OFF->prev!=NULL)
-//				{
-//					cJSON *brightness =ON_OFF->prev;
-//					if(brightness != NULL && (brightness->type==cJSON_Number))
-//					{
-//						lightness_percent = brightness->valueint;
-//						printf("brightness value is :%d\r\n",brightness->valueint);
-//					}
-//					cJSON_Delete(brightness);
-//				}
 				cJSON_Delete(ON_OFF);
+		    }
+		}
+		else
+		{
+			printf("Message doesn't have Lights section \r\n");
+		}
+
+		/*get the switch device*/
+		cJSON *Switch = cJSON_GetObjectItemCaseSensitive(json,"Switch");
+		if(cJSON_IsObject(Switch) && (Switch->child!= NULL))
+		{
+			cJSON *Switch_value = cJSON_GetObjectItemCaseSensitive(Switch,"switch value");
+			if(cJSON_IsString(Switch_value))
+			{
+				printf("Switch value is %s/r/n",Switch_value->valuestring);
 			}
+			else{
+				printf("error get Switch_value \r\n");
+				cJSON_Delete(Switch_value);
+				goto end;
+			}
+			cJSON_Delete(Switch_value);
+		}
+
+
+		cJSON_Delete(Lights);
+		cJSON_Delete(Switch);
+		goto end;
 	}
-	cJSON_Delete(json);
+	else
+	{
+		printf("The json object doesn't have a child\r\n");
+		status = FAIL;
+		goto end;
+	}
+
+	end:
+	    cJSON_Delete(json);
+	    rx_data_ready = 0;
+	    return status ;
 
 }
 
 
 
-void generate_external_signal()
+int generate_external_signal()
 {
-	if(rx_data_ready && (Light_state != INITIAL_COMMAND))
+	int status = FAIL;
+	if(Light_state != INITIAL_COMMAND)
 	{
 		if(Light_state == MESH_GENERIC_ON_OFF_STATE_ON)
 		{
 			//produce an external signal
 			gecko_external_signal(EXTERNAL_SIGNAL_LIGHT_ON);
+			status = SUCCESS;
 
 		}
 		else if(Light_state == MESH_GENERIC_ON_OFF_STATE_OFF )
 		{
 			//produce an external signal
 			gecko_external_signal(EXTERNAL_SIGNAL_LIGHT_OFF);
+			status = SUCCESS;
 		}
 		else
 		{
 			printf("generate external signal error: check Light_state\n");
 			printf("the Light_state is %d\n", Light_state);
 		}
-		//clear buffer
 		memset(rx_buffer,0,BUFFER_SIZE*sizeof(char));
+		rx_data_ready = 0;
 	}
-//	if(rx_data_ready && (lightness_percent != 0))
+	else
+	{
+		printf("The Light_state is not valid value, light state won't change!\r\n");
+		status = FAIL;
+	}
+//	if((lightness_percent != 0))
 //	{
 //		gecko_external_signal(EXTERNAL_SIGNAL_LIGHTNESS);
 //	}
-	rx_data_ready = 0;
+
+	return status;
 }
 void setCallBack()
 {
 	if(rx_data_ready)
 	 {
-		parse_message(rx_buffer);
-		generate_external_signal();
+		int x = parse_message(rx_buffer);
+		if(x==SUCCESS)
+		{
+			x = generate_external_signal();
+			if(x == SUCCESS)
+			{printf("Successfully generated external signal\r\n");}
+		}
+		else
+		{
+			printf("message parse is failed\r\n");
+		}
 	 }
 }
 
@@ -952,7 +1032,7 @@ static void DCD_decode(struct gecko_msg_mesh_config_client_dcd_data_evt_t *pDCD)
   //
   for(i = 10; i < pDCD->data.len;)
   {
-	  //º∆À„elementsµƒ∏ˆ ˝£¨DCD packetµƒ∏Ò Ω «
+	  //ÈîüÊñ§Êã∑ÈîüÊñ§Êã∑elementsÈîü‰æ•Èù©Êã∑ÈîüÊñ§Êã∑ÈîüÊñ§Êã∑DCD packetÈîü‰æ•Èù©Êã∑ÂºèÈîüÊñ§Êã∑
 	  // |cid 2|pid 2|vid 2|cprl 2|feature 2| elements= 2(Loc)+1(NumS)+1(NumV)+2*(NumS)+4*NumS |
 
     i = i + ((4 + pDCD->data.data[i+2]*2 + pDCD->data.data[i+3]*4));
@@ -963,19 +1043,19 @@ static void DCD_decode(struct gecko_msg_mesh_config_client_dcd_data_evt_t *pDCD)
 
   for(i = 0; i<_sDCD.numElement; i++)
   {
-	 //“ª∏ˆ÷∏’Î «16Œª¡Ω∏ˆoctets£¨À˘“‘÷∏’Îº”“ª±„µΩ¡ÀLocµƒŒª÷√ ◊¢“‚£¨*p++œ»»°÷µ‘Ÿ∏¯÷∏’ÎΩ¯––◊‘‘ˆ‘ÀÀ„
-	 //À˘“‘÷∏’Î»°÷µ∫Û÷∏œÚnumS
+	 //‰∏ÄÈîüÊñ§Êã∑ÊåáÈîüÊñ§Êã∑ÈîüÊñ§Êã∑16‰ΩçÈîüÊñ§Êã∑ÈîüÊñ§Êã∑octetsÈîüÊñ§Êã∑ÈîüÊñ§Êã∑ÈîüÊñ§Êã∑ÊåáÈîüÊñ§Êã∑ÈîüÊè≠‰ºôÊã∑ÊÑïÊñ§Êã∑ÈîüÁµÉocÈîüÊñ§Êã∑‰ΩçÈîüÊñ§Êã∑ Ê≥®ÈîüËß£Ôºå*p++ÈîüÊñ§Êã∑ÂèñÂÄºÈîüÂä´Èù©Êã∑ÊåáÈîüÊñ§Êã∑ÈîüÊñ§Êã∑ÈîüÊñ§Êã∑ÈîüÊñ§Êã∑ÈîüÊñ§Êã∑ÈîüÊñ§Êã∑ÈîüÔøΩ
+	 //ÈîüÊñ§Êã∑ÈîüÊñ§Êã∑ÊåáÈîüÊñ§Êã∑ÂèñÂÄºÈîüÊñ§Êã∑ÊåáÈîüÊñ§Êã∑numS
     _sDCD.element[i].loc = *pu16++;
-     //∫Õ0x00FF∞¥Œª”Î‘ÀÀ„µ√µΩnumS ±£¡Ù¡ÀnumS£¨∞—numV÷√¡„ “ÚŒ™numS∫ÕnumV∂º «8Œª
+     //ÈîüÊñ§Êã∑0x00FFÈîüÊñ§Êã∑‰ΩçÈîüÊñ§Êã∑ÈîüÊñ§Êã∑ÈîüÊñ§Êã∑Áé´ÈîüÁµ•umS ÈîüÊñ§Êã∑ÈîüÊñ§Êã∑ÈîüÊñ§Êã∑numSÈîüÊñ§Êã∑ÈîüÊñ§Êã∑numVÈîüÊñ§Êã∑ÈîüÊñ§Êã∑ ÈîüÊñ§Êã∑‰∏∫numSÈîüÊñ§Êã∑numVÈîüÊñ§Êã∑ÈîüÊñ§Êã∑8‰Ωç
     _sDCD.element[i].numS = (uint8)(*pu16 & 0x00FF);
-    // >> ”…”⁄pu16 «16Œªµƒ÷∏’Î£¨∂¯numV «uint8 ˝æ›£¨À˘“‘’‚¿Ô π”√>>”““∆‘ÀÀ„Ω´ ˝÷µœÚ”“≈≤∞ÀŒª£¨“≤æÕ «∞—numS∏¯∏…µÙ÷ª¡Ùœ¬numV
+    // >> ÈîüÊñ§Êã∑ÈîüÊñ§Êã∑pu16ÈîüÊñ§Êã∑16‰ΩçÈîüÊñ§Êã∑ÊåáÈîüËØ´ÔºåÈîüÊñ§Êã∑numVÈîüÊñ§Êã∑uint8ÈîüÊñ§Êã∑ÈîüÊç∑ÔΩèÊã∑ÈîüÊñ§Êã∑ÈîüÊñ§Êã∑ÈîüÊñ§Êã∑ÈîüÊñ§Êã∑‰ΩøÈîüÊñ§Êã∑>>ÈîüÊñ§Êã∑ÈîüÊñ§Êã∑ÈîüÊñ§Êã∑ÈîüÂßêÂ∞ÜÈîüÊñ§Êã∑ÂÄºÈîüÊñ§Êã∑ÈîüÊñ§Êã∑Êå™ÈîüÊñ§Êã∑‰ΩçÈîüÊñ§Êã∑‰πüÈîüÊñ§Êã∑ÈîüËßíÂ∏ÆÊã∑numSÈîüÊñ§Êã∑ÈîüÁº¥Á¢âÊã∑Âè™ÈîüÊñ§Êã∑ÈîüÊñ§Êã∑numV
     _sDCD.element[i].numV = (uint8)((*pu16 & 0xFF00) >> 8);
-    //Ω´÷∏’Î÷∏œÚœ¬“ª∏ˆ16Œª ˝æ›£¨“≤æÕ «SIG Model£¨√ø∏ˆSIG Model∂º «¡Ω∏ˆoctets
+    //ÈîüÊñ§Êã∑ÊåáÈîüÊñ§Êã∑ÊåáÈîüÊñ§Êã∑ÈîüÊñ§Êã∑‰∏ÄÈîüÊñ§Êã∑16‰ΩçÈîüÊñ§Êã∑ÈîüÊç∑ÔΩèÊã∑‰πüÈîüÊñ§Êã∑ÈîüÊñ§Êã∑SIG ModelÈîüÊñ§Êã∑ÊØèÈîüÊñ§Êã∑SIG ModelÈîüÊñ§Êã∑ÈîüÊñ§Êã∑ÈîüÊñ§Êã∑ÈîüÊñ§Êã∑octets
     pu16++;
 
     printf(" ->->-> element %d information ->->-> \r\n",i);
     // grab the SIG models from the DCD data
-    //ªÒ»°√ø“ª∏ˆSIG Model
+    //ÈîüÊñ§Êã∑ÂèñÊØè‰∏ÄÈîüÊñ§Êã∑SIG Model
     for(j=0; j<_sDCD.element[i].numS; j++)
     {
       _sDCD.element[i].SIG_models[j] = *pu16++;
@@ -983,7 +1063,7 @@ static void DCD_decode(struct gecko_msg_mesh_config_client_dcd_data_evt_t *pDCD)
     }
 
     // grab the vendor models from the DCD data
-    //ªÒ»°ÕÍSIG Model∫Û‘ŸªÒ»°Vendor model£¨√ø∏ˆvendor model∂º «4∏ˆoctet≥§
+    //ÈîüÊñ§Êã∑ÂèñÈîüÊñ§Êã∑SIG ModelÈîüÊñ§Êã∑ÈîüÂä´‰ºôÊã∑ÂèñVendor modelÈîüÊñ§Êã∑ÊØèÈîüÊñ§Êã∑vendor modelÈîüÊñ§Êã∑ÈîüÊñ§Êã∑4ÈîüÊñ§Êã∑octetÈîüÊñ§Êã∑
     for(j=0; j<_sDCD.element[i].numV; j++)
     {
       _sDCD.element[i].vendor_models[j].vendor_id = *pu16++;

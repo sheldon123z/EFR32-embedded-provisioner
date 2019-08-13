@@ -54,8 +54,8 @@ void handle_gecko_event(uint32_t evt_id, struct gecko_cmd_packet *evt);
 
 /** @} (end addtogroup app) */
 /** @} (end addtogroup Application) */
-void parse_message(char *message);
-void generate_external_signal();
+int parse_message(char *message);
+int generate_external_signal();
 void call_generate();
 void send_tx_value();
 #ifdef __cplusplus
