@@ -233,17 +233,10 @@ int main(void)
   uart_init();
   // Display Interface initialization
 //  DI_Init();
-//  char welcome_string[] = "Test Usart 1\r\n";
-//
-//  for (uint32_t i = 0 ; welcome_string[i] != '\0'; i++)
-//  {
-//    tx_buffer[i] = welcome_string[i];
-//  }
-//  USART_IntSet(USART1, USART_IFS_TXC);
+
 
   while (1) {
 	setCallBack();
-//	send_tx_value();
     struct gecko_cmd_packet *evt = gecko_wait_event();
     bool pass = mesh_bgapi_listener(evt);
     if (pass) {

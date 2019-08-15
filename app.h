@@ -51,6 +51,7 @@ void gecko_bgapi_classes_init (void);
  * @param[in] evt     Pointer to incoming event.
  ******************************************************************************/
 void handle_gecko_event(uint32_t evt_id, struct gecko_cmd_packet *evt);
+void setCallBack();
 
 /** @} (end addtogroup app) */
 /** @} (end addtogroup Application) */
