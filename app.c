@@ -455,7 +455,7 @@ static void createControlCommandPacket(int deviceType,const char* deviceName,int
 				(const char*)attriValue);//5
 		printf("generated packet is:%s\n",PACKET_BUFFER);
 		//use timer to send the packet
-		gecko_cmd_hardware_set_soft_timer(32768/3,TIMER_ID_SEND_LIGHT_PACKET,1);
+		gecko_cmd_hardware_set_soft_timer(32768/10,TIMER_ID_SEND_LIGHT_PACKET,1);
 	}
 	if(deviceType == Lights && attributeType == LOCK_UNLOCK)
 	{
@@ -496,7 +496,7 @@ static void createControlCommandPacket(int deviceType,const char* deviceName,int
 					(const char*)attriValue);//5
 			printf("generated packet is:%s\n",PACKET_BUFFER);
 			//use timer to send the packet
-			gecko_cmd_hardware_set_soft_timer(32768/3,TIMER_ID_SEND_SWITCH_PACKET,1);
+			gecko_cmd_hardware_set_soft_timer(32768/10,TIMER_ID_SEND_SWITCH_PACKET,1);
 		}
 
 	//add other control command generating codes
@@ -896,41 +896,41 @@ static void config_check()
         printf("add the Generic On/Off Server model to sub/pub/bind list, elementIdx = %d\r\n",elementIdx);
       }
     // Just consider the Generic On/Off model for test
-      else if(_sDCD.element[elementIdx].SIG_models[i] == DIM_SWITCH_MODEL_ID)
-      {
-        config_pub_add(DIM_SWITCH_MODEL_ID, 0xFFFF,elementIdx, LIGHT_CTRL_GRP_ADDR);
-        config_sub_add(DIM_SWITCH_MODEL_ID, 0xFFFF,elementIdx, LIGHT_STATUS_GRP_ADDR);
-        config_bind_add(DIM_SWITCH_MODEL_ID, 0xFFFF,elementIdx, 0, 0);
-        printf("add the Light Lightness Client model to sub/pub/bind list\r\n");
-      }
-      else if(_sDCD.element[elementIdx].SIG_models[i] == DIM_LIGHT_MODEL_ID)
-      {
-        config_pub_add(DIM_LIGHT_MODEL_ID, 0xFFFF,elementIdx, LIGHT_STATUS_GRP_ADDR);
-        config_sub_add(DIM_LIGHT_MODEL_ID, 0xFFFF,elementIdx, LIGHT_CTRL_GRP_ADDR);
-        config_bind_add(DIM_LIGHT_MODEL_ID, 0xFFFF, elementIdx, 0, 0);
-        printf("add the Light Lightness Server model to sub/pub/bind list\r\n");
-      }
-      else if(_sDCD.element[elementIdx].SIG_models[i] == LIGHT_CTL_TEMPERATURE_SERVER)
-      {
-        config_pub_add(LIGHT_CTL_TEMPERATURE_SERVER, 0xFFFF, elementIdx, LIGHT_CTL_STATUS_TEMPERATURE);
-        config_sub_add(LIGHT_CTL_TEMPERATURE_SERVER, 0xFFFF, elementIdx, LIGHT_CTL_CTRL_TEMPERATURE);
-        config_bind_add(LIGHT_CTL_TEMPERATURE_SERVER, 0xFFFF, elementIdx, 0, 0);
-        printf("add the CTL temperature Server model to sub/pub/bind list, elementIdx = %d\r\n", elementIdx);
-      }
-		else if(_sDCD.element[elementIdx].SIG_models[i] == SENSOR_CLIENT_MODEL_ID)
-		{
-			config_pub_add(SENSOR_CLIENT_MODEL_ID, 0xFFFF, elementIdx, SENSOR_GRP_ADDR);
-			config_sub_add(SENSOR_CLIENT_MODEL_ID, 0xFFFF, elementIdx, SENSOR_GRP_ADDR);
-			config_bind_add(SENSOR_CLIENT_MODEL_ID, 0xFFFF, elementIdx, 0, 0);
-			printf("add the sensor client model to sub/pub/bind list, elementIdx = %d\r\n",elementIdx);
-		}
-		else if(_sDCD.element[elementIdx].SIG_models[i] == SENSOR_SERVER_MODEL_ID)
-		{
-			config_pub_add(SENSOR_SERVER_MODEL_ID, 0xFFFF, elementIdx, SENSOR_GRP_ADDR);
-			config_sub_add(SENSOR_SERVER_MODEL_ID, 0xFFFF, elementIdx, SENSOR_GRP_ADDR);
-			config_bind_add(SENSOR_SERVER_MODEL_ID, 0xFFFF, elementIdx, 0, 0);
-			printf("add the sensor server model to sub/pub/bind list, elementIdx = %d\r\n",elementIdx);
-		}
+//      else if(_sDCD.element[elementIdx].SIG_models[i] == DIM_SWITCH_MODEL_ID)
+//      {
+//        config_pub_add(DIM_SWITCH_MODEL_ID, 0xFFFF,elementIdx, LIGHT_CTRL_GRP_ADDR);
+//        config_sub_add(DIM_SWITCH_MODEL_ID, 0xFFFF,elementIdx, LIGHT_STATUS_GRP_ADDR);
+//        config_bind_add(DIM_SWITCH_MODEL_ID, 0xFFFF,elementIdx, 0, 0);
+//        printf("add the Light Lightness Client model to sub/pub/bind list\r\n");
+//      }
+//      else if(_sDCD.element[elementIdx].SIG_models[i] == DIM_LIGHT_MODEL_ID)
+//      {
+//        config_pub_add(DIM_LIGHT_MODEL_ID, 0xFFFF,elementIdx, LIGHT_STATUS_GRP_ADDR);
+//        config_sub_add(DIM_LIGHT_MODEL_ID, 0xFFFF,elementIdx, LIGHT_CTRL_GRP_ADDR);
+//        config_bind_add(DIM_LIGHT_MODEL_ID, 0xFFFF, elementIdx, 0, 0);
+//        printf("add the Light Lightness Server model to sub/pub/bind list\r\n");
+//      }
+//      else if(_sDCD.element[elementIdx].SIG_models[i] == LIGHT_CTL_TEMPERATURE_SERVER)
+//      {
+//        config_pub_add(LIGHT_CTL_TEMPERATURE_SERVER, 0xFFFF, elementIdx, LIGHT_CTL_STATUS_TEMPERATURE);
+//        config_sub_add(LIGHT_CTL_TEMPERATURE_SERVER, 0xFFFF, elementIdx, LIGHT_CTL_CTRL_TEMPERATURE);
+//        config_bind_add(LIGHT_CTL_TEMPERATURE_SERVER, 0xFFFF, elementIdx, 0, 0);
+//        printf("add the CTL temperature Server model to sub/pub/bind list, elementIdx = %d\r\n", elementIdx);
+//      }
+//		else if(_sDCD.element[elementIdx].SIG_models[i] == SENSOR_CLIENT_MODEL_ID)
+//		{
+//			config_pub_add(SENSOR_CLIENT_MODEL_ID, 0xFFFF, elementIdx, SENSOR_GRP_ADDR);
+//			config_sub_add(SENSOR_CLIENT_MODEL_ID, 0xFFFF, elementIdx, SENSOR_GRP_ADDR);
+//			config_bind_add(SENSOR_CLIENT_MODEL_ID, 0xFFFF, elementIdx, 0, 0);
+//			printf("add the sensor client model to sub/pub/bind list, elementIdx = %d\r\n",elementIdx);
+//		}
+//		else if(_sDCD.element[elementIdx].SIG_models[i] == SENSOR_SERVER_MODEL_ID)
+//		{
+//			config_pub_add(SENSOR_SERVER_MODEL_ID, 0xFFFF, elementIdx, SENSOR_GRP_ADDR);
+//			config_sub_add(SENSOR_SERVER_MODEL_ID, 0xFFFF, elementIdx, SENSOR_GRP_ADDR);
+//			config_bind_add(SENSOR_SERVER_MODEL_ID, 0xFFFF, elementIdx, 0, 0);
+//			printf("add the sensor server model to sub/pub/bind list, elementIdx = %d\r\n",elementIdx);
+//		}
 
     }
 
@@ -1208,7 +1208,7 @@ void send_onoff_request(int retrans)
    * of the previous request have delay that increases in 50 ms steps. For example, when using three
    * on/off requests per button press the delays are set as 100, 50, 0 ms
    */
-  resp = gecko_cmd_mesh_generic_client_publish(
+  resp = gecko_cmd_mesh_generic_client_publish( //mesh_lib_generic_client_publish
     MESH_GENERIC_ON_OFF_CLIENT_MODEL_ID,
     0,
     trid,
@@ -1219,6 +1219,16 @@ void send_onoff_request(int retrans)
     1,     // param len
     &req.on_off     /// parameters data
     )->result;
+
+//    resp = mesh_lib_generic_client_publish(
+//    MESH_GENERIC_ON_OFF_CLIENT_MODEL_ID,
+//    0,
+//    trid, //only increased by one even if three requests were sent
+//    &req,
+//    transtime,   // transition time in ms
+//    delay,
+//    0     // flags
+//    );
 
 
 //  gecko_cmd_generic_client_set();
@@ -2010,7 +2020,19 @@ void handle_gecko_event(uint32_t evt_id, struct gecko_cmd_packet *evt)
         printf("network keys already exist\r\n");
         netkey_id = 0;
         appkey_id = 0;
-      } else {
+        struct gecko_msg_mesh_test_get_local_model_pub_rsp_t *pub_setting = gecko_cmd_mesh_test_get_local_model_pub(0, 0xFFFF, MESH_GENERIC_ON_OFF_CLIENT_MODEL_ID);
+        printf("gecko_cmd_mesh_test_get_local_model_pub result: %x\r\n", pub_setting->result);
+        printf("gecko_cmd_mesh_test_get_local_model_pub pub_address: 0x%04x\r\n", pub_setting->pub_address);
+
+        if (!pub_setting->result && (pub_setting->pub_address != 0)) {
+
+           struct gecko_msg_mesh_generic_client_init_rsp_t *genericClientInitRsp = gecko_cmd_mesh_generic_client_init();
+           printf("gecko_cmd_mesh_generic_client_init %x\n\r", genericClientInitRsp->result);
+           printf("Publication Configuration done already.\n");
+         }
+
+      }
+       else {
         printf("Creating a new netkey\r\n");
 
         struct gecko_msg_mesh_prov_create_network_rsp_t *new_netkey_rsp;
